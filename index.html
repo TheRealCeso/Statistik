@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Statistik Augsburg interaktiv</title>
+  <meta name="description" content="Statistik Augsburg interaktiv – kleinräumige Bevölkerungsstatistik der Stadt Augsburg: Detailansicht, Zeitreihe und innerstädtischer Vergleich.">
+  <meta name="keywords" content="Augsburg, Statistik, Bevölkerung, Interaktiv, Kleinräumige Gliederung, Augusta">
+  <link rel="icon" href="img/core/favicon.ico">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/a11y.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Zum Inhalt springen</a>
+
+  <header class="site-header" id="pageBegin">
+    <div class="wrap header-inner">
+      <a class="brand" href="#" title="Startseite">
+        <span class="brand-title"><span class="brand-name">Statistik Augsburg</span> <em>interaktiv</em></span>
+      </a>
+      <div class="header-actions">
+        <a class="btn btn-ghost" id="btnBeschreibung" href="#" target="_blank" rel="noopener" title="Hinweise zur Bedienung dieser Anwendung">Beschreibung der Anwendung</a>
+        <button class="btn btn-ghost" id="btnDatenbeschreibung" type="button" title="Hinweise zu den Daten / Indikatoren">Datenbeschreibung</button>
+        <a class="logo" href="http://www.augsburg.de/statistik" target="_blank" rel="noopener" title="Amt für Statistik und Stadtforschung der Stadt Augsburg"><img class="logo-img" src="img/core/Augsburg_Logo.svg" alt="Stadt Augsburg" height="44"></a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main" class="wrap">
+    <section class="card controls" id="controls" aria-label="Auswahl"></section>
+    <section id="content" aria-live="polite"></section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <span>© Amt für Statistik und Stadtforschung der Stadt Augsburg</span>
+      <span id="footerUpdated"></span>
+      <span id="footerSource"></span>
+      <span class="footer-links">
+        <a href="barrierefreiheit.html">Barrierefreiheit</a>
+        <a href="leichte-sprache.html">Leichte Sprache</a>
+        <a href="https://www.augsburg.de/impressum/" target="_blank" rel="noopener">Impressum</a>
+        <a href="https://www.augsburg.de/datenschutzerklaerung/" target="_blank" rel="noopener">Datenschutz</a>
+      </span>
+    </div>
+  </footer>
+
+  <a class="to-top" href="#pageBegin" title="zum Seitenanfang" aria-label="zum Seitenanfang">↑</a>
+
+  <div class="modal" id="modal" hidden>
+    <div class="modal-backdrop" data-close></div>
+    <div class="modal-dialog" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <div class="modal-head">
+        <h2 id="modalTitle"></h2>
+        <button class="modal-close" type="button" data-close aria-label="Schließen">×</button>
+      </div>
+      <div class="modal-body" id="modalBody"></div>
+    </div>
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+19:14:56 select Sozialregion 2023
+19:21:46 Fehler (Versuch 1): fetch failed "Indikatoren"
+19:24:59 Fehler (Versuch 1): fetch failed "Indikatoren"
+19:24:59 Fehler (Versuch 1): fetch failed "HaushalteNachKindern"
+19:24:59 Fehler (Versuch 1): fetch failed "HaushalteNachPersonen"
+19:24:59 Fehler (Versuch 1): fetch failed "Haushaltstypen"
+19:31:46 Fehler (Versuch 2): fetch failed "Indikatoren"
+19:34:58 Fehler (Versuch 2): fetch failed "HaushalteNachPersonen"
+19:34:58 Fehler (Versuch 2): fetch failed "Haushaltstypen"
+19:34:58 Fehler (Versuch 2): fetch failed "Indikatoren"
+19:34:58 Fehler (Versuch 2): fetch failed "HaushalteNachKindern"
+19:41:47 Fehler (Versuch 3): fetch failed "Indikatoren"
+19:41:53 select Stadtbezirk 2016
+19:44:59 Fehler (Versuch 3): fetch failed "Haushaltstypen"
+19:44:59 Fehler (Versuch 3): fetch failed "HaushalteNachKindern"
+19:44:59 Fehler (Versuch 3): fetch failed "HaushalteNachPersonen"
+19:44:59 Fehler (Versuch 3): fetch failed "Indikatoren"
+19:51:49 Fehler (Versuch 1): fetch failed {"t":"Sozialregion","y":2025}
+19:55:02 Fehler (Versuch 1): fetch failed "BewegungUebersicht"
+19:55:02 Fehler (Versuch 1): fetch failed "BewegungInnerstaedtisch"
+19:55:02 Fehler (Versuch 1): fetch failed "BewegungStadtgrenze"
+19:55:02 Fehler (Versuch 1): fetch failed "BewegungNatuerlich"
+20:01:47 Fehler (Versuch 2): fetch failed {"t":"Sozialregion","y":2025}
+20:05:00 Fehler (Versuch 2): fetch failed "BewegungInnerstaedtisch"
+20:05:00 Fehler (Versuch 2): fetch failed "BewegungUebersicht"
+20:05:00 Fehler (Versuch 2): fetch failed "BewegungStadtgrenze"
+20:05:00 Fehler (Versuch 2): fetch failed "BewegungNatuerlich"
+20:11:48 Fehler (Versuch 3): fetch failed {"t":"Sozialregion","y":2025}
+20:15:01 Fehler (Versuch 3): fetch failed "BewegungNatuerlich"
+20:15:01 Fehler (Versuch 3): fetch failed "BewegungStadtgrenze"
+20:15:01 Fehler (Versuch 3): fetch failed "BewegungUebersicht"
+20:15:01 Fehler (Versuch 3): fetch failed "BewegungInnerstaedtisch"
+20:21:50 Fehler (Versuch 1): fetch failed {"t":"Altenhilfe","y":1999}
+20:25:02 Fehler (Versuch 1): fetch failed "BgPersonen"
+20:25:02 Fehler (Versuch 1): fetch failed "Beschaeftigte"
+20:25:02 Fehler (Versuch 1): fetch failed "Arbeitslose"
+20:31:49 Fehler (Versuch 2): fetch failed {"t":"Altenhilfe","y":1999}
+20:35:01 Fehler (Versuch 2): fetch failed "Beschaeftigte"
+20:35:01 Fehler (Versuch 2): fetch failed "Arbeitslose"
+20:35:01 Fehler (Versuch 2): fetch failed "BgPersonen"
+20:41:51 Fehler (Versuch 3): fetch failed {"t":"Altenhilfe","y":1999}
+20:45:02 Fehler (Versuch 3): fetch failed "Arbeitslose"
+20:45:02 Fehler (Versuch 3): fetch failed "Beschaeftigte"
+20:45:02 Fehler (Versuch 3): fetch failed "BgPersonen"
+20:45:08 select Sozialregion 2024
+20:51:52 Fehler (Versuch 1): fetch failed {"t":"Altenhilfe","y":2000}

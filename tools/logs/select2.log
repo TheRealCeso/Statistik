@@ -1,0 +1,31 @@
+TypeError: terminated
+    at Fetch.onAborted (node:internal/deps/undici/undici:13842:53)
+    at Fetch.emit (node:events:514:28)
+    at Fetch.terminate (node:internal/deps/undici/undici:12972:14)
+    at Object.onError (node:internal/deps/undici/undici:13976:38)
+    at Request.onError (C:\Users\alexa\Desktop\StatistikInteraktiv\tools\node_modules\undici\lib\core\request.js:303:27)
+    at Object.errorRequest (C:\Users\alexa\Desktop\StatistikInteraktiv\tools\node_modules\undici\lib\core\util.js:638:13)
+    at TLSSocket.<anonymous> (C:\Users\alexa\Desktop\StatistikInteraktiv\tools\node_modules\undici\lib\dispatcher\client-h1.js:802:12)
+    at TLSSocket.emit (node:events:526:24)
+    at node:net:362:12
+    at TCP.done (node:internal/tls/wrap:770:7) {
+  [cause]: SocketError: other side closed
+      at TLSSocket.<anonymous> (C:\Users\alexa\Desktop\StatistikInteraktiv\tools\node_modules\undici\lib\dispatcher\client-h1.js:766:24)
+      at TLSSocket.emit (node:events:526:24)
+      at endReadableNT (node:internal/streams/readable:1757:12)
+      at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+    code: 'UND_ERR_SOCKET',
+    socket: {
+      localAddress: '192.168.178.173',
+      localPort: 64882,
+      remoteAddress: '194.246.72.14',
+      remotePort: 443,
+      remoteFamily: 'IPv4',
+      timeout: undefined,
+      bytesWritten: 911,
+      bytesRead: 127287
+    },
+    Symbol(undici.error.UND_ERR): true,
+    Symbol(undici.error.UND_ERR_SOCKET): true
+  }
+}

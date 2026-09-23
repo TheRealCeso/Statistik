@@ -1,0 +1,68 @@
+19:12:51 select Planungsraum 2013
+19:12:51 select Planungsraum 2014
+19:12:53 select Planungsraum 2015
+19:12:54 select Planungsraum 2016
+19:12:56 select Planungsraum 2017
+19:12:57 select Planungsraum 2018
+19:12:58 select Planungsraum 2019
+19:12:59 select Planungsraum 2020
+19:13:00 select Planungsraum 2021
+19:13:02 select Planungsraum 2022
+19:13:03 select Planungsraum 2023
+19:13:03 select Planungsraum 2024
+19:13:04 select Planungsraum 2025
+19:13:05 select Sozialregion 1999
+19:13:05 select Sozialregion 2000
+19:13:06 select Sozialregion 2001
+19:13:07 select Sozialregion 2002
+19:13:08 select Sozialregion 2003
+19:13:08 select Sozialregion 2004
+19:13:09 select Sozialregion 2005
+19:13:10 select Sozialregion 2006
+19:13:11 select Sozialregion 2007
+19:13:12 select Sozialregion 2008
+19:13:12 select Sozialregion 2009
+19:13:13 select Sozialregion 2010
+19:13:14 select Sozialregion 2011
+19:13:15 select Sozialregion 2012
+19:13:16 select Sozialregion 2013
+19:13:17 select Sozialregion 2014
+19:13:17 select Sozialregion 2015
+19:13:18 select Sozialregion 2016
+19:13:19 select Sozialregion 2017
+19:13:19 select Sozialregion 2018
+19:13:20 select Sozialregion 2019
+19:13:21 select Sozialregion 2020
+19:13:21 select Sozialregion 2021
+19:13:22 select Sozialregion 2022
+TypeError: terminated
+    at Fetch.onAborted (node:internal/deps/undici/undici:13842:53)
+    at Fetch.emit (node:events:514:28)
+    at Fetch.terminate (node:internal/deps/undici/undici:12972:14)
+    at Object.onError (node:internal/deps/undici/undici:13976:38)
+    at Request.onError (C:\Users\alexa\Desktop\StatistikInteraktiv\tools\node_modules\undici\lib\core\request.js:303:27)
+    at Object.errorRequest (C:\Users\alexa\Desktop\StatistikInteraktiv\tools\node_modules\undici\lib\core\util.js:638:13)
+    at TLSSocket.<anonymous> (C:\Users\alexa\Desktop\StatistikInteraktiv\tools\node_modules\undici\lib\dispatcher\client-h1.js:802:12)
+    at TLSSocket.emit (node:events:526:24)
+    at node:net:362:12
+    at TCP.done (node:internal/tls/wrap:770:7) {
+  [cause]: SocketError: other side closed
+      at TLSSocket.<anonymous> (C:\Users\alexa\Desktop\StatistikInteraktiv\tools\node_modules\undici\lib\dispatcher\client-h1.js:766:24)
+      at TLSSocket.emit (node:events:526:24)
+      at endReadableNT (node:internal/streams/readable:1757:12)
+      at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+    code: 'UND_ERR_SOCKET',
+    socket: {
+      localAddress: '192.168.178.173',
+      localPort: 49586,
+      remoteAddress: '194.246.72.14',
+      remotePort: 443,
+      remoteFamily: 'IPv4',
+      timeout: undefined,
+      bytesWritten: 16741,
+      bytesRead: 678074
+    },
+    Symbol(undici.error.UND_ERR): true,
+    Symbol(undici.error.UND_ERR_SOCKET): true
+  }
+}

@@ -1,0 +1,42 @@
+[TypeError: fetch failed] {
+  [cause]: ConnectTimeoutError: Connect Timeout Error (attempted address: statistikinteraktiv.augsburg.de:443, timeout: 10000ms)
+      at onConnectTimeout (C:\Users\alexa\Desktop\StatistikInteraktiv\tools\node_modules\19:35:12 Fehler (Versuch 2): fetch failed {"url":"https://statistikinteraktiv.augsburg.de/Interaktiv/Interaktiv/pics/inner
+19:35:12 Fehler (Versuch 2): fetch failed {"url":"https://statistikinteraktiv.augsburg.de/Interaktiv/Interaktiv/pics/inner
+19:45:20 Fehler (Versuch 3): fetch failed {"url":"https://statistikinteraktiv.augsburg.de/Interaktiv/Interaktiv/pics/inner
+19:45:20 Fehler (Versuch 3): fetch failed {"url":"https://statistikinteraktiv.augsburg.de/Interaktiv/Interaktiv/pics/inner
+19:55:30 Fehler (Versuch 1): fetch failed {"url":"https://statistikinteraktiv.augsburg.de/Interaktiv/Interaktiv/pics/inner
+19:55:30 Fehler (Versuch 1): fetch failed {"url":"https://statistikinteraktiv.augsburg.de/Interaktiv/Interaktiv/pics/inner
+19:55:30 Fehler (Versuch 1): fetch failed {"url":"https://statistikinteraktiv.augsburg.de/Interaktiv/Interaktiv/pics/inner
+19:55:30 Fehler (Versuch 1): fetch failed {"url":"https://statistikinteraktiv.augsburg.de/Interaktiv/Interaktiv/pics/inner
+19:55:30 Fehler (Versuch 1): fetch failed {"url":"https://statistikinteraktiv.augsburg.de/Interaktiv/Interaktiv/pics/inner
+19:55:30 Fehler (Versuch 1): fetch failed {"url":"https://statistikinteraktiv.augsburg.de/Interaktiv/Interaktiv/pics/inner
+20:05:35 Fehler (Versuch 2): fetch failed {"url":"https://statistikinteraktiv.augsburg.de/Interaktiv/Interaktiv/pics/inner
+20:05:35 Fehler (Versuch 2): fetch failed {"url":"https://statistikinteraktiv.augsburg.de/Interaktiv/Interaktiv/pics/inner
+20:05:35 Fehler (Versuch 2): fetch failed {"url":"https://statistikinteraktiv.augsburg.de/Interaktiv/Interaktiv/pics/inner
+20:05:35 Fehler (Versuch 2): fetch failed {"url":"https://statistikinteraktiv.augsburg.de/Interaktiv/Interaktiv/pics/inner
+20:05:35 Fehler (Versuch 2): fetch failed {"url":"https://statistikinteraktiv.augsburg.de/Interaktiv/Interaktiv/pics/inner
+20:05:35 Fehler (Versuch 2): fetch failed {"url":"https://statistikinteraktiv.augsburg.de/Interaktiv/Interaktiv/pics/inner
+20:15:43 Fehler (Versuch 3): fetch failed {"url":"https://statistikinteraktiv.augsburg.de/Interaktiv/Interaktiv/pics/inner
+20:15:43 Fehler (Versuch 3): fetch failed {"url":"https://statistikinteraktiv.augsburg.de/Interaktiv/Interaktiv/pics/inner
+20:15:43 Fehler (Versuch 3): fetch failed {"url":"https://statistikinteraktiv.augsburg.de/Interaktiv/Interaktiv/pics/inner
+20:15:43 Fehler (Versuch 3): fetch failed {"url":"https://statistikinteraktiv.augsburg.de/Interaktiv/Interaktiv/pics/inner
+20:15:43 Fehler (Versuch 3): fetch failed {"url":"https://statistikinteraktiv.augsburg.de/Interaktiv/Interaktiv/pics/inner
+20:15:43 Fehler (Versuch 3): fetch failed {"url":"https://statistikinteraktiv.augsburg.de/Interaktiv/Interaktiv/pics/inner
+20:25:53 Fehler (Versuch 1): fetch failed {"url":"https://statistikinteraktiv.augsburg.de/Interaktiv/Interaktiv/pics/inner
+20:25:53 Fehler (Versuch 1): fetch failed {"url":"https://statistikinteraktiv.augsburg.de/Interaktiv/Interaktiv/pics/inner
+20:25:53 Fehler (Versuch 1): fetch failed {"url":"https://statistikinteraktiv.augsburg.de/Interaktiv/Interaktiv/pics/inner
+20:25:53 Fehler (Versuch 1): fetch failed {"url":"https://statistikinteraktiv.augsburg.de/Interaktiv/Interaktiv/pics/inner
+20:25:53 Fehler (Versuch 1): fetch failed {"url":"https://statistikinteraktiv.augsburg.de/Interaktiv/Interaktiv/pics/inner
+20:25:53 Fehler (Versuch 1): fetch failed {"url":"https://statistikinteraktiv.augsburg.de/Interaktiv/Interaktiv/pics/inner
+20:35:58 Fehler (Versuch 2): fetch failed {"url":"https://statistikinteraktiv.augsburg.de/Interaktiv/Interaktiv/pics/inner
+20:35:58 Fehler (Versuch 2): fetch failed {"url":"https://statistikinteraktiv.augsburg.de/Interaktiv/Interaktiv/pics/inner
+20:35:58 Fehler (Versuch 2): fetch failed {"url":"https://statistikinteraktiv.augsburg.de/Interaktiv/Interaktiv/pics/inner
+20:35:58 Fehler (Versuch 2): fetch failed {"url":"https://statistikinteraktiv.augsburg.de/Interaktiv/Interaktiv/pics/inner
+20:35:58 Fehler (Versuch 2): fetch failed {"url":"https://statistikinteraktiv.augsburg.de/Interaktiv/Interaktiv/pics/inner
+20:35:58 Fehler (Versuch 2): fetch failed {"url":"https://statistikinteraktiv.augsburg.de/Interaktiv/Interaktiv/pics/inner
+20:46:06 Fehler (Versuch 3): fetch failed {"url":"https://statistikinteraktiv.augsburg.de/Interaktiv/Interaktiv/pics/inner
+20:46:06 Fehler (Versuch 3): fetch failed {"url":"https://statistikinteraktiv.augsburg.de/Interaktiv/Interaktiv/pics/inner
+20:46:06 Fehler (Versuch 3): fetch failed {"url":"https://statistikinteraktiv.augsburg.de/Interaktiv/Interaktiv/pics/inner
+20:46:06 Fehler (Versuch 3): fetch failed {"url":"https://statistikinteraktiv.augsburg.de/Interaktiv/Interaktiv/pics/inner
+20:46:06 Fehler (Versuch 3): fetch failed {"url":"https://statistikinteraktiv.augsburg.de/Interaktiv/Interaktiv/pics/inner
+20:46:06 Fehler (Versuch 3): fetch failed {"url":"https://statistikinteraktiv.augsburg.de/Interaktiv/Interaktiv/pics/inner

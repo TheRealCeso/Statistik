@@ -1,0 +1,47 @@
+18:58:27 Straßen: 1851
+18:58:32 Hausnummern 200 / 1851
+18:58:38 Hausnummern 400 / 1851
+18:58:45 Hausnummern 600 / 1851
+18:58:52 Hausnummern 800 / 1851
+18:58:59 Hausnummern 1000 / 1851
+18:59:04 Hausnummern 1200 / 1851
+18:59:12 Hausnummern 1400 / 1851
+18:59:19 Hausnummern 1600 / 1851
+18:59:28 Hausnummern 1800 / 1851
+18:59:30 Adressen zu prüfen: 44415
+19:00:30 Adressen 2000 / 44415
+19:01:15 Adressen 4000 / 44415
+19:01:53 Adressen 6000 / 44415
+19:02:24 Adressen 8000 / 44415
+19:02:57 Adressen 10000 / 44415
+19:03:35 Adressen 12000 / 44415
+19:04:14 Adressen 14000 / 44415
+19:04:50 Adressen 16000 / 44415
+19:05:44 Adressen 18000 / 44415
+19:06:23 Adressen 20000 / 44415
+19:07:12 Adressen 22000 / 44415
+19:08:09 Adressen 24000 / 44415
+19:08:37 Adressen 26000 / 44415
+19:09:17 Adressen 28000 / 44415
+19:09:49 Adressen 30000 / 44415
+19:10:15 Adressen 32000 / 44415
+19:10:38 Adressen 34000 / 44415
+19:11:01 Adressen 36000 / 44415
+19:11:33 Adressen 38000 / 44415
+19:11:55 Adressen 40000 / 44415
+19:12:30 Adressen 42000 / 44415
+19:13:01 Adressen 44000 / 44415
+19:13:33 mapping Planungsraum 42 Bezirke 
+19:14:00 mapping Sozialregion 42 Bezirke 
+19:14:17 mapping Altenhilfe 42 Bezirke KONFLIKTE: [{"b":"27","ids":["VRA03","VRA04"]}]
+19:14:33 mapping Sozialmonitoringbezirk 42 Bezirke 
+[TypeError: fetch failed] {
+  [cause]: ConnectTimeoutError: Connect Timeout Error (attempted address: statistikinteraktiv.augsburg.de:443, timeout: 10000ms)
+      at onConnectTimeout (C:\Users\alexa\Desktop\StatistikInteraktiv\tools\node_modules\undici\lib\core\connect.js:237:24)
+      at Immediate._onImmediate (C:\Users\alexa\Desktop\StatistikInteraktiv\tools\node_modules\undici\lib\core\connect.js:188:35)
+      at process.processImmediate (node:internal/timers:574:21) {
+    code: 'UND_ERR_CONNECT_TIMEOUT',
+    Symbol(undici.error.UND_ERR): true,
+    Symbol(undici.error.UND_ERR_CONNECT_TIMEOUT): true
+  }
+}
