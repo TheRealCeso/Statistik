@@ -59,7 +59,6 @@
       html += '</div></fieldset>';
     });
     html += '<p class="a11y-hint">Die Einstellung gilt nur auf diesem Gerät und bleibt gespeichert.</p>'
-      + '<p class="a11y-link"><a href="' + base + 'barrierefreiheit.html">Erklärung zur Barrierefreiheit</a></p>'
       + '<p class="a11y-link"><a href="' + base + 'leichte-sprache.html">Diese Seite in Leichter Sprache</a></p>'
       + '</div>';
     wrap.innerHTML = html;
@@ -77,6 +76,25 @@
     document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && !panel.hidden) { open(false); btn.focus(); } });
   }
 
-  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', buildPanel);
-  else buildPanel();
+  function initToTop() {
+    document.addEventListener('click', function (e) {
+      var btn = e.target.closest('.to-top');
+      if (!btn) return;
+      e.preventDefault();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      var target = document.getElementById('pageBegin') || document.body;
+      if (target) {
+        target.setAttribute('tabindex', '-1');
+        target.focus({ preventScroll: true });
+      }
+    });
+  }
+
+  function setup() {
+    buildPanel();
+    initToTop();
+  }
+
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', setup);
+  else setup();
 })();

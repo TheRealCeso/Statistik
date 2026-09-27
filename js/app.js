@@ -94,7 +94,9 @@
   let M = null; // maps.json
   const state = { mode: 'Detailansicht', area: 'Stadtbezirk', id: 'A', detailView: false, year: 2025, tab: '', sub: '', mk: '', adress: '' };
   function parseHash() {
-    const q = new URLSearchParams(location.hash.replace(/^#\/?/, ''));
+    const raw = location.hash.replace(/^#\/?/, '');
+    if (raw === 'pageBegin') return;
+    const q = new URLSearchParams(raw);
     state.mode = ['Detailansicht', 'Zeitreihe', 'Vergleich'].includes(q.get('mode')) ? q.get('mode') : 'Detailansicht';
     state.area = A.types.includes(q.get('area')) ? q.get('area') : 'Stadtbezirk';
     state.id = q.get('id') || 'A';
@@ -331,7 +333,7 @@
       let fill = opts.fill ? opts.fill(id) : null;
       if (classes.length && opts.classOf) { const ci = opts.classOf(id); if (ci != null) fill = `url(#${prefix}${ci})`; }
       const cls = opts.cls || 'map-area';
-      return `<polygon class="${cls}${sel ? ' is-active' : ''}${opts.extraClass ? ' ' + opts.extraClass(id) : ''}" data-id="${esc(id)}" points="${p.coords.join(' ')}"${fill ? ` style="fill:${esc(fill)}"` : ''}><title>${esc(p.title)}</title></polygon>`;
+      return `<polygon class="${cls}${sel ? ' is-active' : ''}${opts.extraClass ? ' ' + opts.extraClass(id) : ''}" data-id="${esc(id)}" data-title="${esc(p.title)}" aria-label="${esc(p.title)}" points="${p.coords.join(' ')}"${fill ? ` style="fill:${esc(fill)}"` : ''}></polygon>`;
     }).join('');
     return `<svg viewBox="${vb}" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Karte ${esc(areaLabel(mapType))}" preserveAspectRatio="xMidYMid meet">${defs}${items}</svg>`;
   }
@@ -671,7 +673,7 @@
     const tip = $('#mapTip', root);
     $$('#areaList a', root).forEach(a => { a.addEventListener('mouseenter', () => hoverArea(a.dataset.id, true)); a.addEventListener('mouseleave', () => hoverArea(a.dataset.id, false)); });
     $$('#bigMap polygon', root).forEach(p => {
-      p.addEventListener('mouseenter', () => { hoverArea(p.dataset.id, true); if (tip) { tip.textContent = p.querySelector('title').textContent; tip.style.display = 'block'; } });
+      p.addEventListener('mouseenter', () => { hoverArea(p.dataset.id, true); if (tip) { tip.textContent = p.dataset.title || ''; tip.style.display = 'block'; } });
       p.addEventListener('mousemove', e => { if (!tip) return; const r = $('#bigMap').getBoundingClientRect(); tip.style.left = (e.clientX - r.left) + 'px'; tip.style.top = (e.clientY - r.top) + 'px'; });
       p.addEventListener('mouseleave', () => { hoverArea(p.dataset.id, false); if (tip) tip.style.display = 'none'; });
       p.addEventListener('click', () => go({ id: p.dataset.id, detailView: true, tab: '', sub: '' }));
@@ -729,7 +731,10 @@
       if (page === 'Altersgruppen' && mainT) {
         const leg = legendFromTable((pg.tables || []).find(t => t.legend));
         const yearsWithPyr = Object.keys(d.years).filter(y => d.years[y].pages.Altersgruppen && (d.years[y].pages.Altersgruppen.imgs || []).some(i => /pyramid/.test(i))).sort();
-        html += `<div class="chart-row"><div class="pyramid"><div class="chart-title">Bevölkerungspyramide ${state.year}</div><img src="img/pyramid/${esc(type)}/${esc(id)}_${state.year}.gif" alt="Alterspyramide ${esc(area.name)} ${state.year}" width="375" height="416" loading="lazy" onerror="this.closest('.pyramid').innerHTML='<div class=notice>Für dieses Jahr liegt keine Bevölkerungspyramide vor.</div>'"><div class="stand">Stand: 31.12.${state.year}</div></div>
+        const pyrImg = (pg.imgs || []).find(i => /pyramid/.test(i));
+        const pyrSrc = pyrImg ? encodeURI(pyrImg) : `img/pyramid/${esc(type)}/${esc(id)}_${state.year}.gif`;
+        const pyrFallback = pyrImg ? `https://statistikinteraktiv.augsburg.de${encodeURI(pyrImg)}` : '';
+        html += `<div class="chart-row"><div class="pyramid"><div class="chart-title">Bevölkerungspyramide ${state.year}</div><img src="${pyrSrc}" data-fallback="${esc(pyrFallback)}" alt="Alterspyramide ${esc(area.name)} ${state.year}" width="375" height="416" loading="lazy" onerror="if(this.dataset.fallback&&this.src!==this.dataset.fallback){this.src=this.dataset.fallback;}else{this.closest('.pyramid').innerHTML='<div class=notice>Für dieses Jahr liegt keine Bevölkerungspyramide vor.</div>';}"><div class="stand">Stand: 31.12.${state.year}</div></div>
           <div><div class="chart-title">Legende</div>${legendHtml(leg)}<p><button type="button" class="btn btn-primary" id="btnPyramidAnim">Öffne Animation</button></p><p class="muted small">Die Animation zeigt die Entwicklung der Bevölkerungspyramide über die Jahre ${esc(yearsWithPyr[0] || '')} bis ${esc(yearsWithPyr[yearsWithPyr.length - 1] || '')}.</p></div></div>`;
       } else if (mainT) {
         const ch = detailCharts(page, pg, cityPg, area.name);
@@ -810,7 +815,7 @@
     const html = h`
       ${radios}
       <div class="vg-grid">
-        <div class="vg-map"><div class="stand">Stand: 31.12.${state.year}</div><div id="vgMap">${mapHtml}</div></div>
+        <div class="vg-map"><div class="stand">Stand: 31.12.${state.year}</div><div id="vgMap">${mapHtml}</div><div class="map-tooltip" id="vgTip"></div></div>
         <div class="vg-legend"><img src="img/legend/${esc(type)}/${esc(mk)}.png" alt="Legende ${esc(m.merkmal || mk)}, die Klassen stehen auch als Text unter der Karte" loading="lazy" onerror="this.style.display='none'"><div class="small muted" style="margin-top:6px">${esc(unit.y)}</div></div>
         <div class="vg-table"><h3>Vergleich</h3>
           ${box('Augsburg', cleanVal(m.city[0]), cleanVal(m.city[1]))}
@@ -840,9 +845,27 @@
       $$('#vgMap polygon').forEach(p => { p.classList.toggle('is-pin1', vg.pins[0] === p.dataset.id); p.classList.toggle('is-pin2', vg.pins[1] === p.dataset.id); });
     };
     renderBoxes(null);
+    const vgTip = $('#vgTip');
     $$('#vgMap polygon').forEach(p => {
-      p.addEventListener('mouseenter', () => renderBoxes(p.dataset.id));
-      p.addEventListener('mouseleave', () => renderBoxes(null));
+      p.addEventListener('mouseenter', () => {
+        renderBoxes(p.dataset.id);
+        if (vgTip) {
+          const a = p.dataset.id && byId[p.dataset.id];
+          const valText = a && a.value != null ? ` (${cleanVal(a.value)})` : '';
+          vgTip.textContent = (p.dataset.title || '') + valText;
+          vgTip.style.display = 'block';
+        }
+      });
+      p.addEventListener('mousemove', e => {
+        if (!vgTip) return;
+        const r = $('#vgMap').getBoundingClientRect();
+        vgTip.style.left = (e.clientX - r.left) + 'px';
+        vgTip.style.top = (e.clientY - r.top) + 'px';
+      });
+      p.addEventListener('mouseleave', () => {
+        renderBoxes(null);
+        if (vgTip) vgTip.style.display = 'none';
+      });
       p.addEventListener('click', () => { if (vg.pins.length >= 2) vg.pins = []; else if (!vg.pins.includes(p.dataset.id)) vg.pins.push(p.dataset.id); renderBoxes(p.dataset.id); });
     });
     // Balkendiagramm über alle Teilgebiete (ohne AnkER-Einrichtungen)
@@ -858,20 +881,110 @@
   }
   function closeModal() { $('#modal').hidden = true; $('#modalBody').innerHTML = ''; document.body.style.overflow = ''; if (animTimer) { clearInterval(animTimer); animTimer = null; } }
   function openPyramidAnimation(type, id, area, d) {
-    const years = Object.keys(d.years).filter(y => d.years[y].pages.Altersgruppen && (d.years[y].pages.Altersgruppen.imgs || []).some(i => /pyramid/.test(i))).sort();
-    if (!years.length) return;
-    const leg = [{ label: 'Deutsche männlich', color: '#59A2CF' }, { label: 'Deutsche weiblich', color: '#FFABBF' }, { label: 'Ausländer männlich', color: '#3747BF' }, { label: 'Ausländer weiblich', color: '#B22C4C' }];
-    openModal('Alterspyramide animiert', h`<div class="anim"><div class="anim-meta">${esc(typeSingular(type))}: ${esc(area.label || area.name)}</div>
-      <div class="anim-year" id="animYear">${years[0]}</div>
-      <img id="animImg" src="img/pyramidAnim/${esc(type)}/${esc(id)}_${years[0]}.gif" alt="Alterspyramide" width="375" height="416">
-      <div class="anim-controls"><button type="button" class="btn btn-primary" id="animStart">Start Animation</button><button type="button" class="btn" id="animStop">Stop Animation</button><button type="button" class="btn" id="animReset">Zurücksetzen</button></div>
-      ${legendHtml(leg)}</div>`);
-    years.forEach(y => { const im = new Image(); im.src = `img/pyramidAnim/${type}/${id}_${y}.gif`; });
-    let i = 0;
-    const show = () => { $('#animYear').textContent = years[i]; $('#animImg').src = `img/pyramidAnim/${type}/${id}_${years[i]}.gif`; };
-    $('#animStart').addEventListener('click', () => { if (animTimer) return; animTimer = setInterval(() => { i = (i + 1) % years.length; show(); }, 900); });
-    $('#animStop').addEventListener('click', () => { clearInterval(animTimer); animTimer = null; });
-    $('#animReset').addEventListener('click', () => { clearInterval(animTimer); animTimer = null; i = 0; show(); });
+    const frames = [];
+    Object.keys(d.years).sort().forEach(y => {
+      const pg = (d.years[y] || {}).pages.Altersgruppen;
+      const imgs = (pg && pg.imgs) || [];
+      const pyr = imgs.find(i => /pyramid/.test(i));
+      if (pyr) {
+        const animSrc = pyr.replace('/pics/pyramid', '/pics/pyramidAnimation');
+        frames.push({ year: y, src: animSrc });
+      }
+    });
+    if (!frames.length) return;
+
+    let currentIdx = frames.findIndex(f => String(f.year) === String(state.year));
+    if (currentIdx === -1) currentIdx = 0;
+    const startIdx = currentIdx;
+
+    const legendTableHtml = `
+      <table class="pyramid-legend" id="PyramidLegend">
+        <thead>
+          <tr>
+            <th></th>
+            <th>männlich</th>
+            <th>weiblich</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Deutsche</td>
+            <td><span class="sw" style="background:#59A2CF" aria-label="Deutsche männlich"></span></td>
+            <td><span class="sw" style="background:#FFABBF" aria-label="Deutsche weiblich"></span></td>
+          </tr>
+          <tr>
+            <td>Ausländer</td>
+            <td><span class="sw" style="background:#3747BF" aria-label="Ausländer männlich"></span></td>
+            <td><span class="sw" style="background:#B22C4C" aria-label="Ausländer weiblich"></span></td>
+          </tr>
+        </tbody>
+      </table>`;
+
+    const remoteOrigin = 'https://statistikinteraktiv.augsburg.de';
+    const initialFrame = frames[currentIdx];
+    const initialSrc = encodeURI(initialFrame.src);
+
+    openModal('Alterspyramide animiert', h`<div class="anim">
+      <div class="anim-meta">${esc(typeSingular(type))}: ${esc(area.label || (area.id + ' ' + area.name))}</div>
+      <div class="anim-year" id="animYear">${initialFrame.year}</div>
+      <div>
+        <img id="animImg" src="${initialSrc}" data-fallback="${esc(remoteOrigin + initialFrame.src)}" alt="Alterspyramide ${esc(area.name)}" width="375" height="416">
+      </div>
+      <div class="anim-controls">
+        <button type="button" class="btn btn-primary" id="animStart">Start Animation</button>
+        <button type="button" class="btn" id="animStop">Stop Animation</button>
+        <button type="button" class="btn" id="animReset">Zurücksetzen</button>
+      </div>
+      ${legendTableHtml}
+    </div>`);
+
+    const imgEl = $('#animImg');
+    if (imgEl) {
+      imgEl.addEventListener('error', function () {
+        if (this.dataset.fallback && this.src !== this.dataset.fallback) {
+          this.src = this.dataset.fallback;
+        }
+      });
+    }
+
+    frames.forEach(f => {
+      const im = new Image();
+      im.src = encodeURI(f.src);
+    });
+
+    const updateFrame = idx => {
+      const f = frames[idx];
+      if (!f) return;
+      $('#animYear').textContent = f.year;
+      if (imgEl) {
+        imgEl.dataset.fallback = remoteOrigin + f.src;
+        imgEl.src = encodeURI(f.src);
+      }
+    };
+
+    $('#animStart').addEventListener('click', () => {
+      if (animTimer) return;
+      animTimer = setInterval(() => {
+        currentIdx = (currentIdx + 1) % frames.length;
+        updateFrame(currentIdx);
+      }, 1000);
+    });
+
+    $('#animStop').addEventListener('click', () => {
+      if (animTimer) {
+        clearInterval(animTimer);
+        animTimer = null;
+      }
+    });
+
+    $('#animReset').addEventListener('click', () => {
+      if (animTimer) {
+        clearInterval(animTimer);
+        animTimer = null;
+      }
+      currentIdx = startIdx;
+      updateFrame(currentIdx);
+    });
   }
   async function openVergleichAnimation(type, themeKey, mk, tab, sub, theme) {
     const label = (theme.radios.find(r => r.value === mk) || {}).label || mk;

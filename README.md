@@ -31,9 +31,7 @@ Jeder statische Webserver (Apache, nginx, IIS) kann den Ordner ebenfalls direkt 
   „Werte aller Teilgebiete“. Linien in Zeitreihen sind zusätzlich über Strichmuster unterscheidbar.
 - **Für sehbehinderte Nutzer**: Die Seite läuft ohne waagerechtes Scrollen bis 400 Prozent Vergrößerung, alle Schriftgrößen
   sind relativ, der Kopfbereich löst sich bei geringer Fensterhöhe von der Oberkante.
-- [`barrierefreiheit.html`](barrierefreiheit.html) enthält die Erklärung zur Barrierefreiheit nach BITV 2.0
-  samt Meldemöglichkeit für Barrieren; [`leichte-sprache.html`](leichte-sprache.html) erklärt das Angebot in Leichter Sprache.
-  In der Erklärung sind Kontaktdaten und Prüfdatum als Platzhalter markiert und vor einer Veröffentlichung zu ergänzen.
+- [`leichte-sprache.html`](leichte-sprache.html) erklärt das Angebot in Leichter Sprache.
 
 ## Ordner
 
@@ -41,7 +39,7 @@ Jeder statische Webserver (Apache, nginx, IIS) kann den Ordner ebenfalls direkt 
 | --- | --- |
 | `index.html`, `css/style.css`, `js/app.js` | Anwendung |
 | `js/a11y.js` | Darstellungseinstellungen (Schriftgröße, Kontrast, Kartenmuster) |
-| `barrierefreiheit.html`, `leichte-sprache.html` | Erklärung zur Barrierefreiheit, Leichte Sprache |
+| `leichte-sprache.html` | Leichte Sprache |
 | `data/areas.json`, `data/maps.json` | Gebietslisten, Menütexte, Kartenpolygone |
 | `data/select/<Typ>/<Jahr>.json` | Übersichtstabellen aller Teilgebiete eines Jahres |
 | `data/detail/<Typ>/<Id>.json` | Detailansicht eines Teilgebiets, alle Jahre |
