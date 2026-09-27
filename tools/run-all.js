@@ -3,6 +3,7 @@
  * bis der Original-Server erreichbar ist. Bereits vorhandene Dateien werden übersprungen.
  * Aufruf: node run-all.js
  */
+process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0';
 const { spawnSync } = require('child_process');
 const path = require('path');
 

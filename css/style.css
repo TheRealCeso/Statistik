@@ -58,7 +58,7 @@ h1, h2, h3, h4 { margin: 0; font-weight: 600; letter-spacing: -.01em; }
 .brand:hover .brand-name, .brand:focus-visible .brand-name { color: #E01A2B; }
 
 /* Buttons */
-.btn { display: inline-flex; align-items: center; gap: 6px; border: 1px solid var(--border-strong); background: var(--surface); color: var(--g-900); padding: 7px 13px; border-radius: 999px; font: inherit; font-size: .9rem; font-weight: 500; cursor: pointer; text-decoration: none; line-height: 1.2; transition: background .15s, color .15s, border-color .15s, box-shadow .15s; white-space: nowrap; }
+.btn { display: inline-flex; align-items: center; justify-content: center; text-align: center; gap: 6px; border: 1px solid var(--border-strong); background: var(--surface); color: var(--g-900); padding: 8px 18px; border-radius: 999px; font: inherit; font-size: .88rem; font-weight: 500; cursor: pointer; text-decoration: none; line-height: 1.25; transition: background .15s, color .15s, border-color .15s, box-shadow .15s; box-sizing: border-box; max-width: 100%; }
 .btn:hover { background: var(--g-50); border-color: var(--g-500); color: var(--g-900); }
 .btn.is-active, .btn-primary { background: var(--g-800); border-color: var(--g-800); color: #fff; }
 .btn.is-active:hover, .btn-primary:hover { background: var(--g-900); border-color: var(--g-900); color: #fff; }
@@ -152,7 +152,8 @@ input[list]::-webkit-calendar-picker-indicator {
 .map-area:hover, .map-area.is-hover { fill: var(--g-200); }
 .map-area.is-active { fill: var(--g-600); }
 .map-outline { fill: none; stroke: var(--g-900); stroke-width: 2; pointer-events: none; }
-.map-tools { display: flex; justify-content: center; gap: 10px; margin-top: 10px; flex-wrap: wrap; }
+.map-tools { display: flex; justify-content: center; gap: 10px; margin-top: 12px; flex-wrap: wrap; }
+.map-tools .btn { padding: 8px 22px; font-size: .88rem; text-align: center; }
 .map-tooltip { position: absolute; pointer-events: none; background: var(--g-950); color: #fff; padding: 4px 8px; border-radius: 6px; font-size: .8rem; white-space: nowrap; transform: translate(-50%, -130%); display: none; z-index: 5; }
 
 /* Tabs */
@@ -208,6 +209,8 @@ table.data th[title] { text-decoration: underline dotted var(--g-300); text-unde
 .side .card { margin: 0; padding: 16px; }
 .side-select { display: flex; flex-direction: column; gap: 8px; }
 .side-select select { width: 100%; }
+.side-select .btn { width: 100%; justify-content: center; text-align: center; padding: 8px 16px; font-size: .82rem; line-height: 1.25; }
+.minimap { position: relative; }
 .minimap svg { width: 100%; height: auto; display: block; }
 .chart-row { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; align-items: start; margin-top: 16px; }
 .chart-row.single { grid-template-columns: 1fr; }

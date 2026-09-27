@@ -12,6 +12,7 @@
  *   images     Karten, Pyramiden, Choroplethen, Legenden  -> img/...
  *   adress     Adresssuche (Straße/Hausnummer -> Gebiet)  -> data/adressen.json
  */
+process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0';
 const fs = require('fs');
 const path = require('path');
 const cheerio = require('cheerio');

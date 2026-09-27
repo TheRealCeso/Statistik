@@ -551,8 +551,7 @@
   async function loadAdressen() { if (!ADR) ADR = await getJSON('data/adressen.json'); return ADR; }
   function foundAreaFor(bezirk, key) {
     if (!bezirk) return null;
-    if (state.area === 'Stadtbezirk') return areaOf('Stadtbezirk', bezirk);
-    if (state.area === 'Stadt') return areaOf('Stadt', 'A');
+    if (state.area === 'Stadtbezirk' || state.area === 'Stadt') return areaOf('Stadtbezirk', bezirk);
     // adressgenaue Zuordnung für Bezirke, die in dieser Gebietseinteilung geteilt sind
     const ov = ADR.override && ADR.override[state.area];
     if (ov && key in ov) return ov[key] ? areaOf(state.area, ov[key]) : null;
@@ -592,8 +591,9 @@
         const a = foundAreaFor(bez, key);
         if (a) {
           const mode = state.mode === 'Vergleich' ? 'Detailansicht' : state.mode;
+          const targetArea = state.area === 'Stadt' ? 'Stadtbezirk' : state.area;
           const adress = st + '!' + hn;
-          res.innerHTML = h`<a href="${href({ mode, id: a.id, detailView: true, tab: '', sub: '', adress })}" data-area="${esc(a.id)}">${esc(a.label || a.name)}</a>`;
+          res.innerHTML = h`<a href="${href({ mode, area: targetArea, id: a.id, detailView: true, tab: '', sub: '', adress })}" data-area="${esc(a.id)}">${esc(a.label || a.name)}</a>`;
           const link = res.querySelector('a');
           link.addEventListener('mouseenter', () => hoverArea(a.id, true));
           link.addEventListener('mouseleave', () => hoverArea(a.id, false));
@@ -646,7 +646,7 @@
         <div class="select-grid">
           <div><h2 class="section-title">Auswahl Teilgebiet</h2><p class="muted small">${esc((A.menu['Area' + type] || {}).title || '')}</p><ul class="area-list" id="areaList">${items}</ul></div>
           <div class="map-wrap" id="bigMap">${mapHtml}<div class="map-tooltip" id="mapTip"></div>
-            <div class="map-tools"><a class="btn" href="${esc(A.headerLinks.strassenverzeichnis)}" target="_blank" rel="noopener">Straßenverzeichnis mit Gebietseinteilung</a></div>
+            <div class="map-tools"><a class="btn" href="${esc(A.headerLinks.strassenverzeichnis)}" target="_blank" rel="noopener" title="Straßenverzeichnis mit Gebietseinteilung (PDF)">Straßenverzeichnis mit Gebietseinteilung</a></div>
           </div>
         </div>
       </section>
@@ -682,15 +682,30 @@
 
   // ------------------------------------------------------------------ Seitenleiste (Detail / Zeitreihe)
   function sideHtml(type, id) {
-    const list = A.areas[type];
-    const options = list.map(a => `<option value="${esc(a.id)}" ${a.id === id ? 'selected' : ''}>${esc(a.label)}</option>`).join('');
-    const mini = type === 'Stadt' ? mapSvg('Stadtbezirk', { selected: null }) : mapSvg(type, { selected: id });
+    const isCity = type === 'Stadt';
+    const isBezirk = type === 'Stadtbezirk';
+    const list = A.areas[type] || [];
+    let options = '';
+    if (isCity) {
+      options = `<option value="A" selected>Augsburg (Gesamtstadt)</option>` +
+        (A.areas.Stadtbezirk || []).map(a => `<option value="${esc(a.id)}">${esc(a.label || a.name)}</option>`).join('');
+    } else if (isBezirk) {
+      options = `<option value="A">Augsburg (Gesamtstadt)</option>` +
+        list.map(a => `<option value="${esc(a.id)}" ${a.id === id ? 'selected' : ''}>${esc(a.label || a.name)}</option>`).join('');
+    } else {
+      options = `<option value="A">Augsburg (Gesamtstadt)</option>` +
+        list.map(a => `<option value="${esc(a.id)}" ${a.id === id ? 'selected' : ''}>${esc(a.label || a.name)}</option>`).join('');
+    }
+    const mini = isCity ? mapSvg('Stadtbezirk', { selected: null }) : mapSvg(type, { selected: id });
+    const btnHref = isCity
+      ? href({ area: 'Stadtbezirk', detailView: false, tab: '', sub: '', adress: '' })
+      : href({ detailView: false, tab: '', sub: '', adress: '' });
     return h`<aside class="side">
       <div class="card side-select">
-        ${type !== 'Stadt' ? h`<a class="btn btn-primary" href="${href({ detailView: false, tab: '', sub: '', adress: '' })}">Auswahl Teilgebiet</a>` : ''}
+        <a class="btn btn-primary" href="${btnHref}">Auswahl Teilgebiet</a>
         <select class="styled" id="sideSelect" aria-label="Teilgebiet wählen">${options}</select>
-        <div class="minimap">${mini}</div>
-        <a class="btn" href="${esc(A.headerLinks.strassenverzeichnis)}" target="_blank" rel="noopener">Straßenverzeichnis mit Gebietseinteilung</a>
+        <div class="minimap">${mini}<div class="map-tooltip" id="miniTip"></div></div>
+        <a class="btn" href="${esc(A.headerLinks.strassenverzeichnis)}" target="_blank" rel="noopener" title="Straßenverzeichnis mit Gebietseinteilung (PDF)">Straßenverzeichnis mit Gebietseinteilung</a>
       </div>
       <div class="card"><span class="ctrl-label" title="Auswahl des Teilgebietes über die Adresse">Adresssuche</span><div id="adressSide"></div></div>
     </aside>`;
@@ -698,10 +713,41 @@
   function bindSide(root) {
     const sel = $('#sideSelect', root);
     if (sel) {
-      sel.addEventListener('change', () => go({ id: sel.value, tab: state.tab, sub: state.sub, adress: '' }));
-      $$('option', sel).forEach(o => { o.addEventListener('mouseenter', () => hoverArea(o.value, true)); o.addEventListener('mouseleave', () => hoverArea(o.value, false)); });
+      sel.addEventListener('change', () => {
+        const val = sel.value;
+        if (val === 'A') {
+          go({ area: 'Stadt', id: 'A', detailView: true, tab: state.tab, sub: state.sub, adress: '' });
+        } else {
+          const targetArea = (state.area === 'Stadt') ? 'Stadtbezirk' : state.area;
+          go({ area: targetArea, id: val, detailView: true, tab: state.tab, sub: state.sub, adress: '' });
+        }
+      });
+      $$('option', sel).forEach(o => {
+        o.addEventListener('mouseenter', () => { if (o.value !== 'A') hoverArea(o.value, true); });
+        o.addEventListener('mouseleave', () => { if (o.value !== 'A') hoverArea(o.value, false); });
+      });
     }
-    $$('.minimap polygon', root).forEach(p => p.addEventListener('click', () => go({ id: p.dataset.id, adress: '' })));
+    const tip = $('#miniTip', root);
+    $$('.minimap polygon', root).forEach(p => {
+      p.addEventListener('mouseenter', () => {
+        hoverArea(p.dataset.id, true);
+        if (tip) { tip.textContent = p.dataset.title || ''; tip.style.display = 'block'; }
+      });
+      p.addEventListener('mousemove', e => {
+        if (!tip) return;
+        const r = $('.minimap', root).getBoundingClientRect();
+        tip.style.left = (e.clientX - r.left) + 'px';
+        tip.style.top = (e.clientY - r.top) + 'px';
+      });
+      p.addEventListener('mouseleave', () => {
+        hoverArea(p.dataset.id, false);
+        if (tip) tip.style.display = 'none';
+      });
+      p.addEventListener('click', () => {
+        const targetArea = (state.area === 'Stadt') ? 'Stadtbezirk' : state.area;
+        go({ area: targetArea, id: p.dataset.id, detailView: true, adress: '' });
+      });
+    });
     mountAdress($('#adressSide', root), {});
   }
 
