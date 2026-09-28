@@ -85,7 +85,9 @@
     const k = 'text:' + url;
     if (cache.has(k)) return cache.get(k);
     const p = fetch(url).then(r => { if (!r.ok) throw new Error(url); return r.text(); });
-    cache.set(k, p); return p;
+    cache.set(k, p);
+    p.catch(() => cache.delete(k));
+    return p;
   }
   function h(strings, ...vals) { return strings.reduce((a, s, i) => a + s + (i < vals.length ? vals[i] : ''), ''); }
 
@@ -93,6 +95,7 @@
   let A = null; // areas.json
   let M = null; // maps.json
   const state = { mode: 'Detailansicht', area: 'Stadtbezirk', id: 'A', detailView: false, year: 2025, tab: '', sub: '', mk: '', adress: '' };
+  let renderVersion = 0;
   function parseHash() {
     const raw = location.hash.replace(/^#\/?/, '');
     if (raw === 'pageBegin') return;
@@ -620,9 +623,12 @@
     if (!$('#adrStreets')) { const dl = document.createElement('datalist'); dl.id = 'adrStreets'; document.body.appendChild(dl); }
     const inStreet = $('#adrStreet-' + uid), inHnr = $('#adrHnr-' + uid), res = $('#adrResult-' + uid), dlH = $('#adrHnr-' + uid + '-list');
     const ensure = async () => { const d = await loadAdressen(); const dl = $('#adrStreets'); if (!dl.children.length) dl.innerHTML = d.streetList.map(s => `<option value="${esc(s)}">`).join(''); return d; };
-    inStreet.addEventListener('focus', ensure);
+    const loadError = () => { if (res.isConnected) res.textContent = 'Die Adressdaten konnten nicht geladen werden. Bitte erneut versuchen.'; };
+    inStreet.addEventListener('focus', () => { ensure().catch(loadError); });
     const update = async () => {
-      const d = await ensure();
+      let d;
+      try { d = await ensure(); } catch (e) { loadError(); return; }
+      if (!container.isConnected) return;
       const st = inStreet.value.trim();
       const hn = inHnr.value.trim();
       const known = st && d.hnr[st];
@@ -680,7 +686,7 @@
   }
 
   // ------------------------------------------------------------------ Ansicht: Auswahl Teilgebiet (Detailansicht / Zeitreihe ohne Gebiet)
-  async function renderSelect() {
+  async function renderSelect(version = renderVersion) {
     const type = state.area; const list = A.areas[type];
     const T = tabs('select'); const { tab, page, sub } = resolveTab(T);
     const c = $('#content');
@@ -706,13 +712,14 @@
     setFooter(page);
     try {
       const data = await getJSON(`data/select/${type}/${state.year}.json`);
+      if (version !== renderVersion) return;
       const pg = data.pages[page] || {};
       const t = (pg.tables || [])[0];
       const title = pg.h4 && pg.h4[0] ? pg.h4[0] : `${tab.label}${tab.subs ? ' – ' + tab.subs.find(s => s[0] === sub)[1] : ''} ${state.year}`;
       const rowLink = label => { const a = list.find(x => label.startsWith(x.id + ' ') || label === x.label); return a ? href({ id: a.id, detailView: true, tab: '', sub: '' }) : null; };
       $('#tabContent').innerHTML = `<h3 class="content-title">${esc(title)}</h3>${noticeHtml(pg)}${t ? tableHtml(t, { rowLink }) : ''}`;
       bindTabs($('#tabContent'));
-    } catch (e) { $('#tabContent').innerHTML = `<div class="error">Für ${state.year} sind keine Daten verfügbar (${esc(e.message)}).</div>`; }
+    } catch (e) { if (version !== renderVersion) return; $('#tabContent').innerHTML = `<div class="error">Für ${state.year} sind keine Daten verfügbar (${esc(e.message)}).</div>`; }
   }
   function bindMapHover(root) {
     const tip = $('#mapTip', root);
@@ -797,7 +804,7 @@
   }
 
   // ------------------------------------------------------------------ Ansicht: Detailansicht
-  async function renderDetail() {
+  async function renderDetail(version = renderVersion) {
     const type = state.area, id = state.id; const area = areaOf(type, id);
     const T = tabs('detail'); const { tab, page, sub } = resolveTab(T);
     const c = $('#content');
@@ -809,6 +816,7 @@
     bindTabs(c); bindSide(c); setFooter(page);
     try {
       const [d, city] = await Promise.all([getJSON(`data/detail/${type}/${id}.json`), type === 'Stadt' ? null : getJSON('data/detail/Stadt/A.json').catch(() => null)]);
+      if (version !== renderVersion) return;
       const rec = d.years[state.year];
       if (!rec) throw new Error('Für ' + state.year + ' liegen keine Daten vor.');
       const ut = rec.uebersicht && rec.uebersicht.tables && rec.uebersicht.tables[0];
@@ -833,11 +841,11 @@
       }
       $('#tabContent').innerHTML = html;
       const b = $('#btnPyramidAnim'); if (b) b.addEventListener('click', () => openPyramidAnimation(type, id, area, d));
-    } catch (e) { $('#tabContent').innerHTML = `<div class="error">${esc(e.message)}</div>`; $('#uebersicht').innerHTML = ''; }
+    } catch (e) { if (version !== renderVersion) return; $('#tabContent').innerHTML = `<div class="error">${esc(e.message)}</div>`; $('#uebersicht').innerHTML = ''; }
   }
 
   // ------------------------------------------------------------------ Ansicht: Zeitreihe (Gebiet)
-  async function renderZeitreihe() {
+  async function renderZeitreihe(version = renderVersion) {
     const type = state.area, id = state.id; const area = areaOf(type, id);
     const T = tabs('zeitreihe'); const { tab, page, sub } = resolveTab(T);
     const c = $('#content');
@@ -848,6 +856,7 @@
     bindTabs(c); bindSide(c); setFooter(page);
     try {
       const d = await getJSON(`data/zeitreihe/${type}/${id}.json`);
+      if (version !== renderVersion) return;
       const pg = d.pages[page] || {};
       const title = (pg.h4 && pg.h4[0]) || `${tab.label}${tab.subs ? ' – ' + tab.subs.find(s => s[0] === sub)[1] : ''}`;
       const mainT = (pg.tables || []).find(t => !t.legend);
@@ -855,7 +864,7 @@
       if (mainT) { html += tableHtml(mainT, { compact: true }); const ch = timeSeriesChart(page, pg); if (ch) html += `<div class="chart-row single"><div><div class="chart-title">Entwicklung ${esc(title)}</div>${ch}</div></div>`; }
       else if (!pg.notice) html += '<div class="notice">Für diesen Themenbereich liegen keine Zeitreihendaten vor.</div>';
       $('#tabContent').innerHTML = html;
-    } catch (e) { $('#tabContent').innerHTML = `<div class="error">${esc(e.message)}</div>`; }
+    } catch (e) { if (version !== renderVersion) return; $('#tabContent').innerHTML = `<div class="error">${esc(e.message)}</div>`; }
   }
 
   // ------------------------------------------------------------------ Ansicht: Innerstädtischer Vergleich
@@ -930,7 +939,7 @@
     if (/tausend/i.test(v)) return { y: 'je 1.000 Einwohner', short: 'je 1.000' };
     return { y: 'Wert', short: '' };
   }
-  async function renderVergleich() {
+  async function renderVergleich(version = renderVersion) {
     const type = state.area; const T = tabs('vergleich'); const { tab, page, sub } = resolveTab(T);
     const themeKey = themeKeyFor(tab, sub);
     const c = $('#content');
@@ -939,7 +948,8 @@
     bindTabs(c); setFooter(page);
     let data;
     try { data = await getJSON(`data/vergleich/${type}/${state.year}.json`); }
-    catch (e) { $('#tabContent').innerHTML = `<div class="error">Für ${state.year} sind keine Vergleichsdaten verfügbar.</div>`; return; }
+    catch (e) { if (version !== renderVersion) return; $('#tabContent').innerHTML = `<div class="error">Für ${state.year} sind keine Vergleichsdaten verfügbar.</div>`; return; }
+    if (version !== renderVersion) return;
     const theme = data.themes[themeKey];
     const mks = theme ? Object.values(theme.merkmale || {}) : [];
     const hasData = mks.some(m => (m.areas && m.areas.length > 0) && !(m.city && m.city[0] === '0' && m.city[1] === '.'));
@@ -1201,12 +1211,15 @@
     $('#animReset').addEventListener('click', () => { clearInterval(animTimer); animTimer = null; next = 0; show(startIndex); });
   }
   async function openDatenbeschreibung() {
-    openModal('Datenbeschreibung', '<div class="loading">Wird geladen …</div>');
-    try { $('#modalBody').innerHTML = await getText('data/beschreibung.html'); } catch (e) { $('#modalBody').innerHTML = '<div class="error">Die Datenbeschreibung konnte nicht geladen werden.</div>'; }
+    openModal('Datenbeschreibung', '<div class="description-content"><div class="loading">Wird geladen …</div></div>');
+    const target = $('#modalBody .description-content');
+    try { const html = await getText('data/beschreibung.html'); if (target.isConnected) target.innerHTML = html; }
+    catch (e) { if (target.isConnected) target.innerHTML = '<div class="error">Die Datenbeschreibung konnte nicht geladen werden.</div>'; }
   }
 
   // ------------------------------------------------------------------ Rendern
   async function render() {
+    renderVersion++;
     parseHash();
     renderControls();
     if (state.mode === 'Vergleich') return renderVergleich();
