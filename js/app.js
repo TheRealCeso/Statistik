@@ -335,7 +335,7 @@
       const cls = opts.cls || 'map-area';
       return `<polygon class="${cls}${sel ? ' is-active' : ''}${opts.extraClass ? ' ' + opts.extraClass(id) : ''}" data-id="${esc(id)}" data-title="${esc(p.title)}" aria-label="${esc(p.title)}" points="${p.coords.join(' ')}"${fill ? ` style="fill:${esc(fill)}"` : ''}></polygon>`;
     }).join('');
-    return `<svg viewBox="${vb}" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Karte ${esc(areaLabel(mapType))}" preserveAspectRatio="xMidYMid meet">${defs}${items}</svg>`;
+    return `<svg viewBox="${vb}" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Karte ${esc(areaLabel(mapType))}" preserveAspectRatio="xMidYMid meet">${defs}${items}<g class="map-overlays" pointer-events="none"></g></svg>`;
   }
 
   // ------------------------------------------------------------------ Diagramme (SVG)
@@ -350,8 +350,11 @@
   }
   function chartBars(cfg) {
     // Gruppierte Balken: cfg.groups=[{label, values:[...]}], cfg.series=[{label,color}], cfg.yLabel, cfg.xLabel
-    const W = 800, Hh = 360, mL = 56, mR = 20, mT = 34, mB = 110;
-    const iw = W - mL - mR, ih = Hh - mT - mB;
+    const maxLen = Math.max(...cfg.groups.map(g => (g.label || '').length), 0);
+    const W = 800, mL = 56, mR = 20, mT = 34, ih = 216;
+    const mB = Math.max(110, Math.ceil(maxLen * 4.0) + 36);
+    const Hh = mT + ih + mB;
+    const iw = W - mL - mR;
     const all = cfg.groups.flatMap(g => g.values).filter(v => v != null);
     const ax = axisTicks(Math.max(...all, 0), Math.min(...all, 0));
     const y = v => mT + ih - (v - ax.bottom) / (ax.top - ax.bottom || 1) * ih;
@@ -394,7 +397,7 @@
     });
     if (cfg.title) s += `<text x="${cx}" y="${Hh - 12}" text-anchor="middle" font-size="12" fill="#142019">${esc(cfg.title)}</text>`;
     s += '</svg>';
-    return `<div class="chart">${s}</div>`;
+    return `<div class="chart chart-pie">${s}</div>`;
   }
   function chartLines(cfg) {
     // cfg.x=[Jahre], cfg.series=[{label,color,values}], cfg.yLabel
@@ -506,8 +509,9 @@
         const cityRow = cityT && (cityT.rows.find(r => /summe/i.test(txt(r[0]))) || cityT.rows[cityT.rows.length - 1]);
         const totA = num(sum[12]), totC = cityRow ? num(cityRow[12]) : null;
         const groups = [[3, 'Deutsche ohne Migrationshintergrund'], [6, 'Deutsche mit Migrationshintergrund'], [9, 'Ausländer']].map(([ci, l]) => ({ label: l, values: [totA ? num(sum[ci]) / totA * 100 : null, totC ? num(cityRow[ci]) / totC * 100 : null] }));
-        const bars = chartBars({ groups, series, yLabel: 'Anteil in %', xLabel: 'Migrationshintergrund' });
-        return `<div class="chart-row"><div><div class="chart-title">Anteile nach Migrationshintergrund und Geschlecht</div>${pie}${legendHtml(leg)}</div><div><div class="chart-title">Vergleich mit der Gesamtstadt</div>${bars}</div></div>`;
+        const bars = cityRow ? chartBars({ groups, series, yLabel: 'Anteil in %', xLabel: 'Migrationshintergrund' }) : '';
+        return `<div class="chart-row single"><div><div class="chart-title">Anteile nach Migrationshintergrund und Geschlecht</div>${pie}${legendHtml(leg)}</div></div>` +
+          (bars ? `<div class="chart-row single"><div><div class="chart-title">Vergleich mit der Gesamtstadt</div>${bars}</div></div>` : '');
       }
       default: return '';
     }
@@ -562,8 +566,8 @@
   function adressHtml(ctx) {
     const uid = ctx.uid;
     return h`<div class="adress" id="adr-${uid}">
-      <label>Straße: <input class="styled" id="adrStreet-${uid}" list="adrStreets" autocomplete="off" placeholder="Straße eingeben"></label>
-      <label>Hausnummer: <input class="styled" id="adrHnr-${uid}" list="adrHnr-${uid}-list" autocomplete="off" placeholder="Nr."><datalist id="adrHnr-${uid}-list"></datalist></label>
+      <label class="adr-label-street">Straße: <input class="styled" id="adrStreet-${uid}" list="adrStreets" autocomplete="off" placeholder="Straße eingeben"></label>
+      <label class="adr-label-hnr">Hausnummer: <input class="styled" id="adrHnr-${uid}" list="adrHnr-${uid}-list" autocomplete="off" placeholder="Nr."><datalist id="adrHnr-${uid}-list"></datalist></label>
       <span class="adress-result" id="adrResult-${uid}"></span>
     </div>`;
   }
@@ -784,7 +788,7 @@
           <div><div class="chart-title">Legende</div>${legendHtml(leg)}<p><button type="button" class="btn btn-primary" id="btnPyramidAnim">Öffne Animation</button></p><p class="muted small">Die Animation zeigt die Entwicklung der Bevölkerungspyramide über die Jahre ${esc(yearsWithPyr[0] || '')} bis ${esc(yearsWithPyr[yearsWithPyr.length - 1] || '')}.</p></div></div>`;
       } else if (mainT) {
         const ch = detailCharts(page, pg, cityPg, area.name);
-        if (ch) html += ch.startsWith('<div class="chart-row"') ? ch : `<div class="chart-row single">${ch}</div>`;
+        if (ch) html += ch.trim().startsWith('<div class="chart-row"') ? ch : `<div class="chart-row single">${ch}</div>`;
       }
       $('#tabContent').innerHTML = html;
       const b = $('#btnPyramidAnim'); if (b) b.addEventListener('click', () => openPyramidAnimation(type, id, area, d));
@@ -833,13 +837,18 @@
     try { data = await getJSON(`data/vergleich/${type}/${state.year}.json`); }
     catch (e) { $('#tabContent').innerHTML = `<div class="error">Für ${state.year} sind keine Vergleichsdaten verfügbar.</div>`; return; }
     const theme = data.themes[themeKey];
-    if (!theme || !theme.radios || !theme.radios.length) {
-      $('#tabContent').innerHTML = noticeHtml(theme) || `<div class="notice">Für das Jahr ${state.year} sind noch keine Daten zum Thema ${esc(tab.label)} verfügbar!</div>`;
+    const mks = theme ? Object.values(theme.merkmale || {}) : [];
+    const hasData = mks.some(m => (m.areas && m.areas.length > 0) && !(m.city && m.city[0] === '0' && m.city[1] === '.'));
+    if (!theme || (theme.notice && theme.notice.length) || !hasData || !theme.radios || !theme.radios.length) {
+      const defaultNotice = (state.year === 2025 || state.year === '2025')
+        ? `Für das Jahr ${state.year} sind noch keine Daten zum Thema ${esc(tab.label)} verfügbar!`
+        : `Für das Jahr ${state.year} existieren keine Daten zum Thema ${esc(tab.label)}!`;
+      $('#tabContent').innerHTML = noticeHtml(theme) || `<div class="notice">${defaultNotice}</div>`;
       return;
     }
     const mk = theme.merkmale[state.mk] ? state.mk : theme.radios[0].value;
     const m = theme.merkmale[mk];
-    if (!m) { $('#tabContent').innerHTML = `<div class="notice">Keine Daten für dieses Merkmal.</div>`; return; }
+    if (!m || !m.areas || !m.areas.length) { $('#tabContent').innerHTML = `<div class="notice">Keine Daten für dieses Merkmal.</div>`; return; }
     const radios = `<div class="radios">` + theme.radios.map(r => `<button type="button" class="pill ${r.value === mk ? 'is-active' : ''}" data-mk="${esc(r.value)}">${esc(r.label)}</button>`).join('') + '</div>';
     const polys = data.icCoords || [];
     const byId = {}; m.areas.forEach(a => { byId[a.id] = a; });
@@ -888,11 +897,29 @@
         el.innerHTML = a ? box(a.name, cleanVal(a.people), cleanVal(a.value), pinned ? 'img/core/pushpin.gif' : 'img/core/empty.gif') : box('Teilgebiet auswählen', '', '', pinned ? 'img/core/pushpin.gif' : 'img/core/empty.gif', 'is-empty');
       };
       fill($('#vgBox1'), slot1, !!vg.pins[0]); fill($('#vgBox2'), slot2, !!vg.pins[1]);
-      $$('#vgMap polygon').forEach(p => { p.classList.toggle('is-pin1', vg.pins[0] === p.dataset.id); p.classList.toggle('is-pin2', vg.pins[1] === p.dataset.id); });
+      $$('#vgMap .vg-area').forEach(p => {
+        p.classList.toggle('is-pin1', vg.pins[0] === p.dataset.id);
+        p.classList.toggle('is-pin2', vg.pins[1] === p.dataset.id);
+      });
+      const ov = $('#vgMap .map-overlays');
+      if (ov) {
+        let outlines = '';
+        const addOutlines = id => {
+          if (!id) return;
+          $$('#vgMap .vg-area').forEach(p => {
+            if (p.dataset.id === id) {
+              outlines += `<polygon class="map-outline" points="${p.getAttribute('points')}"></polygon>`;
+            }
+          });
+        };
+        if (vg.pins[0]) addOutlines(vg.pins[0]);
+        if (vg.pins[1]) addOutlines(vg.pins[1]);
+        ov.innerHTML = outlines;
+      }
     };
     renderBoxes(null);
     const vgTip = $('#vgTip');
-    $$('#vgMap polygon').forEach(p => {
+    $$('#vgMap .vg-area').forEach(p => {
       p.addEventListener('mouseenter', () => {
         renderBoxes(p.dataset.id);
         if (vgTip) {
@@ -1079,7 +1106,7 @@
       $('#content').innerHTML = '<div class="card error">Die Daten konnten nicht geladen werden. Die Seite muss über einen Webserver aufgerufen werden (z. B. <code>node serve.js</code>).</div>';
       return;
     }
-    $('#btnBeschreibung').href = A.headerLinks.beschreibung || '#';
+    if (A.headerLinks && A.headerLinks.beschreibung) $('#btnBeschreibung').href = A.headerLinks.beschreibung;
     $('#btnDatenbeschreibung').addEventListener('click', openDatenbeschreibung);
     $$('#modal [data-close]').forEach(el => el.addEventListener('click', closeModal));
     document.addEventListener('keydown', e => { if (e.key === 'Escape' && !$('#modal').hidden) closeModal(); });

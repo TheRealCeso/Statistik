@@ -88,7 +88,7 @@ h1, h2, h3, h4 { margin: 0; font-weight: 600; letter-spacing: -.01em; }
 
 /* Adresssuche & Styled Inputs */
 .adress { display: flex; flex-wrap: wrap; gap: 10px 14px; align-items: flex-end; }
-.adress label { display: flex; flex-direction: column; gap: 4px; font-size: .82rem; color: var(--muted); }
+.adress label { display: flex; flex-direction: column; gap: 4px; font-size: .82rem; color: var(--muted); min-width: 0; max-width: 100%; }
 .adress input, .adress select, .side-select select, select.styled, input.styled {
   font: inherit;
   font-size: .92rem;
@@ -108,7 +108,7 @@ h1, h2, h3, h4 { margin: 0; font-weight: 600; letter-spacing: -.01em; }
 .adress input[id^="adrStreet"], .adress input#adrStreet { width: 300px; max-width: 100%; }
 .adress input[id^="adrHnr"], .adress input#adrHnr { width: 110px; }
 .adress input.is-invalid { border-color: var(--danger); background: #FFF3F4; }
-.adress-result { display: inline-flex; align-items: center; gap: 8px; }
+.adress-result { display: inline-flex; align-items: center; gap: 8px; max-width: 100%; }
 .adress-result a { font-weight: 600; }
 .adress-hint { font-size: .82rem; color: var(--muted); }
 
@@ -151,7 +151,7 @@ input[list]::-webkit-calendar-picker-indicator {
 .map-area { fill: #fff; stroke: var(--g-800); stroke-width: 1; stroke-linejoin: round; cursor: pointer; transition: fill .12s; }
 .map-area:hover, .map-area.is-hover { fill: var(--g-200); }
 .map-area.is-active { fill: var(--g-600); }
-.map-outline { fill: none; stroke: var(--g-900); stroke-width: 2; pointer-events: none; }
+.map-outline { fill: none; stroke: var(--g-950); stroke-width: 2; pointer-events: none; }
 .map-tools { display: flex; justify-content: center; gap: 10px; margin-top: 12px; flex-wrap: wrap; }
 .map-tools .btn { padding: 8px 22px; font-size: .88rem; text-align: center; }
 .map-tooltip { position: absolute; pointer-events: none; background: var(--g-950); color: #fff; padding: 4px 8px; border-radius: 6px; font-size: .8rem; white-space: nowrap; transform: translate(-50%, -130%); display: none; z-index: 5; }
@@ -210,11 +210,17 @@ table.data th[title] { text-decoration: underline dotted var(--g-300); text-unde
 .side-select { display: flex; flex-direction: column; gap: 8px; }
 .side-select select { width: 100%; }
 .side-select .btn { width: 100%; justify-content: center; text-align: center; padding: 8px 16px; font-size: .82rem; line-height: 1.25; }
+.side .adress { width: 100%; }
+.side .adress .adr-label-street,
+.side .adress label:first-of-type { width: 100%; }
+.side .adress input[id^="adrStreet"],
+.side .adress input#adrStreet { width: 100%; }
 .minimap { position: relative; }
 .minimap svg { width: 100%; height: auto; display: block; }
 .chart-row { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; align-items: start; margin-top: 16px; }
 .chart-row.single { grid-template-columns: 1fr; }
 .chart { width: 100%; }
+.chart-pie { max-width: 440px; margin: 0 auto; }
 .chart svg { width: 100%; height: auto; display: block; font-family: var(--font); }
 .chart-title { font-size: .9rem; font-weight: 600; color: var(--g-900); margin-bottom: 4px; }
 .pyramid { text-align: center; }
