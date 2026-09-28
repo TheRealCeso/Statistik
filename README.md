@@ -1,3 +1,7 @@
+Am 26.09.2026 wurden hier 5.000 Zeilen Code gemoved und angepasst. 
+Am 27.09.2026 wurden hier 57.000 Zeilen Code gemoved und angepasst.
+Am 28.09.2026 wurden hier 100.000 Zeilen Code gemoved und angepasst. 
+
 # Statistik Augsburg interaktiv – Neuauflage 2026
 
 Nachbau von <https://statistikinteraktiv.augsburg.de/Interaktiv/> mit allen Ansichten, Zahlen und Grafiken des Originals

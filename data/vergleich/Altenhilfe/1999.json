@@ -131,7 +131,21 @@
               "people": "0",
               "value": "."
             }
-          ]
+          ],
+          "colors": {
+            "VRA01": "#8BBDD6",
+            "VRA02": "#E2E9FE",
+            "VRA03": "#236EA9",
+            "VRA04": "#8BBDD6",
+            "VRA05": "#236EA9",
+            "VRA06": "#FEE5E5",
+            "VRA07": "#236EA9",
+            "VRA08": "#8BBDD6",
+            "VRA09": "#8BBDD6",
+            "VRA10": "#4B8BC2",
+            "VRA11": "#236EA9",
+            "VRA12": "#236EA9"
+          }
         }
       },
       "cityLabels": [
@@ -253,7 +267,21 @@
               "value": "."
             }
           ],
-          "themenbereich": "Familienstand"
+          "themenbereich": "Familienstand",
+          "colors": {
+            "VRA01": "#BDD6EA",
+            "VRA02": "#8BBDD6",
+            "VRA03": "#4B8BC2",
+            "VRA04": "#4B8BC2",
+            "VRA05": "#4B8BC2",
+            "VRA06": "#8BBDD6",
+            "VRA07": "#4B8BC2",
+            "VRA08": "#8BBDD6",
+            "VRA09": "#8BBDD6",
+            "VRA10": "#8BBDD6",
+            "VRA11": "#8BBDD6",
+            "VRA12": "#8BBDD6"
+          }
         },
         "Verheiratet": {
           "img": "/Interaktiv/pics/innerComparisonFamilienstandYear1999AreaAltenhilfeFamilienstandVerheiratet.gif",
@@ -342,7 +370,21 @@
               "people": "0",
               "value": "."
             }
-          ]
+          ],
+          "colors": {
+            "VRA01": "#FEBDBD",
+            "VRA02": "#DB6451",
+            "VRA03": "#AE2C1D",
+            "VRA04": "#AE2C1D",
+            "VRA05": "#AE2C1D",
+            "VRA06": "#DB6451",
+            "VRA07": "#AE2C1D",
+            "VRA08": "#DB6451",
+            "VRA09": "#DB6451",
+            "VRA10": "#F49182",
+            "VRA11": "#DB6451",
+            "VRA12": "#DB6451"
+          }
         },
         "Verwitwet": {
           "img": "/Interaktiv/pics/innerComparisonFamilienstandYear1999AreaAltenhilfeFamilienstandVerwitwet.gif",
@@ -431,7 +473,21 @@
               "people": "0",
               "value": "."
             }
-          ]
+          ],
+          "colors": {
+            "VRA01": "#F49182",
+            "VRA02": "#AE2C1E",
+            "VRA03": "#F49182",
+            "VRA04": "#DB6451",
+            "VRA05": "#DB6451",
+            "VRA06": "#F49182",
+            "VRA07": "#AE2C1E",
+            "VRA08": "#FEBEBD",
+            "VRA09": "#F49182",
+            "VRA10": "#DB6451",
+            "VRA11": "#DB6451",
+            "VRA12": "#DB6451"
+          }
         },
         "Geschieden": {
           "img": "/Interaktiv/pics/innerComparisonFamilienstandYear1999AreaAltenhilfeFamilienstandGeschieden.gif",
@@ -520,7 +576,21 @@
               "people": "0",
               "value": "."
             }
-          ]
+          ],
+          "colors": {
+            "VRA01": "#F49182",
+            "VRA02": "#FEBDBD",
+            "VRA03": "#E2E9FE",
+            "VRA04": "#FEBDBD",
+            "VRA05": "#FEE5E5",
+            "VRA06": "#F49182",
+            "VRA07": "#FEE5E5",
+            "VRA08": "#FEE5E5",
+            "VRA09": "#F49182",
+            "VRA10": "#FEBDBD",
+            "VRA11": "#FEBDBD",
+            "VRA12": "#FEE5E5"
+          }
         }
       },
       "cityLabels": [
@@ -662,7 +732,21 @@
               "value": "0,0"
             }
           ],
-          "themenbereich": "Indikator"
+          "themenbereich": "Indikator",
+          "colors": {
+            "VRA01": "#DB6451",
+            "VRA02": "#AE2C1D",
+            "VRA03": "#DB6451",
+            "VRA04": "#AE2C1D",
+            "VRA05": "#AE2C1D",
+            "VRA06": "#DB6451",
+            "VRA07": "#AE2C1D",
+            "VRA08": "#DB6451",
+            "VRA09": "#DB6451",
+            "VRA10": "#DB6451",
+            "VRA11": "#AE2C1D",
+            "VRA12": "#AE2C1D"
+          }
         },
         "Medianalter": {
           "img": "/Interaktiv/pics/innerComparisonIndicatorsYear1999AreaAltenhilfeIndiMedianalter.gif",
@@ -751,7 +835,21 @@
               "people": "0",
               "value": "0,0"
             }
-          ]
+          ],
+          "colors": {
+            "VRA01": "#F49182",
+            "VRA02": "#AE2C1E",
+            "VRA03": "#DB6451",
+            "VRA04": "#DB6451",
+            "VRA05": "#AE2C1E",
+            "VRA06": "#DB6451",
+            "VRA07": "#AE2C1E",
+            "VRA08": "#F49182",
+            "VRA09": "#DB6451",
+            "VRA10": "#DB6451",
+            "VRA11": "#DB6451",
+            "VRA12": "#DB6451"
+          }
         },
         "Jugendquotient": {
           "img": "/Interaktiv/pics/innerComparisonIndicatorsYear1999AreaAltenhilfeIndiJugendquotient.gif",
@@ -840,7 +938,21 @@
               "people": "0",
               "value": "0,0"
             }
-          ]
+          ],
+          "colors": {
+            "VRA01": "#4B8BC2",
+            "VRA02": "#8CBED6",
+            "VRA03": "#BDD6EA",
+            "VRA04": "#BDD6EA",
+            "VRA05": "#BDD6EA",
+            "VRA06": "#BDD6EA",
+            "VRA07": "#BDD6EA",
+            "VRA08": "#BDD6EA",
+            "VRA09": "#8CBED6",
+            "VRA10": "#8CBED6",
+            "VRA11": "#8CBED6",
+            "VRA12": "#8CBED6"
+          }
         },
         "Altenquotient": {
           "img": "/Interaktiv/pics/innerComparisonIndicatorsYear1999AreaAltenhilfeIndiAltenquotient.gif",
@@ -929,7 +1041,21 @@
               "people": "0",
               "value": "0,0"
             }
-          ]
+          ],
+          "colors": {
+            "VRA01": "#FEE5E5",
+            "VRA02": "#F49182",
+            "VRA03": "#FEBDBD",
+            "VRA04": "#FEBDBD",
+            "VRA05": "#F49182",
+            "VRA06": "#FEE5E5",
+            "VRA07": "#DB6451",
+            "VRA08": "#FEE5E5",
+            "VRA09": "#FEBDBD",
+            "VRA10": "#FEBDBD",
+            "VRA11": "#FEBDBD",
+            "VRA12": "#FEBDBD"
+          }
         },
         "Abhaengigkeitsquotient": {
           "img": "/Interaktiv/pics/innerComparisonIndicatorsYear1999AreaAltenhilfeIndiAbhaengigkeitsquotient.gif",
@@ -1018,7 +1144,21 @@
               "people": "0",
               "value": "0,0"
             }
-          ]
+          ],
+          "colors": {
+            "VRA01": "#E2E9FE",
+            "VRA02": "#FEBDBD",
+            "VRA03": "#FEBDBD",
+            "VRA04": "#FEE5E5",
+            "VRA05": "#FEBDBD",
+            "VRA06": "#FEE5E5",
+            "VRA07": "#FEBDBD",
+            "VRA08": "#FEBDBD",
+            "VRA09": "#FEE5E5",
+            "VRA10": "#FEE5E5",
+            "VRA11": "#FEE5E5",
+            "VRA12": "#FEE5E5"
+          }
         },
         "GreyingIndex": {
           "img": "/Interaktiv/pics/innerComparisonIndicatorsYear1999AreaAltenhilfeIndiGreyingIndex.gif",
@@ -1107,7 +1247,21 @@
               "people": "0",
               "value": "0,0"
             }
-          ]
+          ],
+          "colors": {
+            "VRA01": "#DB6451",
+            "VRA02": "#FEE5E5",
+            "VRA03": "#BDD6EA",
+            "VRA04": "#E2E9FE",
+            "VRA05": "#E2E9FE",
+            "VRA06": "#FEE5E5",
+            "VRA07": "#E2E9FE",
+            "VRA08": "#E2E9FE",
+            "VRA09": "#FEE5E5",
+            "VRA10": "#F49182",
+            "VRA11": "#E2E9FE",
+            "VRA12": "#FEE5E5"
+          }
         },
         "Migrationshintergrund": {
           "img": "/Interaktiv/pics/innerComparisonIndicatorsYear1999AreaAltenhilfeIndiMigrationshintergrund.gif",
@@ -1196,7 +1350,8 @@
               "people": "0",
               "value": "0,0"
             }
-          ]
+          ],
+          "mapUnavailable": true
         },
         "Auslaenderanteil": {
           "img": "/Interaktiv/pics/innerComparisonIndicatorsYear1999AreaAltenhilfeIndiAuslaenderanteil.gif",
@@ -1285,7 +1440,21 @@
               "people": "0",
               "value": "0,0"
             }
-          ]
+          ],
+          "colors": {
+            "VRA01": "#4B8BC2",
+            "VRA02": "#8BBDD6",
+            "VRA03": "#236EA9",
+            "VRA04": "#4B8BC2",
+            "VRA05": "#236EA9",
+            "VRA06": "#BDD6EA",
+            "VRA07": "#236EA9",
+            "VRA08": "#8BBDD6",
+            "VRA09": "#4B8BC2",
+            "VRA10": "#4B8BC2",
+            "VRA11": "#4B8BC2",
+            "VRA12": "#236EA9"
+          }
         }
       },
       "cityLabels": [

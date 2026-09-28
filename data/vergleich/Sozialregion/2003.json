@@ -89,7 +89,14 @@
               "people": "0",
               "value": "."
             }
-          ]
+          ],
+          "colors": {
+            "SoR01": "#4B8BC2",
+            "SoR02": "#E2E9FE",
+            "SoR03": "#8BBDD6",
+            "SoR04": "#236EA9",
+            "SoR05": "#8BBDD6"
+          }
         }
       },
       "cityLabels": [
@@ -169,7 +176,14 @@
               "value": "."
             }
           ],
-          "themenbereich": "Familienstand"
+          "themenbereich": "Familienstand",
+          "colors": {
+            "SoR01": "#4B8BC2",
+            "SoR02": "#8BBDD6",
+            "SoR03": "#BDD6EA",
+            "SoR04": "#8BBDD6",
+            "SoR05": "#8BBDD6"
+          }
         },
         "Verheiratet": {
           "img": "/Interaktiv/pics/innerComparisonFamilienstandYear2003AreaSozialregionFamilienstandVerheiratet.gif",
@@ -216,7 +230,14 @@
               "people": "0",
               "value": "."
             }
-          ]
+          ],
+          "colors": {
+            "SoR01": "#AE2C1E",
+            "SoR02": "#DB6451",
+            "SoR03": "#F49182",
+            "SoR04": "#DB6451",
+            "SoR05": "#DB6451"
+          }
         },
         "Verwitwet": {
           "img": "/Interaktiv/pics/innerComparisonFamilienstandYear2003AreaSozialregionFamilienstandVerwitwet.gif",
@@ -263,7 +284,14 @@
               "people": "0",
               "value": "."
             }
-          ]
+          ],
+          "colors": {
+            "SoR01": "#DB6451",
+            "SoR02": "#DB6451",
+            "SoR03": "#DB6451",
+            "SoR04": "#DB6451",
+            "SoR05": "#F49182"
+          }
         },
         "Geschieden": {
           "img": "/Interaktiv/pics/innerComparisonFamilienstandYear2003AreaSozialregionFamilienstandGeschieden.gif",
@@ -310,7 +338,14 @@
               "people": "0",
               "value": "."
             }
-          ]
+          ],
+          "colors": {
+            "SoR01": "#FEBDBD",
+            "SoR02": "#F49182",
+            "SoR03": "#F49182",
+            "SoR04": "#FEBDBD",
+            "SoR05": "#F49182"
+          }
         }
       },
       "cityLabels": [
@@ -410,7 +445,14 @@
               "value": "0,0"
             }
           ],
-          "themenbereich": "Indikator"
+          "themenbereich": "Indikator",
+          "colors": {
+            "SoR01": "#AE2C1E",
+            "SoR02": "#AE2C1E",
+            "SoR03": "#AE2C1E",
+            "SoR04": "#AE2C1E",
+            "SoR05": "#DB6350"
+          }
         },
         "Medianalter": {
           "img": "/Interaktiv/pics/innerComparisonIndicatorsYear2003AreaSozialregionIndiMedianalter.gif",
@@ -457,7 +499,14 @@
               "people": "0",
               "value": "0,0"
             }
-          ]
+          ],
+          "colors": {
+            "SoR01": "#AE2C1E",
+            "SoR02": "#DB6451",
+            "SoR03": "#DB6451",
+            "SoR04": "#DB6451",
+            "SoR05": "#DB6451"
+          }
         },
         "Jugendquotient": {
           "img": "/Interaktiv/pics/innerComparisonIndicatorsYear2003AreaSozialregionIndiJugendquotient.gif",
@@ -504,7 +553,14 @@
               "people": "0",
               "value": "0,0"
             }
-          ]
+          ],
+          "colors": {
+            "SoR01": "#BDD6EA",
+            "SoR02": "#BDD6EA",
+            "SoR03": "#8CBED6",
+            "SoR04": "#8CBED6",
+            "SoR05": "#BDD6EA"
+          }
         },
         "Altenquotient": {
           "img": "/Interaktiv/pics/innerComparisonIndicatorsYear2003AreaSozialregionIndiAltenquotient.gif",
@@ -551,7 +607,14 @@
               "people": "0",
               "value": "0,0"
             }
-          ]
+          ],
+          "colors": {
+            "SoR01": "#DB6451",
+            "SoR02": "#F49182",
+            "SoR03": "#F49182",
+            "SoR04": "#F49182",
+            "SoR05": "#FEBDBD"
+          }
         },
         "Abhaengigkeitsquotient": {
           "img": "/Interaktiv/pics/innerComparisonIndicatorsYear2003AreaSozialregionIndiAbhaengigkeitsquotient.gif",
@@ -598,7 +661,14 @@
               "people": "0",
               "value": "0,0"
             }
-          ]
+          ],
+          "colors": {
+            "SoR01": "#FEBDBD",
+            "SoR02": "#FEE5E5",
+            "SoR03": "#E2E9FE",
+            "SoR04": "#FEE5E5",
+            "SoR05": "#FEE5E5"
+          }
         },
         "GreyingIndex": {
           "img": "/Interaktiv/pics/innerComparisonIndicatorsYear2003AreaSozialregionIndiGreyingIndex.gif",
@@ -645,7 +715,14 @@
               "people": "0",
               "value": "0,0"
             }
-          ]
+          ],
+          "colors": {
+            "SoR01": "#E3E9FE",
+            "SoR02": "#FEE5E5",
+            "SoR03": "#AE2C1E",
+            "SoR04": "#FEE5E5",
+            "SoR05": "#FEBDBD"
+          }
         },
         "Migrationshintergrund": {
           "img": "/Interaktiv/pics/innerComparisonIndicatorsYear2003AreaSozialregionIndiMigrationshintergrund.gif",
@@ -692,7 +769,8 @@
               "people": "0",
               "value": "0,0"
             }
-          ]
+          ],
+          "mapUnavailable": true
         },
         "Auslaenderanteil": {
           "img": "/Interaktiv/pics/innerComparisonIndicatorsYear2003AreaSozialregionIndiAuslaenderanteil.gif",
@@ -739,7 +817,14 @@
               "people": "0",
               "value": "0,0"
             }
-          ]
+          ],
+          "colors": {
+            "SoR01": "#4B8BC2",
+            "SoR02": "#8BBDD6",
+            "SoR03": "#4B8BC2",
+            "SoR04": "#4B8BC2",
+            "SoR05": "#4B8BC2"
+          }
         }
       },
       "cityLabels": [

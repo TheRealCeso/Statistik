@@ -348,6 +348,37 @@
     const ticks = []; for (let v = bottom; v <= top + 1e-9; v += step) ticks.push(Math.round(v * 1000) / 1000);
     return { top, bottom, ticks, step };
   }
+  // Tatsächliche SVG-Textmaße berücksichtigen, auch bei gedrehten Labels.
+  // Die zusätzliche Fläche gehört zum Diagramm und überlagert keine Nachbarn.
+  function fitChartSvg(markup) {
+    const host = document.createElement('div');
+    host.className = 'chart';
+    host.style.cssText = 'position:fixed;left:-100000px;top:0;visibility:hidden;pointer-events:none';
+    host.innerHTML = markup;
+    const svg = host.firstElementChild;
+    const original = svg.viewBox.baseVal;
+    const width = original.width, height = original.height;
+    host.style.width = width + 'px';
+    document.body.appendChild(host);
+    try {
+      const footer = svg.querySelector('[data-chart-footer]');
+      if (footer) {
+        footer.remove();
+        const content = svg.getBBox();
+        footer.setAttribute('y', Math.max(Number(footer.getAttribute('y')), content.y + content.height + 28));
+        svg.appendChild(footer);
+      }
+      const bounds = svg.getBBox();
+      const left = Math.min(0, Math.floor(bounds.x - 12));
+      const top = Math.min(0, Math.floor(bounds.y - 12));
+      const right = Math.max(width, Math.ceil(bounds.x + bounds.width + 12));
+      const bottom = Math.max(height, Math.ceil(bounds.y + bounds.height + 12));
+      svg.setAttribute('viewBox', `${left} ${top} ${right - left} ${bottom - top}`);
+      return svg.outerHTML;
+    } finally {
+      host.remove();
+    }
+  }
   function chartBars(cfg) {
     // Gruppierte Balken: cfg.groups=[{label, values:[...]}], cfg.series=[{label,color}], cfg.yLabel, cfg.xLabel
     const maxLen = Math.max(...cfg.groups.map(g => (g.label || '').length), 0);
@@ -374,9 +405,9 @@
       });
       s += `<text transform="translate(${cx},${mT + ih + 10}) rotate(35)" font-size="11" fill="#142019" text-anchor="start">${esc(g.label)}</text>`;
     });
-    if (cfg.xLabel) s += `<text x="${W - mR}" y="${Hh - 8}" text-anchor="end" font-size="12" fill="#5B6B63">${esc(cfg.xLabel)}</text>`;
+    if (cfg.xLabel) s += `<text data-chart-footer x="${W - mR}" y="${Hh - 8}" text-anchor="end" font-size="12" fill="#5B6B63">${esc(cfg.xLabel)}</text>`;
     s += '</svg>';
-    return `<div class="chart">${s}${legendHtml(cfg.series)}</div>`;
+    return `<div class="chart">${fitChartSvg(s)}${legendHtml(cfg.series)}</div>`;
   }
   function chartPie(cfg) {
     const W = 380, Hh = 380, cx = 190, cy = 180, r = 130;
@@ -395,9 +426,9 @@
       if (v / total > 0.015) s += `<text x="${lx}" y="${ly}" font-size="11" text-anchor="${anchor}" fill="#142019">${fmt(v, 0)}</text><text x="${lx}" y="${ly + 12}" font-size="10" font-style="italic" text-anchor="${anchor}" fill="#5B6B63">(${fmt(v / total * 100, 1)}%)</text>`;
       a0 = a1;
     });
-    if (cfg.title) s += `<text x="${cx}" y="${Hh - 12}" text-anchor="middle" font-size="12" fill="#142019">${esc(cfg.title)}</text>`;
+    if (cfg.title) s += `<text data-chart-footer x="${cx}" y="${Hh - 12}" text-anchor="middle" font-size="12" fill="#142019">${esc(cfg.title)}</text>`;
     s += '</svg>';
-    return `<div class="chart chart-pie">${s}</div>`;
+    return `<div class="chart chart-pie">${fitChartSvg(s)}</div>`;
   }
   function chartLines(cfg) {
     // cfg.x=[Jahre], cfg.series=[{label,color,values}], cfg.yLabel
@@ -421,13 +452,23 @@
       s += `<path d="${d}" fill="none" stroke="${sr.color}" stroke-width="2.1" stroke-linejoin="round" stroke-linecap="round"${dash ? ` stroke-dasharray="${dash}"` : ''}/>`;
       sr.values.forEach((v, i) => { if (v == null) return; s += `<circle cx="${x(i)}" cy="${y(v)}" r="3" fill="${sr.color}"><title>${esc(sr.label)} ${esc(cfg.x[i])}: ${fmt(v, 1)}</title></circle>`; });
     });
-    s += `<text x="${W - mR}" y="${Hh - 4}" text-anchor="end" font-size="12" fill="#5B6B63">Jahr</text></svg>`;
-    return `<div class="chart">${s}${legendHtml(cfg.series)}</div>`;
+    s += `<text data-chart-footer x="${W - mR}" y="${Hh - 4}" text-anchor="end" font-size="12" fill="#5B6B63">Jahr</text></svg>`;
+    return `<div class="chart">${fitChartSvg(s)}${legendHtml(cfg.series)}</div>`;
   }
   function chartAreaBars(cfg) {
     // Balken je Teilgebiet mit Linie für den Wert der Gesamtstadt
-    const W = 1000, Hh = 420, mL = 56, mR = 20, mT = 40, mB = 150;
-    const iw = W - mL - mR, ih = Hh - mT - mB;
+    // Platz für lange, um 50° gedrehte Gebietsnamen bereits im Layout
+    // reservieren; nicht erst auf die nachträgliche SVG-Messung verlassen.
+    const context = document.createElement('canvas').getContext('2d');
+    const fontFamily = getComputedStyle(document.body).getPropertyValue('--font').trim() || 'sans-serif';
+    context.font = `10px ${fontFamily}`;
+    const labelWidth = Math.max(0, ...cfg.items.map(item => context.measureText(String(item.label || '')).width));
+    const angle = 50 * Math.PI / 180;
+    const mB = Math.max(150, Math.ceil(labelWidth * Math.sin(angle)) + 52);
+    const mR = Math.max(20, Math.ceil(labelWidth * Math.cos(angle)) + 24);
+    const mL = 56, mT = 40, ih = 230;
+    const W = 980 + mR, Hh = mT + ih + mB;
+    const iw = W - mL - mR;
     const vals = cfg.items.map(i => i.value).filter(v => v != null);
     const ax = axisTicks(Math.max(...vals, cfg.city || 0, 0), Math.min(...vals, cfg.city || 0, 0));
     const y = v => mT + ih - (v - ax.bottom) / (ax.top - ax.bottom || 1) * ih;
@@ -444,9 +485,9 @@
       s += `<text transform="translate(${cx},${mT + ih + 8}) rotate(50)" font-size="10" fill="#142019">${esc(it.label)}</text>`;
     });
     if (cfg.city != null) s += `<line x1="${mL}" x2="${W - mR}" y1="${y(cfg.city)}" y2="${y(cfg.city)}" stroke="#142019" stroke-width="1.2"/><text x="${W - mR + 2}" y="${y(cfg.city) + 4}" font-size="12" fill="#142019">*</text>`;
-    if (cfg.xLabel) s += `<text x="${mL}" y="${Hh - 6}" font-size="12" fill="#5B6B63">${esc(cfg.xLabel)}</text>`;
+    if (cfg.xLabel) s += `<text data-chart-footer x="${mL}" y="${Hh - 6}" font-size="12" fill="#5B6B63">${esc(cfg.xLabel)}</text>`;
     s += '</svg>';
-    return `<div class="chart">${s}</div>`;
+    return `<div class="chart">${fitChartSvg(s)}</div>`;
   }
 
   // ------------------------------------------------------------------ Diagramm-Ableitung aus Tabellen (Detailansicht)
@@ -920,7 +961,7 @@
     const classes = hasColors ? colorClasses(m) : [];
     const classIdx = {}; classes.forEach(c => c.ids.forEach(id => { classIdx[id] = c.index; }));
     const musterAn = classes.length > 1 && a11y().muster === 'an';
-    const mapHtml = mapSvg(type, {
+    const mapHtml = m.mapUnavailable ? '<div class="notice">Für dieses Jahr und Merkmal stellt die Originalquelle keine Karte bereit.</div>' : mapSvg(type, {
       polys, cls: 'vg-area',
       fill: id => (hasColors ? (colors[id] || '#E9EEEB') : '#E9EEEB'),
       patternClasses: musterAn ? classes : null,
@@ -1014,6 +1055,7 @@
   // ------------------------------------------------------------------ Modale Dialoge & Animationen
   let animTimer = null;
   function openModal(title, body) {
+    if (animTimer) { clearInterval(animTimer); animTimer = null; }
     $('#modalTitle').textContent = title; $('#modalBody').innerHTML = body; $('#modal').hidden = false; document.body.style.overflow = 'hidden';
   }
   function closeModal() { $('#modal').hidden = true; $('#modalBody').innerHTML = ''; document.body.style.overflow = ''; if (animTimer) { clearInterval(animTimer); animTimer = null; } }
@@ -1125,30 +1167,38 @@
   }
   async function openVergleichAnimation(type, themeKey, mk, tab, sub, theme) {
     const label = (theme.radios.find(r => r.value === mk) || {}).label || mk;
-    openModal('Innerstädtischer Vergleich animiert', h`<div class="anim"><div class="anim-meta">Gebietseinteilung: ${esc(areaLabel(type))} · Themenbereich: ${esc(tab.label)}${tab.subs ? ' – ' + esc(tab.subs.find(s => s[0] === sub)[1]) : ''} · Merkmal: ${esc(label)}</div>
+    const initialYear = state.year;
+    openModal('Innerstädtischer Vergleich animiert', h`<div class="anim anim-comparison"><div class="anim-meta">Gebietseinteilung: ${esc(areaLabel(type))} · Themenbereich: ${esc(tab.label)}${tab.subs ? ' – ' + esc(tab.subs.find(s => s[0] === sub)[1]) : ''} · Merkmal: ${esc(label)}</div>
       <div class="anim-year" id="animYear">…</div>
       <div class="anim-grid"><div id="animMap" class="vg-map"><div class="loading">Jahre werden geladen …</div></div><div class="vg-legend">${vergleichLegendHtml(mk)}</div></div>
-      <div class="anim-controls"><button type="button" class="btn btn-primary" id="animStart">Start Animation</button><button type="button" class="btn" id="animStop">Stop Animation</button><button type="button" class="btn" id="animReset">Zurücksetzen</button></div></div>`);
-    const frames = [];
-    await Promise.all(A.years.map(async y => {
-      try { const d = await getJSON(`data/vergleich/${type}/${y}.json`); const th = d.themes[themeKey]; const m = th && th.merkmale && th.merkmale[mk]; if (m && m.areas && m.areas.length) frames.push({ y, m, polys: d.icCoords }); } catch (e) { /* Jahr ohne Daten */ }
+      <div class="anim-controls"><button type="button" class="btn btn-primary" id="animStart" disabled>Start Animation</button><button type="button" class="btn" id="animStop" disabled>Stop Animation</button><button type="button" class="btn" id="animReset" disabled>Zurücksetzen</button></div></div>`);
+    const map = $('#animMap'), year = $('#animYear');
+    const frames = await Promise.all(A.years.map(async y => {
+      try { const d = await getJSON(`data/vergleich/${type}/${y}.json`); const th = d.themes[themeKey]; return { y, m: th && th.merkmale && th.merkmale[mk], polys: d.icCoords }; }
+      catch (e) { return { y, loadFailed: true }; }
     }));
+    if (!map.isConnected) return;
     frames.sort((a, b) => a.y - b.y);
-    if (!frames.length) { $('#animMap').innerHTML = '<div class="notice">Keine Daten für die Animation.</div>'; return; }
-    let i = 0;
-    const show = () => {
-      const f = frames[i]; $('#animYear').textContent = f.y;
+    if (!frames.length) { map.innerHTML = '<div class="notice">Keine Daten für die Animation.</div>'; return; }
+    let next = 0;
+    const startIndex = Math.max(0, frames.findIndex(f => String(f.y) === String(initialYear)));
+    const show = i => {
+      const f = frames[i]; year.textContent = f.y;
+      if (f.loadFailed) { map.innerHTML = '<div class="notice">Die Daten für dieses Jahr konnten nicht geladen werden.</div>'; return; }
+      if (!f.m || !f.m.areas?.length || f.m.mapUnavailable || !f.polys?.length) { map.innerHTML = '<div class="notice">Für dieses Jahr und Merkmal stellt die Originalquelle keine Karte bereit.</div>'; return; }
       const colors = f.m.colors || {};
-      if (!Object.keys(colors).length) { $('#animMap').innerHTML = `<img src="img/vergleich/${type}/${f.y}_${mk}.gif" alt="Karte ${esc(label)} ${f.y}" style="width:100%">`; return; }
+      if (!Object.keys(colors).length) { map.innerHTML = '<div class="notice">Für dieses Jahr liegen keine Kartenfarben vor.</div>'; return; }
       const cls = colorClasses(f.m);
       const idx = {}; cls.forEach(c => c.ids.forEach(id => { idx[id] = c.index; }));
       const pat = cls.length > 1 && a11y().muster === 'an';
-      $('#animMap').innerHTML = mapSvg(type, { polys: f.polys, cls: 'vg-area', fill: id => colors[id] || '#E9EEEB', patternClasses: pat ? cls : null, classOf: id => (id in idx ? idx[id] : null) });
+      map.innerHTML = mapSvg(type, { polys: f.polys, cls: 'vg-area', fill: id => colors[id] || '#E9EEEB', patternClasses: pat ? cls : null, classOf: id => (id in idx ? idx[id] : null) });
     };
-    show();
-    $('#animStart').addEventListener('click', () => { if (animTimer) return; animTimer = setInterval(() => { i = (i + 1) % frames.length; show(); }, 900); });
+    show(startIndex);
+    $$('.anim-comparison .anim-controls button').forEach(button => { button.disabled = false; });
+    const advance = () => { show(next); next = (next + 1) % frames.length; };
+    $('#animStart').addEventListener('click', () => { if (animTimer) return; advance(); animTimer = setInterval(advance, 1000); });
     $('#animStop').addEventListener('click', () => { clearInterval(animTimer); animTimer = null; });
-    $('#animReset').addEventListener('click', () => { clearInterval(animTimer); animTimer = null; i = 0; show(); });
+    $('#animReset').addEventListener('click', () => { clearInterval(animTimer); animTimer = null; next = 0; show(startIndex); });
   }
   async function openDatenbeschreibung() {
     openModal('Datenbeschreibung', '<div class="loading">Wird geladen …</div>');

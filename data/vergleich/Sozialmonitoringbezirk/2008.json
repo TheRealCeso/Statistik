@@ -171,7 +171,31 @@
               "value": "."
             }
           ],
-          "themenbereich": "Migrationshintergrund"
+          "themenbereich": "Migrationshintergrund",
+          "colors": {
+            "SMB01": "#F49182",
+            "SMB02": "#BDD6EA",
+            "SMB03": "#E2E9FE",
+            "SMB04": "#FEBDBD",
+            "SMB05": "#FEBDBD",
+            "SMB06": "#F49182",
+            "SMB07": "#F49182",
+            "SMB08": "#E2E9FE",
+            "SMB09": "#BDD6EA",
+            "SMB10": "#AE2C1D",
+            "SMB11": "#FEE5E5",
+            "SMB12": "#F49182",
+            "SMB13": "#8BBDD6",
+            "SMB14": "#F49182",
+            "SMB17": "#FEBDBD",
+            "SMB18": "#F49182",
+            "SMB19": "#F49182",
+            "SMB20": "#FEBDBD",
+            "SMB21": "#FEE5E5",
+            "SMB22": "#BDD6EA",
+            "SMB23": "#FEBDBD",
+            "SMB24": "#AE2C1D"
+          }
         },
         "GermansWithMigration": {
           "img": "/Interaktiv/pics/innerComparisonMigrationYear2008AreaSozialmonitoringbezirkMigrationGermansWithMigration.gif",
@@ -320,7 +344,31 @@
               "people": "0",
               "value": "."
             }
-          ]
+          ],
+          "colors": {
+            "SMB01": "#8BBDD6",
+            "SMB02": "#E2E9FE",
+            "SMB03": "#FEE5E5",
+            "SMB04": "#8BBDD6",
+            "SMB05": "#4B8BC2",
+            "SMB06": "#4B8BC2",
+            "SMB07": "#4B8BC2",
+            "SMB08": "#BDD6EA",
+            "SMB09": "#E2E9FE",
+            "SMB10": "#236EA9",
+            "SMB11": "#BDD6EA",
+            "SMB12": "#4B8BC2",
+            "SMB13": "#AE2C1D",
+            "SMB14": "#4B8BC2",
+            "SMB17": "#BDD6EA",
+            "SMB18": "#BDD6EA",
+            "SMB19": "#BDD6EA",
+            "SMB20": "#E2E9FE",
+            "SMB21": "#E2E9FE",
+            "SMB22": "#FEE5E5",
+            "SMB23": "#BDD6EA",
+            "SMB24": "#4B8BC2"
+          }
         },
         "Foreigners": {
           "img": "/Interaktiv/pics/innerComparisonMigrationYear2008AreaSozialmonitoringbezirkMigrationForeigners.gif",
@@ -469,7 +517,31 @@
               "people": "0",
               "value": "."
             }
-          ]
+          ],
+          "colors": {
+            "SMB01": "#4B8BC2",
+            "SMB02": "#FEE5E5",
+            "SMB03": "#BDD6EA",
+            "SMB04": "#8BBDD6",
+            "SMB05": "#E3EAFE",
+            "SMB06": "#BDD6EA",
+            "SMB07": "#8BBDD6",
+            "SMB08": "#FEE5E5",
+            "SMB09": "#E3EAFE",
+            "SMB10": "#236EA9",
+            "SMB11": "#BDD6EA",
+            "SMB12": "#8BBDD6",
+            "SMB13": "#8BBDD6",
+            "SMB14": "#4B8BC2",
+            "SMB17": "#4B8BC2",
+            "SMB18": "#4B8BC2",
+            "SMB19": "#236EA9",
+            "SMB20": "#4B8BC2",
+            "SMB21": "#8BBDD6",
+            "SMB22": "#E3EAFE",
+            "SMB23": "#4B8BC2",
+            "SMB24": "#236EA9"
+          }
         }
       },
       "cityLabels": [
@@ -651,7 +723,31 @@
               "value": "."
             }
           ],
-          "themenbereich": "Familienstand"
+          "themenbereich": "Familienstand",
+          "colors": {
+            "SMB01": "#4B8BC2",
+            "SMB02": "#8BBDD6",
+            "SMB03": "#8BBDD6",
+            "SMB04": "#8BBDD6",
+            "SMB05": "#BDD6EA",
+            "SMB06": "#E2E9FE",
+            "SMB07": "#E2E9FE",
+            "SMB08": "#8BBDD6",
+            "SMB09": "#8BBDD6",
+            "SMB10": "#8BBDD6",
+            "SMB11": "#BDD6EA",
+            "SMB12": "#BDD6EA",
+            "SMB13": "#8BBDD6",
+            "SMB14": "#8BBDD6",
+            "SMB17": "#8BBDD6",
+            "SMB18": "#8BBDD6",
+            "SMB19": "#4B8BC2",
+            "SMB20": "#4B8BC2",
+            "SMB21": "#8BBDD6",
+            "SMB22": "#8BBDD6",
+            "SMB23": "#8BBDD6",
+            "SMB24": "#4B8BC2"
+          }
         },
         "Verheiratet": {
           "img": "/Interaktiv/pics/innerComparisonFamilienstandYear2008AreaSozialmonitoringbezirkFamilienstandVerheiratet.gif",
@@ -800,7 +896,31 @@
               "people": "0",
               "value": "."
             }
-          ]
+          ],
+          "colors": {
+            "SMB01": "#DB6451",
+            "SMB02": "#F49182",
+            "SMB03": "#F49182",
+            "SMB04": "#F49182",
+            "SMB05": "#FEE5E5",
+            "SMB06": "#FEE5E5",
+            "SMB07": "#FEE5E5",
+            "SMB08": "#F49182",
+            "SMB09": "#F49182",
+            "SMB10": "#DB6451",
+            "SMB11": "#FEBDBD",
+            "SMB12": "#FEE5E5",
+            "SMB13": "#DB6451",
+            "SMB14": "#F49182",
+            "SMB17": "#DB6451",
+            "SMB18": "#DB6451",
+            "SMB19": "#AE2C1D",
+            "SMB20": "#DB6451",
+            "SMB21": "#DB6451",
+            "SMB22": "#DB6451",
+            "SMB23": "#DB6451",
+            "SMB24": "#AE2C1D"
+          }
         },
         "Verwitwet": {
           "img": "/Interaktiv/pics/innerComparisonFamilienstandYear2008AreaSozialmonitoringbezirkFamilienstandVerwitwet.gif",
@@ -949,7 +1069,31 @@
               "people": "0",
               "value": "."
             }
-          ]
+          ],
+          "colors": {
+            "SMB01": "#FEBDBD",
+            "SMB02": "#FEE5E5",
+            "SMB03": "#E2E9FE",
+            "SMB04": "#FEE5E5",
+            "SMB05": "#E2E9FE",
+            "SMB06": "#E2E9FE",
+            "SMB07": "#FEE5E5",
+            "SMB08": "#FEE5E5",
+            "SMB09": "#F49182",
+            "SMB10": "#FEE5E5",
+            "SMB11": "#FEE5E5",
+            "SMB12": "#F49182",
+            "SMB13": "#FEE5E5",
+            "SMB14": "#FEE5E5",
+            "SMB17": "#FEBDBD",
+            "SMB18": "#FEE5E5",
+            "SMB19": "#FEBDBD",
+            "SMB20": "#FEE5E5",
+            "SMB21": "#FEBDBD",
+            "SMB22": "#FEBDBD",
+            "SMB23": "#FEBDBD",
+            "SMB24": "#E2E9FE"
+          }
         },
         "Geschieden": {
           "img": "/Interaktiv/pics/innerComparisonFamilienstandYear2008AreaSozialmonitoringbezirkFamilienstandGeschieden.gif",
@@ -1098,7 +1242,31 @@
               "people": "0",
               "value": "."
             }
-          ]
+          ],
+          "colors": {
+            "SMB01": "#FEBDBD",
+            "SMB02": "#DB6451",
+            "SMB03": "#FEBDBD",
+            "SMB04": "#F49182",
+            "SMB05": "#AE2C1E",
+            "SMB06": "#DB6451",
+            "SMB07": "#F49182",
+            "SMB08": "#F49182",
+            "SMB09": "#F49182",
+            "SMB10": "#FEBDBD",
+            "SMB11": "#F49182",
+            "SMB12": "#DB6451",
+            "SMB13": "#FEE5E5",
+            "SMB14": "#F49182",
+            "SMB17": "#F49182",
+            "SMB18": "#FEBDBD",
+            "SMB19": "#E2E9FE",
+            "SMB20": "#FEE5E5",
+            "SMB21": "#FEBDBD",
+            "SMB22": "#F49182",
+            "SMB23": "#FEBDBD",
+            "SMB24": "#E2E9FE"
+          }
         }
       },
       "cityLabels": [
@@ -1300,7 +1468,31 @@
               "value": "0,0"
             }
           ],
-          "themenbereich": "Indikator"
+          "themenbereich": "Indikator",
+          "colors": {
+            "SMB01": "#AE2C1D",
+            "SMB02": "#DB6451",
+            "SMB03": "#F49182",
+            "SMB04": "#DB6451",
+            "SMB05": "#DB6451",
+            "SMB06": "#DB6451",
+            "SMB07": "#DB6451",
+            "SMB08": "#DB6451",
+            "SMB09": "#AE2C1D",
+            "SMB10": "#AE2C1D",
+            "SMB11": "#DB6451",
+            "SMB12": "#AE2C1D",
+            "SMB13": "#DB6451",
+            "SMB14": "#AE2C1D",
+            "SMB17": "#AE2C1D",
+            "SMB18": "#DB6451",
+            "SMB19": "#AE2C1D",
+            "SMB20": "#DB6451",
+            "SMB21": "#AE2C1D",
+            "SMB22": "#DB6451",
+            "SMB23": "#AE2C1D",
+            "SMB24": "#DB6451"
+          }
         },
         "Medianalter": {
           "img": "/Interaktiv/pics/innerComparisonIndicatorsYear2008AreaSozialmonitoringbezirkIndiMedianalter.gif",
@@ -1449,7 +1641,31 @@
               "people": "0",
               "value": "0,0"
             }
-          ]
+          ],
+          "colors": {
+            "SMB01": "#DB6451",
+            "SMB02": "#F49182",
+            "SMB03": "#F49182",
+            "SMB04": "#DB6451",
+            "SMB05": "#F49182",
+            "SMB06": "#F49182",
+            "SMB07": "#F49182",
+            "SMB08": "#DB6451",
+            "SMB09": "#DB6451",
+            "SMB10": "#AE2C1D",
+            "SMB11": "#F49182",
+            "SMB12": "#DB6451",
+            "SMB13": "#DB6451",
+            "SMB14": "#DB6451",
+            "SMB17": "#DB6451",
+            "SMB18": "#DB6451",
+            "SMB19": "#AE2C1D",
+            "SMB20": "#DB6451",
+            "SMB21": "#DB6451",
+            "SMB22": "#DB6451",
+            "SMB23": "#DB6451",
+            "SMB24": "#DB6451"
+          }
         },
         "Jugendquotient": {
           "img": "/Interaktiv/pics/innerComparisonIndicatorsYear2008AreaSozialmonitoringbezirkIndiJugendquotient.gif",
@@ -1598,7 +1814,31 @@
               "people": "0",
               "value": "0,0"
             }
-          ]
+          ],
+          "colors": {
+            "SMB01": "#BDD6EA",
+            "SMB02": "#BDD6EA",
+            "SMB03": "#E2E9FE",
+            "SMB04": "#8BBDD6",
+            "SMB05": "#8BBDD6",
+            "SMB06": "#4B8BC2",
+            "SMB07": "#4B8BC2",
+            "SMB08": "#8BBDD6",
+            "SMB09": "#8BBDD6",
+            "SMB10": "#BDD6EA",
+            "SMB11": "#8BBDD6",
+            "SMB12": "#8BBDD6",
+            "SMB13": "#8BBDD6",
+            "SMB14": "#8BBDD6",
+            "SMB17": "#8BBDD6",
+            "SMB18": "#8BBDD6",
+            "SMB19": "#BDD6EA",
+            "SMB20": "#BDD6EA",
+            "SMB21": "#BDD6EA",
+            "SMB22": "#BDD6EA",
+            "SMB23": "#BDD6EA",
+            "SMB24": "#BDD6EA"
+          }
         },
         "Altenquotient": {
           "img": "/Interaktiv/pics/innerComparisonIndicatorsYear2008AreaSozialmonitoringbezirkIndiAltenquotient.gif",
@@ -1747,7 +1987,31 @@
               "people": "0",
               "value": "0,0"
             }
-          ]
+          ],
+          "colors": {
+            "SMB01": "#F49182",
+            "SMB02": "#E2E9FE",
+            "SMB03": "#E2E9FE",
+            "SMB04": "#FEE5E5",
+            "SMB05": "#BDD6EA",
+            "SMB06": "#E2E9FE",
+            "SMB07": "#E2E9FE",
+            "SMB08": "#FEE5E5",
+            "SMB09": "#F49182",
+            "SMB10": "#AE2C1D",
+            "SMB11": "#E2E9FE",
+            "SMB12": "#FEBDBD",
+            "SMB13": "#E2E9FE",
+            "SMB14": "#FEBDBD",
+            "SMB17": "#F49182",
+            "SMB18": "#FEE5E5",
+            "SMB19": "#DB6451",
+            "SMB20": "#FEBDBD",
+            "SMB21": "#FEBDBD",
+            "SMB22": "#FEE5E5",
+            "SMB23": "#F49182",
+            "SMB24": "#FEE5E5"
+          }
         },
         "Abhaengigkeitsquotient": {
           "img": "/Interaktiv/pics/innerComparisonIndicatorsYear2008AreaSozialmonitoringbezirkIndiAbhaengigkeitsquotient.gif",
@@ -1896,7 +2160,31 @@
               "people": "0",
               "value": "0,0"
             }
-          ]
+          ],
+          "colors": {
+            "SMB01": "#F49182",
+            "SMB02": "#FEBDBD",
+            "SMB03": "#FEBDBD",
+            "SMB04": "#FEE5E5",
+            "SMB05": "#E2E9FE",
+            "SMB06": "#E2E9FE",
+            "SMB07": "#E2E9FE",
+            "SMB08": "#FEE5E5",
+            "SMB09": "#F49182",
+            "SMB10": "#AE2C1D",
+            "SMB11": "#E2E9FE",
+            "SMB12": "#FEE5E5",
+            "SMB13": "#FEE5E5",
+            "SMB14": "#FEBDBD",
+            "SMB17": "#FEBDBD",
+            "SMB18": "#FEBDBD",
+            "SMB19": "#DB6451",
+            "SMB20": "#F49182",
+            "SMB21": "#F49182",
+            "SMB22": "#FEBDBD",
+            "SMB23": "#F49182",
+            "SMB24": "#F49182"
+          }
         },
         "GreyingIndex": {
           "img": "/Interaktiv/pics/innerComparisonIndicatorsYear2008AreaSozialmonitoringbezirkIndiGreyingIndex.gif",
@@ -2045,7 +2333,31 @@
               "people": "0",
               "value": "0,0"
             }
-          ]
+          ],
+          "colors": {
+            "SMB01": "#BDD6EA",
+            "SMB02": "#BDD6EA",
+            "SMB03": "#BDD6EA",
+            "SMB04": "#E2E9FE",
+            "SMB05": "#BDD6EA",
+            "SMB06": "#E2E9FE",
+            "SMB07": "#DB6451",
+            "SMB08": "#BDD6EA",
+            "SMB09": "#FEE5E5",
+            "SMB10": "#E2E9FE",
+            "SMB11": "#E2E9FE",
+            "SMB12": "#AE2C1D",
+            "SMB13": "#BDD6EA",
+            "SMB14": "#E2E9FE",
+            "SMB17": "#BDD6EA",
+            "SMB18": "#8BBDD6",
+            "SMB19": "#8BBDD6",
+            "SMB20": "#BDD6EA",
+            "SMB21": "#BDD6EA",
+            "SMB22": "#BDD6EA",
+            "SMB23": "#BDD6EA",
+            "SMB24": "#BDD6EA"
+          }
         },
         "Migrationshintergrund": {
           "img": "/Interaktiv/pics/innerComparisonIndicatorsYear2008AreaSozialmonitoringbezirkIndiMigrationshintergrund.gif",
@@ -2194,7 +2506,31 @@
               "people": "0",
               "value": "0,0"
             }
-          ]
+          ],
+          "colors": {
+            "SMB01": "#BDD6EA",
+            "SMB02": "#FEE5E5",
+            "SMB03": "#E2E9FE",
+            "SMB04": "#BDD6EA",
+            "SMB05": "#BDD6EA",
+            "SMB06": "#BDD6EA",
+            "SMB07": "#8BBDD6",
+            "SMB08": "#E2E9FE",
+            "SMB09": "#FEE5E5",
+            "SMB10": "#4B8BC2",
+            "SMB11": "#E2E9FE",
+            "SMB12": "#8BBDD6",
+            "SMB13": "#FEBDBD",
+            "SMB14": "#8BBDD6",
+            "SMB17": "#BDD6EA",
+            "SMB18": "#BDD6EA",
+            "SMB19": "#8BBDD6",
+            "SMB20": "#BDD6EA",
+            "SMB21": "#E2E9FE",
+            "SMB22": "#FEE5E5",
+            "SMB23": "#BDD6EA",
+            "SMB24": "#4B8BC2"
+          }
         },
         "Auslaenderanteil": {
           "img": "/Interaktiv/pics/innerComparisonIndicatorsYear2008AreaSozialmonitoringbezirkIndiAuslaenderanteil.gif",
@@ -2343,7 +2679,31 @@
               "people": "0",
               "value": "0,0"
             }
-          ]
+          ],
+          "colors": {
+            "SMB01": "#4B8BC2",
+            "SMB02": "#8BBDD6",
+            "SMB03": "#4B8BC2",
+            "SMB04": "#4B8BC2",
+            "SMB05": "#8BBDD6",
+            "SMB06": "#4B8BC2",
+            "SMB07": "#4B8BC2",
+            "SMB08": "#8BBDD6",
+            "SMB09": "#8BBDD6",
+            "SMB10": "#236EA9",
+            "SMB11": "#8BBDD6",
+            "SMB12": "#4B8BC2",
+            "SMB13": "#4B8BC2",
+            "SMB14": "#4B8BC2",
+            "SMB17": "#4B8BC2",
+            "SMB18": "#236EA9",
+            "SMB19": "#236EA9",
+            "SMB20": "#236EA9",
+            "SMB21": "#4B8BC2",
+            "SMB22": "#8BBDD6",
+            "SMB23": "#4B8BC2",
+            "SMB24": "#236EA9"
+          }
         }
       },
       "cityLabels": [
@@ -2530,7 +2890,31 @@
               "value": "."
             }
           ],
-          "themenbereich": "Haushaltstypen"
+          "themenbereich": "Haushaltstypen",
+          "colors": {
+            "SMB01": "#FEBDBD",
+            "SMB02": "#F49182",
+            "SMB03": "#FEE5E5",
+            "SMB04": "#F49182",
+            "SMB05": "#AE2C1E",
+            "SMB06": "#AE2C1E",
+            "SMB07": "#AE2C1E",
+            "SMB08": "#F49182",
+            "SMB09": "#F49182",
+            "SMB10": "#FEBDBD",
+            "SMB11": "#DB6451",
+            "SMB12": "#DB6451",
+            "SMB13": "#FEBDBD",
+            "SMB14": "#F49182",
+            "SMB17": "#FEBDBD",
+            "SMB18": "#FEBDBD",
+            "SMB19": "#E2E9FE",
+            "SMB20": "#FEE5E5",
+            "SMB21": "#FEBDBD",
+            "SMB22": "#FEBDBD",
+            "SMB23": "#FEBDBD",
+            "SMB24": "#E2E9FE"
+          }
         },
         "PaareOhneKinder": {
           "img": "/Interaktiv/pics/innerComparisonHaushaltstypenYear2008AreaSozialmonitoringbezirkHaushaltstypenPaareOhneKinder.gif",
@@ -2679,7 +3063,31 @@
               "people": "0",
               "value": "."
             }
-          ]
+          ],
+          "colors": {
+            "SMB01": "#F49182",
+            "SMB02": "#FEE5E5",
+            "SMB03": "#FEE5E5",
+            "SMB04": "#FEBDBD",
+            "SMB05": "#E2E9FE",
+            "SMB06": "#E2E9FE",
+            "SMB07": "#E2E9FE",
+            "SMB08": "#FEBDBD",
+            "SMB09": "#FEBDBD",
+            "SMB10": "#F49182",
+            "SMB11": "#FEE5E5",
+            "SMB12": "#FEE5E5",
+            "SMB13": "#FEBDBD",
+            "SMB14": "#FEBDBD",
+            "SMB17": "#F49182",
+            "SMB18": "#F49182",
+            "SMB19": "#AE2C1D",
+            "SMB20": "#F49182",
+            "SMB21": "#F49182",
+            "SMB22": "#FEBDBD",
+            "SMB23": "#F49182",
+            "SMB24": "#DB6451"
+          }
         },
         "PaareMitKinder": {
           "img": "/Interaktiv/pics/innerComparisonHaushaltstypenYear2008AreaSozialmonitoringbezirkHaushaltstypenPaareMitKinder.gif",
@@ -2828,7 +3236,31 @@
               "people": "0",
               "value": "."
             }
-          ]
+          ],
+          "colors": {
+            "SMB01": "#FEE5E5",
+            "SMB02": "#FEE5E5",
+            "SMB03": "#DB6451",
+            "SMB04": "#FEBDBD",
+            "SMB05": "#BDD6EA",
+            "SMB06": "#8BBDD6",
+            "SMB07": "#BDD6EA",
+            "SMB08": "#E2E9FE",
+            "SMB09": "#FEE5E5",
+            "SMB10": "#FEBDBD",
+            "SMB11": "#E2E9FE",
+            "SMB12": "#E2E9FE",
+            "SMB13": "#FEE5E5",
+            "SMB14": "#E2E9FE",
+            "SMB17": "#FEE5E5",
+            "SMB18": "#FEE5E5",
+            "SMB19": "#F49182",
+            "SMB20": "#DB6451",
+            "SMB21": "#FEBDBD",
+            "SMB22": "#FEE5E5",
+            "SMB23": "#FEBDBD",
+            "SMB24": "#AE2C1D"
+          }
         },
         "Alleinerziehende": {
           "img": "/Interaktiv/pics/innerComparisonHaushaltstypenYear2008AreaSozialmonitoringbezirkHaushaltstypenAlleinerziehende.gif",
@@ -2977,7 +3409,31 @@
               "people": "0",
               "value": "."
             }
-          ]
+          ],
+          "colors": {
+            "SMB01": "#DB6451",
+            "SMB02": "#DB6451",
+            "SMB03": "#DB6451",
+            "SMB04": "#F49182",
+            "SMB05": "#FEBDBD",
+            "SMB06": "#E2E9FE",
+            "SMB07": "#E2E9FE",
+            "SMB08": "#E2E9FE",
+            "SMB09": "#FEBDBD",
+            "SMB10": "#FEBDBD",
+            "SMB11": "#FEBDBD",
+            "SMB12": "#F49182",
+            "SMB13": "#FEE5E5",
+            "SMB14": "#FEBDBD",
+            "SMB17": "#F49182",
+            "SMB18": "#FEE5E5",
+            "SMB19": "#F49182",
+            "SMB20": "#FEE5E5",
+            "SMB21": "#FEBDBD",
+            "SMB22": "#FEBDBD",
+            "SMB23": "#FEBDBD",
+            "SMB24": "#F49182"
+          }
         },
         "SonstigeMehrpersonenhaushalte": {
           "img": "/Interaktiv/pics/innerComparisonHaushaltstypenYear2008AreaSozialmonitoringbezirkHaushaltstypenSonstigeMehrpersonenhaushalte.gif",
@@ -3126,7 +3582,31 @@
               "people": "0",
               "value": "."
             }
-          ]
+          ],
+          "colors": {
+            "SMB01": "#DB6451",
+            "SMB02": "#F49182",
+            "SMB03": "#F49182",
+            "SMB04": "#FEBDBD",
+            "SMB05": "#F49182",
+            "SMB06": "#FEE5E5",
+            "SMB07": "#FEE5E5",
+            "SMB08": "#FEBDBD",
+            "SMB09": "#F49182",
+            "SMB10": "#FEBDBD",
+            "SMB11": "#FEBDBD",
+            "SMB12": "#FEBDBD",
+            "SMB13": "#F49182",
+            "SMB14": "#FEBDBD",
+            "SMB17": "#FEBDBD",
+            "SMB18": "#FEBDBD",
+            "SMB19": "#DB6451",
+            "SMB20": "#AE2C1D",
+            "SMB21": "#F49182",
+            "SMB22": "#FEBDBD",
+            "SMB23": "#FEBDBD",
+            "SMB24": "#F49182"
+          }
         }
       },
       "cityLabels": [
@@ -3303,7 +3783,31 @@
               "value": "."
             }
           ],
-          "themenbereich": "Haushalte nach Personen"
+          "themenbereich": "Haushalte nach Personen",
+          "colors": {
+            "SMB01": "#FEBDBD",
+            "SMB02": "#F49182",
+            "SMB03": "#FEE5E5",
+            "SMB04": "#F49182",
+            "SMB05": "#AE2C1E",
+            "SMB06": "#AE2C1E",
+            "SMB07": "#AE2C1E",
+            "SMB08": "#F49182",
+            "SMB09": "#F49182",
+            "SMB10": "#FEBDBD",
+            "SMB11": "#DB6451",
+            "SMB12": "#DB6451",
+            "SMB13": "#FEBDBD",
+            "SMB14": "#F49182",
+            "SMB17": "#FEBDBD",
+            "SMB18": "#FEBDBD",
+            "SMB19": "#E2E9FE",
+            "SMB20": "#FEE5E5",
+            "SMB21": "#FEBDBD",
+            "SMB22": "#FEBDBD",
+            "SMB23": "#FEBDBD",
+            "SMB24": "#E2E9FE"
+          }
         },
         "Zweipersonenhaushalte": {
           "img": "/Interaktiv/pics/innerComparisonHaushalteNachPersonenYear2008AreaSozialmonitoringbezirkHaushalteNachPersonenZweipersonenhaushalte.gif",
@@ -3452,7 +3956,31 @@
               "people": "0",
               "value": "."
             }
-          ]
+          ],
+          "colors": {
+            "SMB01": "#F49182",
+            "SMB02": "#FEBDBD",
+            "SMB03": "#FEBDBD",
+            "SMB04": "#FEBDBD",
+            "SMB05": "#FEE5E5",
+            "SMB06": "#FEE5E5",
+            "SMB07": "#FEE5E5",
+            "SMB08": "#FEBDBD",
+            "SMB09": "#F49182",
+            "SMB10": "#F49182",
+            "SMB11": "#FEBDBD",
+            "SMB12": "#FEBDBD",
+            "SMB13": "#F49182",
+            "SMB14": "#F49182",
+            "SMB17": "#F49182",
+            "SMB18": "#DB6451",
+            "SMB19": "#AE2C1D",
+            "SMB20": "#F49182",
+            "SMB21": "#F49182",
+            "SMB22": "#F49182",
+            "SMB23": "#F49182",
+            "SMB24": "#DB6451"
+          }
         },
         "DreiOderMehrpersonenhaushalte": {
           "img": "/Interaktiv/pics/innerComparisonHaushalteNachPersonenYear2008AreaSozialmonitoringbezirkHaushalteNachPersonenDreiOderMehrpersonenhaushalte.gif",
@@ -3601,7 +4129,31 @@
               "people": "0",
               "value": "."
             }
-          ]
+          ],
+          "colors": {
+            "SMB01": "#FEBDBD",
+            "SMB02": "#FEE5E5",
+            "SMB03": "#DB6451",
+            "SMB04": "#FEE5E5",
+            "SMB05": "#BDD6EA",
+            "SMB06": "#8BBDD6",
+            "SMB07": "#BDD6EA",
+            "SMB08": "#E2E9FE",
+            "SMB09": "#FEE5E5",
+            "SMB10": "#FEBDBD",
+            "SMB11": "#E2E9FE",
+            "SMB12": "#E2E9FE",
+            "SMB13": "#FEBDBD",
+            "SMB14": "#E2E9FE",
+            "SMB17": "#FEE5E5",
+            "SMB18": "#FEE5E5",
+            "SMB19": "#DB6451",
+            "SMB20": "#DB6451",
+            "SMB21": "#FEBDBD",
+            "SMB22": "#FEE5E5",
+            "SMB23": "#FEBDBD",
+            "SMB24": "#AE2C1D"
+          }
         }
       },
       "cityLabels": [
@@ -3783,7 +4335,31 @@
               "value": "."
             }
           ],
-          "themenbereich": "Haushalte nach Kindern"
+          "themenbereich": "Haushalte nach Kindern",
+          "colors": {
+            "SMB01": "#DB6451",
+            "SMB02": "#DB6451",
+            "SMB03": "#F49182",
+            "SMB04": "#DB6451",
+            "SMB05": "#AE2C1D",
+            "SMB06": "#AE2C1D",
+            "SMB07": "#AE2C1D",
+            "SMB08": "#AE2C1D",
+            "SMB09": "#AE2C1D",
+            "SMB10": "#DB6451",
+            "SMB11": "#AE2C1D",
+            "SMB12": "#AE2C1D",
+            "SMB13": "#AE2C1D",
+            "SMB14": "#AE2C1D",
+            "SMB17": "#DB6451",
+            "SMB18": "#DB6451",
+            "SMB19": "#DB6451",
+            "SMB20": "#DB6451",
+            "SMB21": "#DB6451",
+            "SMB22": "#DB6451",
+            "SMB23": "#DB6451",
+            "SMB24": "#F49182"
+          }
         },
         "Haushalte1Kind": {
           "img": "/Interaktiv/pics/innerComparisonHaushalteNachKindernYear2008AreaSozialmonitoringbezirkHaushalteNachKindernHaushalte1Kind.gif",
@@ -3932,7 +4508,31 @@
               "people": "0",
               "value": "."
             }
-          ]
+          ],
+          "colors": {
+            "SMB01": "#F49182",
+            "SMB02": "#F49182",
+            "SMB03": "#DB6451",
+            "SMB04": "#F49182",
+            "SMB05": "#FEE5E6",
+            "SMB06": "#E2E9FE",
+            "SMB07": "#E2E9FE",
+            "SMB08": "#FEE5E6",
+            "SMB09": "#FEBDBD",
+            "SMB10": "#F49182",
+            "SMB11": "#FEBDBD",
+            "SMB12": "#F49182",
+            "SMB13": "#F49182",
+            "SMB14": "#FEBDBD",
+            "SMB17": "#F49182",
+            "SMB18": "#F49182",
+            "SMB19": "#F49182",
+            "SMB20": "#DB6451",
+            "SMB21": "#F49182",
+            "SMB22": "#F49182",
+            "SMB23": "#F49182",
+            "SMB24": "#AE2C1D"
+          }
         },
         "Haushalte2Kinder": {
           "img": "/Interaktiv/pics/innerComparisonHaushalteNachKindernYear2008AreaSozialmonitoringbezirkHaushalteNachKindernHaushalte2Kinder.gif",
@@ -4081,7 +4681,31 @@
               "people": "0",
               "value": "."
             }
-          ]
+          ],
+          "colors": {
+            "SMB01": "#FEBDBD",
+            "SMB02": "#FEE5E5",
+            "SMB03": "#DB6451",
+            "SMB04": "#FEE5E5",
+            "SMB05": "#BDD6EA",
+            "SMB06": "#8BBDD6",
+            "SMB07": "#8BBDD6",
+            "SMB08": "#E3EAFE",
+            "SMB09": "#FEE5E5",
+            "SMB10": "#FEBDBD",
+            "SMB11": "#E3EAFE",
+            "SMB12": "#BDD6EA",
+            "SMB13": "#E3EAFE",
+            "SMB14": "#E3EAFE",
+            "SMB17": "#FEE5E5",
+            "SMB18": "#E3EAFE",
+            "SMB19": "#FEBDBD",
+            "SMB20": "#DB6451",
+            "SMB21": "#FEE5E5",
+            "SMB22": "#FEE5E5",
+            "SMB23": "#FEE5E5",
+            "SMB24": "#DB6451"
+          }
         },
         "Haushalte3oderMehrKinder": {
           "img": "/Interaktiv/pics/innerComparisonHaushalteNachKindernYear2008AreaSozialmonitoringbezirkHaushalteNachKindernHaushalte3oderMehrKinder.gif",
@@ -4230,7 +4854,31 @@
               "people": "0",
               "value": "."
             }
-          ]
+          ],
+          "colors": {
+            "SMB01": "#FEE5E5",
+            "SMB02": "#FEBDBD",
+            "SMB03": "#DC6451",
+            "SMB04": "#E2E9FE",
+            "SMB05": "#BDD6EA",
+            "SMB06": "#4B8BC2",
+            "SMB07": "#4B8BC2",
+            "SMB08": "#BDD6EA",
+            "SMB09": "#E2E9FE",
+            "SMB10": "#E2E9FE",
+            "SMB11": "#BDD6EA",
+            "SMB12": "#8BBDD6",
+            "SMB13": "#BDD6EA",
+            "SMB14": "#BDD6EA",
+            "SMB17": "#BDD6EA",
+            "SMB18": "#BDD6EA",
+            "SMB19": "#FEBDBD",
+            "SMB20": "#FEBDBD",
+            "SMB21": "#E2E9FE",
+            "SMB22": "#E2E9FE",
+            "SMB23": "#E2E9FE",
+            "SMB24": "#FEBDBD"
+          }
         }
       },
       "cityLabels": [
@@ -4402,7 +5050,31 @@
               "value": "."
             }
           ],
-          "themenbereich": "Natürliche Bevölkerungsbewegung"
+          "themenbereich": "Natürliche Bevölkerungsbewegung",
+          "colors": {
+            "SMB01": "#236EA9",
+            "SMB02": "#8BBDD6",
+            "SMB03": "#4B8BC2",
+            "SMB04": "#4B8BC2",
+            "SMB05": "#4B8BC2",
+            "SMB06": "#4B8BC2",
+            "SMB07": "#4B8BC2",
+            "SMB08": "#4B8BC2",
+            "SMB09": "#4B8BC2",
+            "SMB10": "#4B8BC2",
+            "SMB11": "#4B8BC2",
+            "SMB12": "#4B8BC2",
+            "SMB13": "#4B8BC2",
+            "SMB14": "#4B8BC2",
+            "SMB17": "#4B8BC2",
+            "SMB18": "#236EA9",
+            "SMB19": "#236EA9",
+            "SMB20": "#4B8BC2",
+            "SMB21": "#4B8BC2",
+            "SMB22": "#4B8BC2",
+            "SMB23": "#4B8BC2",
+            "SMB24": "#4B8BC2"
+          }
         },
         "Sterbefaelle": {
           "img": "/Interaktiv/pics/innerComparisonPopulationMovementYear2008AreaSozialmonitoringbezirkNatuerlichSterbefaelle.gif",
@@ -4551,7 +5223,31 @@
               "people": "0",
               "value": "."
             }
-          ]
+          ],
+          "colors": {
+            "SMB01": "#8BBDD6",
+            "SMB02": "#8BBDD6",
+            "SMB03": "#4B8BC2",
+            "SMB04": "#BDD6EA",
+            "SMB05": "#8BBDD6",
+            "SMB06": "#BDD6EA",
+            "SMB07": "#FEE5E5",
+            "SMB08": "#4B8BC2",
+            "SMB09": "#FEE5E5",
+            "SMB10": "#E2E9FE",
+            "SMB11": "#8BBDD6",
+            "SMB12": "#FEBDBD",
+            "SMB13": "#8BBDD6",
+            "SMB14": "#BDD6EA",
+            "SMB17": "#E2E9FE",
+            "SMB18": "#4B8BC2",
+            "SMB19": "#8BBDD6",
+            "SMB20": "#8BBDD6",
+            "SMB21": "#BDD6EA",
+            "SMB22": "#8BBDD6",
+            "SMB23": "#8BBDD6",
+            "SMB24": "#BDD6EA"
+          }
         }
       },
       "cityLabels": [
@@ -4723,7 +5419,31 @@
               "value": "."
             }
           ],
-          "themenbereich": "Zu-/Wegzüge"
+          "themenbereich": "Zu-/Wegzüge",
+          "colors": {
+            "SMB01": "#236EA9",
+            "SMB02": "#236EA9",
+            "SMB03": "#236EA9",
+            "SMB04": "#236EA9",
+            "SMB05": "#236EA9",
+            "SMB06": "#236EA9",
+            "SMB07": "#236EA9",
+            "SMB08": "#236EA9",
+            "SMB09": "#236EA9",
+            "SMB10": "#236EA9",
+            "SMB11": "#236EA9",
+            "SMB12": "#236EA9",
+            "SMB13": "#236EA9",
+            "SMB14": "#236EA9",
+            "SMB17": "#236EA9",
+            "SMB18": "#236EA9",
+            "SMB19": "#236EA9",
+            "SMB20": "#236EA9",
+            "SMB21": "#236EA9",
+            "SMB22": "#236EA9",
+            "SMB23": "#236EA9",
+            "SMB24": "#236EA9"
+          }
         },
         "StadtFort": {
           "img": "/Interaktiv/pics/innerComparisonPopulationMovementYear2008AreaSozialmonitoringbezirkStadtgrenzeStadtFort.gif",
@@ -4872,7 +5592,31 @@
               "people": "0",
               "value": "."
             }
-          ]
+          ],
+          "colors": {
+            "SMB01": "#236EA9",
+            "SMB02": "#236EA9",
+            "SMB03": "#236EA9",
+            "SMB04": "#236EA9",
+            "SMB05": "#236EA9",
+            "SMB06": "#236EA9",
+            "SMB07": "#236EA9",
+            "SMB08": "#236EA9",
+            "SMB09": "#236EA9",
+            "SMB10": "#236EA9",
+            "SMB11": "#236EA9",
+            "SMB12": "#236EA9",
+            "SMB13": "#236EA9",
+            "SMB14": "#236EA9",
+            "SMB17": "#236EA9",
+            "SMB18": "#236EA9",
+            "SMB19": "#236EA9",
+            "SMB20": "#236EA9",
+            "SMB21": "#236EA9",
+            "SMB22": "#236EA9",
+            "SMB23": "#236EA9",
+            "SMB24": "#236EA9"
+          }
         }
       },
       "cityLabels": [
@@ -5044,7 +5788,31 @@
               "value": "."
             }
           ],
-          "themenbereich": "Innerstädtische Bevölkerungsbewegung"
+          "themenbereich": "Innerstädtische Bevölkerungsbewegung",
+          "colors": {
+            "SMB01": "#236EA9",
+            "SMB02": "#236EA9",
+            "SMB03": "#236EA9",
+            "SMB04": "#236EA9",
+            "SMB05": "#236EA9",
+            "SMB06": "#236EA9",
+            "SMB07": "#236EA9",
+            "SMB08": "#236EA9",
+            "SMB09": "#236EA9",
+            "SMB10": "#236EA9",
+            "SMB11": "#236EA9",
+            "SMB12": "#236EA9",
+            "SMB13": "#236EA9",
+            "SMB14": "#236EA9",
+            "SMB17": "#236EA9",
+            "SMB18": "#236EA9",
+            "SMB19": "#236EA9",
+            "SMB20": "#236EA9",
+            "SMB21": "#236EA9",
+            "SMB22": "#236EA9",
+            "SMB23": "#236EA9",
+            "SMB24": "#236EA9"
+          }
         },
         "InnerFort": {
           "img": "/Interaktiv/pics/innerComparisonPopulationMovementYear2008AreaSozialmonitoringbezirkInnerstaedtischInnerFort.gif",
@@ -5193,7 +5961,31 @@
               "people": "0",
               "value": "."
             }
-          ]
+          ],
+          "colors": {
+            "SMB01": "#236EA9",
+            "SMB02": "#236EA9",
+            "SMB03": "#236EA9",
+            "SMB04": "#236EA9",
+            "SMB05": "#236EA9",
+            "SMB06": "#236EA9",
+            "SMB07": "#236EA9",
+            "SMB08": "#236EA9",
+            "SMB09": "#236EA9",
+            "SMB10": "#236EA9",
+            "SMB11": "#236EA9",
+            "SMB12": "#236EA9",
+            "SMB13": "#236EA9",
+            "SMB14": "#236EA9",
+            "SMB17": "#236EA9",
+            "SMB18": "#236EA9",
+            "SMB19": "#236EA9",
+            "SMB20": "#236EA9",
+            "SMB21": "#236EA9",
+            "SMB22": "#236EA9",
+            "SMB23": "#236EA9",
+            "SMB24": "#236EA9"
+          }
         }
       },
       "cityLabels": [
@@ -5597,7 +6389,31 @@
               "value": "."
             }
           ],
-          "themenbereich": "Bedarfsgemeinschaften"
+          "themenbereich": "Bedarfsgemeinschaften",
+          "colors": {
+            "SMB01": "#DB6451",
+            "SMB02": "#F49182",
+            "SMB03": "#FEE5E5",
+            "SMB04": "#F49182",
+            "SMB05": "#DB6451",
+            "SMB06": "#AE2C1D",
+            "SMB07": "#DB6451",
+            "SMB08": "#F49182",
+            "SMB09": "#F49182",
+            "SMB10": "#AE2C1D",
+            "SMB11": "#F49182",
+            "SMB12": "#AE2C1D",
+            "SMB13": "#FEE5E5",
+            "SMB14": "#F49182",
+            "SMB17": "#F49182",
+            "SMB18": "#FEBDBD",
+            "SMB19": "#F49182",
+            "SMB20": "#F49182",
+            "SMB21": "#FEBDBD",
+            "SMB22": "#F49182",
+            "SMB23": "#FEBDBD",
+            "SMB24": "#FEE5E5"
+          }
         },
         "bg2P": {
           "img": "/Interaktiv/pics/innerComparisonBgPersonenYear2008AreaSozialmonitoringbezirkBgPersonenbg2P.gif",
@@ -5746,7 +6562,31 @@
               "people": "0",
               "value": "."
             }
-          ]
+          ],
+          "colors": {
+            "SMB01": "#FEE5E5",
+            "SMB02": "#FEE5E5",
+            "SMB03": "#FEE5E5",
+            "SMB04": "#FEBDBD",
+            "SMB05": "#E2E9FE",
+            "SMB06": "#BDD6EA",
+            "SMB07": "#E2E9FE",
+            "SMB08": "#FEE5E5",
+            "SMB09": "#FEBDBD",
+            "SMB10": "#FEBDBD",
+            "SMB11": "#FEBDBD",
+            "SMB12": "#BDD6EA",
+            "SMB13": "#F49182",
+            "SMB14": "#FEBDBD",
+            "SMB17": "#FEE5E5",
+            "SMB18": "#E2E9FE",
+            "SMB19": "#FEBDBD",
+            "SMB20": "#FEE5E5",
+            "SMB21": "#FEE5E5",
+            "SMB22": "#FEE5E5",
+            "SMB23": "#FEBDBD",
+            "SMB24": "#FEBDBD"
+          }
         },
         "bg3mP": {
           "img": "/Interaktiv/pics/innerComparisonBgPersonenYear2008AreaSozialmonitoringbezirkBgPersonenbg3mP.gif",
@@ -5895,7 +6735,31 @@
               "people": "0",
               "value": "."
             }
-          ]
+          ],
+          "colors": {
+            "SMB01": "#E2E9FE",
+            "SMB02": "#FEBDBD",
+            "SMB03": "#AE2C1D",
+            "SMB04": "#FEBDBD",
+            "SMB05": "#FEE5E5",
+            "SMB06": "#BDD6EA",
+            "SMB07": "#E2E9FE",
+            "SMB08": "#FEE5E5",
+            "SMB09": "#FEBDBD",
+            "SMB10": "#8BBDD6",
+            "SMB11": "#FEE5E5",
+            "SMB12": "#E2E9FE",
+            "SMB13": "#F49182",
+            "SMB14": "#FEE5E5",
+            "SMB17": "#FEE5E5",
+            "SMB18": "#DB6451",
+            "SMB19": "#FEE5E5",
+            "SMB20": "#FEBDBD",
+            "SMB21": "#F49182",
+            "SMB22": "#FEBDBD",
+            "SMB23": "#F49182",
+            "SMB24": "#DB6451"
+          }
         },
         "bgKeinKind": {
           "img": "/Interaktiv/pics/innerComparisonBgPersonenYear2008AreaSozialmonitoringbezirkBgPersonenbgKeinKind.gif",
@@ -6044,7 +6908,31 @@
               "people": "0",
               "value": "."
             }
-          ]
+          ],
+          "colors": {
+            "SMB01": "#DB6451",
+            "SMB02": "#DB6451",
+            "SMB03": "#FEBDBD",
+            "SMB04": "#F49182",
+            "SMB05": "#DB6451",
+            "SMB06": "#AE2C1D",
+            "SMB07": "#DB6451",
+            "SMB08": "#DB6451",
+            "SMB09": "#DB6451",
+            "SMB10": "#AE2C1D",
+            "SMB11": "#DB6451",
+            "SMB12": "#AE2C1D",
+            "SMB13": "#FEBDBD",
+            "SMB14": "#F49182",
+            "SMB17": "#DB6451",
+            "SMB18": "#FEBDBD",
+            "SMB19": "#F49182",
+            "SMB20": "#F49182",
+            "SMB21": "#F49182",
+            "SMB22": "#F49182",
+            "SMB23": "#F49182",
+            "SMB24": "#FEE5E5"
+          }
         },
         "bg1Kind": {
           "img": "/Interaktiv/pics/innerComparisonBgPersonenYear2008AreaSozialmonitoringbezirkBgPersonenbg1Kind.gif",
@@ -6193,7 +7081,31 @@
               "people": "0",
               "value": "."
             }
-          ]
+          ],
+          "colors": {
+            "SMB01": "#E3EAFE",
+            "SMB02": "#E3EAFE",
+            "SMB03": "#FEE5E5",
+            "SMB04": "#FEE5E5",
+            "SMB05": "#BDD6EA",
+            "SMB06": "#BDD6EA",
+            "SMB07": "#E3EAFE",
+            "SMB08": "#E3EAFE",
+            "SMB09": "#FEE5E5",
+            "SMB10": "#E3EAFE",
+            "SMB11": "#FEE5E5",
+            "SMB12": "#BDD6EA",
+            "SMB13": "#FEBDBD",
+            "SMB14": "#FEBDBD",
+            "SMB17": "#FEE5E5",
+            "SMB18": "#E3EAFE",
+            "SMB19": "#FEBDBD",
+            "SMB20": "#E3EAFE",
+            "SMB21": "#FEE5E5",
+            "SMB22": "#E3EAFE",
+            "SMB23": "#FEE5E5",
+            "SMB24": "#F49182"
+          }
         },
         "bg2mKinder": {
           "img": "/Interaktiv/pics/innerComparisonBgPersonenYear2008AreaSozialmonitoringbezirkBgPersonenbg2mKinder.gif",
@@ -6342,7 +7254,31 @@
               "people": "0",
               "value": "."
             }
-          ]
+          ],
+          "colors": {
+            "SMB01": "#BDD6EA",
+            "SMB02": "#E2E9FE",
+            "SMB03": "#F49182",
+            "SMB04": "#E2E9FE",
+            "SMB05": "#E2E9FE",
+            "SMB06": "#8BBDD6",
+            "SMB07": "#BDD6EA",
+            "SMB08": "#E2E9FE",
+            "SMB09": "#BDD6EA",
+            "SMB10": "#8BBDD6",
+            "SMB11": "#BDD6EA",
+            "SMB12": "#BDD6EA",
+            "SMB13": "#FEE5E5",
+            "SMB14": "#E2E9FE",
+            "SMB17": "#E2E9FE",
+            "SMB18": "#F49182",
+            "SMB19": "#BDD6EA",
+            "SMB20": "#FEE5E5",
+            "SMB21": "#FEE5E5",
+            "SMB22": "#E2E9FE",
+            "SMB23": "#E2E9FE",
+            "SMB24": "#FEBDBD"
+          }
         }
       },
       "cityLabels": [

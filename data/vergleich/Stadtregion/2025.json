@@ -69,7 +69,14 @@
               "value": "62,3 %"
             }
           ],
-          "themenbereich": "Migrationshintergrund"
+          "themenbereich": "Migrationshintergrund",
+          "colors": {
+            "MI": "#E3EAFE",
+            "NO": "#4B8BC2",
+            "NW": "#236EA9",
+            "SO": "#8BBDD6",
+            "SW": "#FEBDBD"
+          }
         },
         "GermansWithMigration": {
           "img": "/Interaktiv/pics/innerComparisonMigrationYear2025AreaStadtregionMigrationGermansWithMigration.gif",
@@ -116,7 +123,14 @@
               "people": "29.533",
               "value": "20,5 %"
             }
-          ]
+          ],
+          "colors": {
+            "MI": "#8BBDD6",
+            "NO": "#AE2C1D",
+            "NW": "#DB6451",
+            "SO": "#AE2C1D",
+            "SW": "#E2E9FE"
+          }
         },
         "Foreigners": {
           "img": "/Interaktiv/pics/innerComparisonMigrationYear2025AreaStadtregionMigrationForeigners.gif",
@@ -163,7 +177,14 @@
               "people": "29.533",
               "value": "17,2 %"
             }
-          ]
+          ],
+          "colors": {
+            "MI": "#FEBDBD",
+            "NO": "#F49182",
+            "NW": "#AE2C1D",
+            "SO": "#FEBDBD",
+            "SW": "#BDD6EA"
+          }
         }
       },
       "cityLabels": [
@@ -243,7 +264,14 @@
               "value": "29,3 %"
             }
           ],
-          "themenbereich": "Familienstand"
+          "themenbereich": "Familienstand",
+          "colors": {
+            "MI": "#E2E9FE",
+            "NO": "#8CBED6",
+            "NW": "#BDD6EA",
+            "SO": "#BDD6EA",
+            "SW": "#8CBED6"
+          }
         },
         "Verheiratet": {
           "img": "/Interaktiv/pics/innerComparisonFamilienstandYear2025AreaStadtregionFamilienstandVerheiratet.gif",
@@ -290,7 +318,14 @@
               "people": "29.533",
               "value": "42,1 % %"
             }
-          ]
+          ],
+          "colors": {
+            "MI": "#FEE5E5",
+            "NO": "#DB6451",
+            "NW": "#F49182",
+            "SO": "#F49182",
+            "SW": "#DB6451"
+          }
         },
         "Verwitwet": {
           "img": "/Interaktiv/pics/innerComparisonFamilienstandYear2025AreaStadtregionFamilienstandVerwitwet.gif",
@@ -337,7 +372,14 @@
               "people": "29.533",
               "value": "5,9 % %"
             }
-          ]
+          ],
+          "colors": {
+            "MI": "#E2E9FE",
+            "NO": "#FEBDBD",
+            "NW": "#FEE5E5",
+            "SO": "#FEBDBD",
+            "SW": "#FEE5E5"
+          }
         },
         "Geschieden": {
           "img": "/Interaktiv/pics/innerComparisonFamilienstandYear2025AreaStadtregionFamilienstandGeschieden.gif",
@@ -384,7 +426,14 @@
               "people": "29.533",
               "value": "7,4 % %"
             }
-          ]
+          ],
+          "colors": {
+            "MI": "#DB6451",
+            "NO": "#DB6451",
+            "NW": "#DB6451",
+            "SO": "#AE2C1D",
+            "SW": "#DB6451"
+          }
         }
       },
       "cityLabels": [
@@ -484,7 +533,14 @@
               "value": "43,9"
             }
           ],
-          "themenbereich": "Indikator"
+          "themenbereich": "Indikator",
+          "colors": {
+            "MI": "#AE2C1D",
+            "NO": "#AE2C1D",
+            "NW": "#AE2C1D",
+            "SO": "#AE2C1D",
+            "SW": "#AE2C1D"
+          }
         },
         "Medianalter": {
           "img": "/Interaktiv/pics/innerComparisonIndicatorsYear2025AreaStadtregionIndiMedianalter.gif",
@@ -531,7 +587,14 @@
               "people": "29.533",
               "value": "43,9"
             }
-          ]
+          ],
+          "colors": {
+            "MI": "#F49182",
+            "NO": "#AE2C1D",
+            "NW": "#DB6451",
+            "SO": "#AE2C1D",
+            "SW": "#AE2C1D"
+          }
         },
         "Jugendquotient": {
           "img": "/Interaktiv/pics/innerComparisonIndicatorsYear2025AreaStadtregionIndiJugendquotient.gif",
@@ -578,7 +641,14 @@
               "people": "29.533",
               "value": "28,7"
             }
-          ]
+          ],
+          "colors": {
+            "MI": "#4B8CC3",
+            "NO": "#BDD6EA",
+            "NW": "#BDD6EA",
+            "SO": "#8CBED6",
+            "SW": "#8CBED6"
+          }
         },
         "Altenquotient": {
           "img": "/Interaktiv/pics/innerComparisonIndicatorsYear2025AreaStadtregionIndiAltenquotient.gif",
@@ -625,7 +695,14 @@
               "people": "29.533",
               "value": "37,3"
             }
-          ]
+          ],
+          "colors": {
+            "MI": "#FEE5E5",
+            "NO": "#AE2C1D",
+            "NW": "#FEBDBD",
+            "SO": "#AE2C1D",
+            "SW": "#AE2C1D"
+          }
         },
         "Abhaengigkeitsquotient": {
           "img": "/Interaktiv/pics/innerComparisonIndicatorsYear2025AreaStadtregionIndiAbhaengigkeitsquotient.gif",
@@ -672,7 +749,14 @@
               "people": "29.533",
               "value": "65,9"
             }
-          ]
+          ],
+          "colors": {
+            "MI": "#E2E9FE",
+            "NO": "#FEBDBD",
+            "NW": "#FEE5E5",
+            "SO": "#FEBDBD",
+            "SW": "#FEBDBD"
+          }
         },
         "GreyingIndex": {
           "img": "/Interaktiv/pics/innerComparisonIndicatorsYear2025AreaStadtregionIndiGreyingIndex.gif",
@@ -719,7 +803,14 @@
               "people": "29.533",
               "value": "34,4"
             }
-          ]
+          ],
+          "colors": {
+            "MI": "#DB6451",
+            "NO": "#DB6451",
+            "NW": "#F49182",
+            "SO": "#AE2C1D",
+            "SW": "#AE2C1D"
+          }
         },
         "Migrationshintergrund": {
           "img": "/Interaktiv/pics/innerComparisonIndicatorsYear2025AreaStadtregionIndiMigrationshintergrund.gif",
@@ -766,7 +857,14 @@
               "people": "29.533",
               "value": "37,7"
             }
-          ]
+          ],
+          "colors": {
+            "MI": "#E2E9FE",
+            "NO": "#FEE5E5",
+            "NW": "#FEE5E5",
+            "SO": "#FEE5E5",
+            "SW": "#BDD6EA"
+          }
         },
         "Auslaenderanteil": {
           "img": "/Interaktiv/pics/innerComparisonIndicatorsYear2025AreaStadtregionIndiAuslaenderanteil.gif",
@@ -813,7 +911,14 @@
               "people": "29.533",
               "value": "17,2"
             }
-          ]
+          ],
+          "colors": {
+            "MI": "#8BBDD6",
+            "NO": "#8BBDD6",
+            "NW": "#BDD6EA",
+            "SO": "#8BBDD6",
+            "SW": "#4B8BC2"
+          }
         }
       },
       "cityLabels": [
@@ -898,7 +1003,14 @@
               "value": "50,7 %"
             }
           ],
-          "themenbereich": "Haushaltstypen"
+          "themenbereich": "Haushaltstypen",
+          "colors": {
+            "MI": "#AE2C1D",
+            "NO": "#F49182",
+            "NW": "#F49182",
+            "SO": "#DB6451",
+            "SW": "#F49182"
+          }
         },
         "PaareOhneKinder": {
           "img": "/Interaktiv/pics/innerComparisonHaushaltstypenYear2025AreaStadtregionHaushaltstypenPaareOhneKinder.gif",
@@ -945,7 +1057,14 @@
               "people": "4.154",
               "value": "26,6 %"
             }
-          ]
+          ],
+          "colors": {
+            "MI": "#FEBDBD",
+            "NO": "#DB6451",
+            "NW": "#F49182",
+            "SO": "#F49182",
+            "SW": "#DB6451"
+          }
         },
         "PaareMitKinder": {
           "img": "/Interaktiv/pics/innerComparisonHaushaltstypenYear2025AreaStadtregionHaushaltstypenPaareMitKinder.gif",
@@ -992,7 +1111,14 @@
               "people": "2.163",
               "value": "13,8 %"
             }
-          ]
+          ],
+          "colors": {
+            "MI": "#FEE5E5",
+            "NO": "#AE2C1D",
+            "NW": "#AE2C1D",
+            "SO": "#F49182",
+            "SW": "#DB6451"
+          }
         },
         "Alleinerziehende": {
           "img": "/Interaktiv/pics/innerComparisonHaushaltstypenYear2025AreaStadtregionHaushaltstypenAlleinerziehende.gif",
@@ -1039,7 +1165,14 @@
               "people": "457",
               "value": "2,9 %"
             }
-          ]
+          ],
+          "colors": {
+            "MI": "#E2E9FE",
+            "NO": "#FEE5E5",
+            "NW": "#FEBDBD",
+            "SO": "#FEE5E5",
+            "SW": "#E2E9FE"
+          }
         },
         "SonstigeMehrpersonenhaushalte": {
           "img": "/Interaktiv/pics/innerComparisonHaushaltstypenYear2025AreaStadtregionHaushaltstypenSonstigeMehrpersonenhaushalte.gif",
@@ -1086,7 +1219,14 @@
               "people": "945",
               "value": "6,0 %"
             }
-          ]
+          ],
+          "colors": {
+            "MI": "#FEBDBD",
+            "NO": "#AE2C1D",
+            "NW": "#AE2C1D",
+            "SO": "#F49182",
+            "SW": "#F49182"
+          }
         }
       },
       "cityLabels": [
@@ -1161,7 +1301,14 @@
               "value": "50,7 %"
             }
           ],
-          "themenbereich": "Haushalte nach Personen"
+          "themenbereich": "Haushalte nach Personen",
+          "colors": {
+            "MI": "#AE2C1D",
+            "NO": "#F49182",
+            "NW": "#F49182",
+            "SO": "#DB6451",
+            "SW": "#F49182"
+          }
         },
         "Zweipersonenhaushalte": {
           "img": "/Interaktiv/pics/innerComparisonHaushalteNachPersonenYear2025AreaStadtregionHaushalteNachPersonenZweipersonenhaushalte.gif",
@@ -1208,7 +1355,14 @@
               "people": "4.302",
               "value": "27,5 %"
             }
-          ]
+          ],
+          "colors": {
+            "MI": "#F49182",
+            "NO": "#DB6451",
+            "NW": "#F49182",
+            "SO": "#DB6451",
+            "SW": "#DB6451"
+          }
         },
         "DreiOderMehrpersonenhaushalte": {
           "img": "/Interaktiv/pics/innerComparisonHaushalteNachPersonenYear2025AreaStadtregionHaushalteNachPersonenDreiOderMehrpersonenhaushalte.gif",
@@ -1255,7 +1409,14 @@
               "people": "3.417",
               "value": "21,8 %"
             }
-          ]
+          ],
+          "colors": {
+            "MI": "#E2E9FE",
+            "NO": "#DB6451",
+            "NW": "#DB6451",
+            "SO": "#F49182",
+            "SW": "#F49182"
+          }
         }
       },
       "cityLabels": [
@@ -1335,7 +1496,14 @@
               "value": "82,4 %"
             }
           ],
-          "themenbereich": "Haushalte nach Kindern"
+          "themenbereich": "Haushalte nach Kindern",
+          "colors": {
+            "MI": "#AE2C1D",
+            "NO": "#DB6451",
+            "NW": "#DB6451",
+            "SO": "#AE2C1D",
+            "SW": "#AE2C1D"
+          }
         },
         "Haushalte1Kind": {
           "img": "/Interaktiv/pics/innerComparisonHaushalteNachKindernYear2025AreaStadtregionHaushalteNachKindernHaushalte1Kind.gif",
@@ -1382,7 +1550,14 @@
               "people": "1.395",
               "value": "8,9 %"
             }
-          ]
+          ],
+          "colors": {
+            "MI": "#FEE5E5",
+            "NO": "#F49182",
+            "NW": "#DB6451",
+            "SO": "#F49182",
+            "SW": "#F49182"
+          }
         },
         "Haushalte2Kinder": {
           "img": "/Interaktiv/pics/innerComparisonHaushalteNachKindernYear2025AreaStadtregionHaushalteNachKindernHaushalte2Kinder.gif",
@@ -1429,7 +1604,14 @@
               "people": "1.073",
               "value": "6,9 %"
             }
-          ]
+          ],
+          "colors": {
+            "MI": "#FEE5E5",
+            "NO": "#AE2C1D",
+            "NW": "#AE2C1D",
+            "SO": "#F49182",
+            "SW": "#DB6451"
+          }
         },
         "Haushalte3oderMehrKinder": {
           "img": "/Interaktiv/pics/innerComparisonHaushalteNachKindernYear2025AreaStadtregionHaushalteNachKindernHaushalte3oderMehrKinder.gif",
@@ -1476,7 +1658,14 @@
               "people": "278",
               "value": "1,8 %"
             }
-          ]
+          ],
+          "colors": {
+            "MI": "#BDD6EA",
+            "NO": "#F49182",
+            "NW": "#AE2C1D",
+            "SO": "#FEE5E5",
+            "SW": "#FEBDBD"
+          }
         }
       },
       "cityLabels": [
@@ -1546,7 +1735,14 @@
               "value": "7,4 je Tausend"
             }
           ],
-          "themenbereich": "Natürliche Bevölkerungsbewegung"
+          "themenbereich": "Natürliche Bevölkerungsbewegung",
+          "colors": {
+            "MI": "#4B8CC3",
+            "NO": "#4B8CC3",
+            "NW": "#4B8CC3",
+            "SO": "#4B8CC3",
+            "SW": "#4B8CC3"
+          }
         },
         "Sterbefaelle": {
           "img": "/Interaktiv/pics/innerComparisonPopulationMovementYear2025AreaStadtregionNatuerlichSterbefaelle.gif",
@@ -1593,7 +1789,14 @@
               "people": "29.533",
               "value": "10,0 je Tausend"
             }
-          ]
+          ],
+          "colors": {
+            "MI": "#FEE5E5",
+            "NO": "#F49182",
+            "NW": "#FEBDBD",
+            "SO": "#DB6451",
+            "SW": "#FEBDBD"
+          }
         }
       },
       "cityLabels": [
@@ -1663,7 +1866,14 @@
               "value": "52,2 je Tausend"
             }
           ],
-          "themenbereich": "Zu-/Wegzüge"
+          "themenbereich": "Zu-/Wegzüge",
+          "colors": {
+            "MI": "#236EA9",
+            "NO": "#236EA9",
+            "NW": "#236EA9",
+            "SO": "#236EA9",
+            "SW": "#236EA9"
+          }
         },
         "StadtFort": {
           "img": "/Interaktiv/pics/innerComparisonPopulationMovementYear2025AreaStadtregionStadtgrenzeStadtFort.gif",
@@ -1710,7 +1920,14 @@
               "people": "29.533",
               "value": "50,5 je Tausend"
             }
-          ]
+          ],
+          "colors": {
+            "MI": "#236EA9",
+            "NO": "#236EA9",
+            "NW": "#236EA9",
+            "SO": "#236EA9",
+            "SW": "#236EA9"
+          }
         }
       },
       "cityLabels": [
@@ -1780,7 +1997,14 @@
               "value": "48,2 je Tausend"
             }
           ],
-          "themenbereich": "Innerstädtische Bevölkerungsbewegung"
+          "themenbereich": "Innerstädtische Bevölkerungsbewegung",
+          "colors": {
+            "MI": "#236EA9",
+            "NO": "#236EA9",
+            "NW": "#236EA9",
+            "SO": "#236EA9",
+            "SW": "#236EA9"
+          }
         },
         "InnerFort": {
           "img": "/Interaktiv/pics/innerComparisonPopulationMovementYear2025AreaStadtregionInnerstaedtischInnerFort.gif",
@@ -1827,7 +2051,14 @@
               "people": "29.533",
               "value": "46,3 je Tausend"
             }
-          ]
+          ],
+          "colors": {
+            "MI": "#236EA9",
+            "NO": "#236EA9",
+            "NW": "#236EA9",
+            "SO": "#236EA9",
+            "SW": "#236EA9"
+          }
         }
       },
       "cityLabels": [

@@ -15,7 +15,7 @@ const opt = {};
 process.argv.slice(2).forEach(a => { const m = a.match(/^--([^=]+)=(.*)$/); if (m) opt[m[1]] = m[2]; else opt[a.replace(/^--/, '')] = true; });
 
 function decodeGif(file) {
-  const buf = fs.readFileSync(file);
+  const buf = Buffer.isBuffer(file) ? file : fs.readFileSync(file);
   const r = new GifReader(buf);
   const px = new Uint8Array(r.width * r.height * 4);
   r.decodeAndBlitFrameRGBA(0, px);
@@ -62,6 +62,9 @@ function sampleColor(img, coords) {
   return best;
 }
 
+module.exports = { decodeGif, sampleColor };
+
+if (require.main === module) {
 let files = 0, merkmale = 0, missing = 0;
 for (const type of fs.readdirSync(DATA)) {
   if (opt.type && opt.type !== type) continue;
@@ -87,3 +90,4 @@ for (const type of fs.readdirSync(DATA)) {
   }
 }
 console.log('Dateien aktualisiert:', files, '| Merkmale eingefärbt:', merkmale, '| fehlende GIFs:', missing);
+}

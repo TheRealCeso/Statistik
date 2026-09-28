@@ -179,7 +179,29 @@
               "people": "0",
               "value": "."
             }
-          ]
+          ],
+          "colors": {
+            "AZ01": "#BDD6EA",
+            "AZ02": "#8BBDD6",
+            "AZ03": "#4B8BC2",
+            "AZ04": "#236EA9",
+            "AZ05": "#FEBDBD",
+            "AZ06": "#236EA9",
+            "AZ07": "#FEE5E5",
+            "AZ08": "#8BBDD6",
+            "AZ09": "#4B8BC2",
+            "AZ10": "#4B8BC2",
+            "AZ11": "#236EA9",
+            "AZ12": "#8BBDD6",
+            "AZ13": "#E2E9FE",
+            "AZ14": "#8BBDD6",
+            "AZ15": "#FEE5E5",
+            "AZ16": "#4B8BC2",
+            "AZ17": "#BDD6EA",
+            "AZ18": "#BDD6EA",
+            "AZ19": "#8BBDD6",
+            "AZ20": "#E2E9FE"
+          }
         }
       },
       "cityLabels": [
@@ -349,7 +371,29 @@
               "value": "."
             }
           ],
-          "themenbereich": "Familienstand"
+          "themenbereich": "Familienstand",
+          "colors": {
+            "AZ01": "#8BBDD6",
+            "AZ02": "#4B8BC2",
+            "AZ03": "#4B8BC2",
+            "AZ04": "#4B8BC2",
+            "AZ05": "#8BBDD6",
+            "AZ06": "#8BBDD6",
+            "AZ07": "#8BBDD6",
+            "AZ08": "#8BBDD6",
+            "AZ09": "#8BBDD6",
+            "AZ10": "#4B8BC2",
+            "AZ11": "#4B8BC2",
+            "AZ12": "#8BBDD6",
+            "AZ13": "#BDD6EA",
+            "AZ14": "#BDD6EA",
+            "AZ15": "#8BBDD6",
+            "AZ16": "#4B8BC2",
+            "AZ17": "#8BBDD6",
+            "AZ18": "#8BBDD6",
+            "AZ19": "#E2E9FE",
+            "AZ20": "#E2E9FE"
+          }
         },
         "Verheiratet": {
           "img": "/Interaktiv/pics/innerComparisonFamilienstandYear2005AreaStadtteilFamilienstandVerheiratet.gif",
@@ -486,7 +530,29 @@
               "people": "0",
               "value": "."
             }
-          ]
+          ],
+          "colors": {
+            "AZ01": "#DB6451",
+            "AZ02": "#DB6451",
+            "AZ03": "#DB6451",
+            "AZ04": "#AE2C1D",
+            "AZ05": "#DB6451",
+            "AZ06": "#DB6451",
+            "AZ07": "#F49182",
+            "AZ08": "#F49182",
+            "AZ09": "#DB6451",
+            "AZ10": "#DB6451",
+            "AZ11": "#AE2C1D",
+            "AZ12": "#DB6451",
+            "AZ13": "#FEBDBD",
+            "AZ14": "#FEBDBD",
+            "AZ15": "#F49182",
+            "AZ16": "#DB6451",
+            "AZ17": "#F49182",
+            "AZ18": "#F49182",
+            "AZ19": "#FEE5E5",
+            "AZ20": "#FEE5E5"
+          }
         },
         "Verwitwet": {
           "img": "/Interaktiv/pics/innerComparisonFamilienstandYear2005AreaStadtteilFamilienstandVerwitwet.gif",
@@ -623,7 +689,29 @@
               "people": "0",
               "value": "."
             }
-          ]
+          ],
+          "colors": {
+            "AZ01": "#FEE5E5",
+            "AZ02": "#FEBDBD",
+            "AZ03": "#FEBDBD",
+            "AZ04": "#FEBDBD",
+            "AZ05": "#FEE5E5",
+            "AZ06": "#FEBDBD",
+            "AZ07": "#F49182",
+            "AZ08": "#FEBDBD",
+            "AZ09": "#FEBDBD",
+            "AZ10": "#FEE5E5",
+            "AZ11": "#BDD6EA",
+            "AZ12": "#FEE5E5",
+            "AZ13": "#FEBDBD",
+            "AZ14": "#DB6451",
+            "AZ15": "#FEE5E5",
+            "AZ16": "#FEBDBD",
+            "AZ17": "#E3EAFE",
+            "AZ18": "#FEE5E5",
+            "AZ19": "#FEE5E5",
+            "AZ20": "#FEE5E5"
+          }
         },
         "Geschieden": {
           "img": "/Interaktiv/pics/innerComparisonFamilienstandYear2005AreaStadtteilFamilienstandGeschieden.gif",
@@ -760,7 +848,29 @@
               "people": "0",
               "value": "."
             }
-          ]
+          ],
+          "colors": {
+            "AZ01": "#FEBDBD",
+            "AZ02": "#FEBDBD",
+            "AZ03": "#FEE5E5",
+            "AZ04": "#E2E9FE",
+            "AZ05": "#FEBDBD",
+            "AZ06": "#FEE5E5",
+            "AZ07": "#F49182",
+            "AZ08": "#FEBDBD",
+            "AZ09": "#FEBDBD",
+            "AZ10": "#E2E9FE",
+            "AZ11": "#E2E9FE",
+            "AZ12": "#FEE5E5",
+            "AZ13": "#FEBDBD",
+            "AZ14": "#DB6451",
+            "AZ15": "#F49182",
+            "AZ16": "#FEBDBD",
+            "AZ17": "#FEE5E5",
+            "AZ18": "#F49182",
+            "AZ19": "#F49182",
+            "AZ20": "#DB6451"
+          }
         }
       },
       "cityLabels": [
@@ -950,7 +1060,29 @@
               "value": "0,0"
             }
           ],
-          "themenbereich": "Indikator"
+          "themenbereich": "Indikator",
+          "colors": {
+            "AZ01": "#DB6451",
+            "AZ02": "#AE2C1D",
+            "AZ03": "#DB6451",
+            "AZ04": "#AE2C1D",
+            "AZ05": "#DB6451",
+            "AZ06": "#AE2C1D",
+            "AZ07": "#AE2C1D",
+            "AZ08": "#AE2C1D",
+            "AZ09": "#AE2C1D",
+            "AZ10": "#DB6451",
+            "AZ11": "#DB6451",
+            "AZ12": "#DB6451",
+            "AZ13": "#DB6451",
+            "AZ14": "#AE2C1D",
+            "AZ15": "#DB6451",
+            "AZ16": "#AE2C1D",
+            "AZ17": "#F49182",
+            "AZ18": "#DB6451",
+            "AZ19": "#DB6451",
+            "AZ20": "#DB6451"
+          }
         },
         "Medianalter": {
           "img": "/Interaktiv/pics/innerComparisonIndicatorsYear2005AreaStadtteilIndiMedianalter.gif",
@@ -1087,7 +1219,29 @@
               "people": "0",
               "value": "0,0"
             }
-          ]
+          ],
+          "colors": {
+            "AZ01": "#DB6451",
+            "AZ02": "#DB6451",
+            "AZ03": "#DB6451",
+            "AZ04": "#AE2C1D",
+            "AZ05": "#F49182",
+            "AZ06": "#AE2C1D",
+            "AZ07": "#DB6451",
+            "AZ08": "#DB6451",
+            "AZ09": "#DB6451",
+            "AZ10": "#DB6451",
+            "AZ11": "#DB6451",
+            "AZ12": "#F49182",
+            "AZ13": "#F49182",
+            "AZ14": "#DB6451",
+            "AZ15": "#F49182",
+            "AZ16": "#DB6451",
+            "AZ17": "#F49182",
+            "AZ18": "#F49182",
+            "AZ19": "#F49182",
+            "AZ20": "#F49182"
+          }
         },
         "Jugendquotient": {
           "img": "/Interaktiv/pics/innerComparisonIndicatorsYear2005AreaStadtteilIndiJugendquotient.gif",
@@ -1224,7 +1378,29 @@
               "people": "0",
               "value": "0,0"
             }
-          ]
+          ],
+          "colors": {
+            "AZ01": "#BDD6EA",
+            "AZ02": "#BDD6EA",
+            "AZ03": "#BDD6EA",
+            "AZ04": "#BDD6EA",
+            "AZ05": "#8BBDD6",
+            "AZ06": "#BDD6EA",
+            "AZ07": "#BDD6EA",
+            "AZ08": "#8BBDD6",
+            "AZ09": "#8BBDD6",
+            "AZ10": "#E2E9FE",
+            "AZ11": "#BDD6EA",
+            "AZ12": "#8BBDD6",
+            "AZ13": "#8BBDD6",
+            "AZ14": "#8BBDD6",
+            "AZ15": "#BDD6EA",
+            "AZ16": "#BDD6EA",
+            "AZ17": "#E2E9FE",
+            "AZ18": "#8BBDD6",
+            "AZ19": "#4B8BC2",
+            "AZ20": "#4B8BC2"
+          }
         },
         "Altenquotient": {
           "img": "/Interaktiv/pics/innerComparisonIndicatorsYear2005AreaStadtteilIndiAltenquotient.gif",
@@ -1361,7 +1537,29 @@
               "people": "0",
               "value": "0,0"
             }
-          ]
+          ],
+          "colors": {
+            "AZ01": "#FEE5E5",
+            "AZ02": "#F49182",
+            "AZ03": "#FEBDBD",
+            "AZ04": "#F49182",
+            "AZ05": "#E2E9FE",
+            "AZ06": "#DB6451",
+            "AZ07": "#F49182",
+            "AZ08": "#FEBDBD",
+            "AZ09": "#FEBDBD",
+            "AZ10": "#FEE5E5",
+            "AZ11": "#FEE5E5",
+            "AZ12": "#E2E9FE",
+            "AZ13": "#E2E9FE",
+            "AZ14": "#FEBDBD",
+            "AZ15": "#E2E9FE",
+            "AZ16": "#F49182",
+            "AZ17": "#E2E9FE",
+            "AZ18": "#FEE5E5",
+            "AZ19": "#E2E9FE",
+            "AZ20": "#E2E9FE"
+          }
         },
         "Abhaengigkeitsquotient": {
           "img": "/Interaktiv/pics/innerComparisonIndicatorsYear2005AreaStadtteilIndiAbhaengigkeitsquotient.gif",
@@ -1498,7 +1696,29 @@
               "people": "0",
               "value": "0,0"
             }
-          ]
+          ],
+          "colors": {
+            "AZ01": "#FEBDBD",
+            "AZ02": "#F49182",
+            "AZ03": "#F49182",
+            "AZ04": "#F49182",
+            "AZ05": "#FEE5E5",
+            "AZ06": "#DB6451",
+            "AZ07": "#F49182",
+            "AZ08": "#FEBDBD",
+            "AZ09": "#FEBDBD",
+            "AZ10": "#F49182",
+            "AZ11": "#F49182",
+            "AZ12": "#FEE5E5",
+            "AZ13": "#FEE5E5",
+            "AZ14": "#FEE5E5",
+            "AZ15": "#FEE5E5",
+            "AZ16": "#F49182",
+            "AZ17": "#FEBDBD",
+            "AZ18": "#FEE5E5",
+            "AZ19": "#E3E9FE",
+            "AZ20": "#BDD6EA"
+          }
         },
         "GreyingIndex": {
           "img": "/Interaktiv/pics/innerComparisonIndicatorsYear2005AreaStadtteilIndiGreyingIndex.gif",
@@ -1635,7 +1855,29 @@
               "people": "0",
               "value": "0,0"
             }
-          ]
+          ],
+          "colors": {
+            "AZ01": "#BDD6EA",
+            "AZ02": "#BDD6EA",
+            "AZ03": "#8BBDD6",
+            "AZ04": "#8BBDD6",
+            "AZ05": "#BDD6EA",
+            "AZ06": "#BDD6EA",
+            "AZ07": "#E2E9FE",
+            "AZ08": "#BDD6EA",
+            "AZ09": "#BDD6EA",
+            "AZ10": "#BDD6EA",
+            "AZ11": "#BDD6EA",
+            "AZ12": "#BDD6EA",
+            "AZ13": "#E2E9FE",
+            "AZ14": "#AE2C1D",
+            "AZ15": "#BDD6EA",
+            "AZ16": "#BDD6EA",
+            "AZ17": "#BDD6EA",
+            "AZ18": "#E2E9FE",
+            "AZ19": "#F49182",
+            "AZ20": "#E2E9FE"
+          }
         },
         "Migrationshintergrund": {
           "img": "/Interaktiv/pics/innerComparisonIndicatorsYear2005AreaStadtteilIndiMigrationshintergrund.gif",
@@ -1772,7 +2014,8 @@
               "people": "0",
               "value": "0,0"
             }
-          ]
+          ],
+          "mapUnavailable": true
         },
         "Auslaenderanteil": {
           "img": "/Interaktiv/pics/innerComparisonIndicatorsYear2005AreaStadtteilIndiAuslaenderanteil.gif",
@@ -1909,7 +2152,29 @@
               "people": "0",
               "value": "0,0"
             }
-          ]
+          ],
+          "colors": {
+            "AZ01": "#4B8BC2",
+            "AZ02": "#4B8BC2",
+            "AZ03": "#236EA9",
+            "AZ04": "#236EA9",
+            "AZ05": "#BDD6EA",
+            "AZ06": "#236EA9",
+            "AZ07": "#8BBDD6",
+            "AZ08": "#4B8BC2",
+            "AZ09": "#4B8BC2",
+            "AZ10": "#236EA9",
+            "AZ11": "#236EA9",
+            "AZ12": "#4B8BC2",
+            "AZ13": "#8BBDD6",
+            "AZ14": "#4B8BC2",
+            "AZ15": "#8BBDD6",
+            "AZ16": "#4B8BC2",
+            "AZ17": "#4B8BC2",
+            "AZ18": "#4B8BC2",
+            "AZ19": "#4B8BC2",
+            "AZ20": "#8BBDD6"
+          }
         }
       },
       "cityLabels": [
@@ -2084,7 +2349,29 @@
               "value": "."
             }
           ],
-          "themenbereich": "Haushaltstypen"
+          "themenbereich": "Haushaltstypen",
+          "colors": {
+            "AZ01": "#FEBDBD",
+            "AZ02": "#FEE5E5",
+            "AZ03": "#E3E9FE",
+            "AZ04": "#E3E9FE",
+            "AZ05": "#F49182",
+            "AZ06": "#FEE5E5",
+            "AZ07": "#FEBDBD",
+            "AZ08": "#F49182",
+            "AZ09": "#FEBDBD",
+            "AZ10": "#E3E9FE",
+            "AZ11": "#BDD6EA",
+            "AZ12": "#FEBDBD",
+            "AZ13": "#F49182",
+            "AZ14": "#DB6451",
+            "AZ15": "#F49182",
+            "AZ16": "#FEE5E5",
+            "AZ17": "#FEE5E5",
+            "AZ18": "#F49182",
+            "AZ19": "#AE2C1E",
+            "AZ20": "#AE2C1E"
+          }
         },
         "PaareOhneKinder": {
           "img": "/Interaktiv/pics/innerComparisonHaushaltstypenYear2005AreaStadtteilHaushaltstypenPaareOhneKinder.gif",
@@ -2221,7 +2508,29 @@
               "people": "0",
               "value": "."
             }
-          ]
+          ],
+          "colors": {
+            "AZ01": "#FEBDBD",
+            "AZ02": "#F49182",
+            "AZ03": "#F49182",
+            "AZ04": "#AE2C1D",
+            "AZ05": "#FEBDBD",
+            "AZ06": "#F49182",
+            "AZ07": "#FEBDBD",
+            "AZ08": "#FEBDBD",
+            "AZ09": "#F49182",
+            "AZ10": "#DB6451",
+            "AZ11": "#DB6451",
+            "AZ12": "#FEBDBD",
+            "AZ13": "#FEE5E5",
+            "AZ14": "#FEE5E5",
+            "AZ15": "#FEE5E5",
+            "AZ16": "#F49182",
+            "AZ17": "#FEE5E5",
+            "AZ18": "#FEE5E5",
+            "AZ19": "#E3E9FE",
+            "AZ20": "#E3E9FE"
+          }
         },
         "PaareMitKinder": {
           "img": "/Interaktiv/pics/innerComparisonHaushaltstypenYear2005AreaStadtteilHaushaltstypenPaareMitKinder.gif",
@@ -2358,7 +2667,29 @@
               "people": "0",
               "value": "."
             }
-          ]
+          ],
+          "colors": {
+            "AZ01": "#FEE5E5",
+            "AZ02": "#FEBDBD",
+            "AZ03": "#F49182",
+            "AZ04": "#F49182",
+            "AZ05": "#FEE5E5",
+            "AZ06": "#FEBDBD",
+            "AZ07": "#FEE5E5",
+            "AZ08": "#E2E9FE",
+            "AZ09": "#FEE5E5",
+            "AZ10": "#AE2C1D",
+            "AZ11": "#AE2C1D",
+            "AZ12": "#FEE5E5",
+            "AZ13": "#E2E9FE",
+            "AZ14": "#E2E9FE",
+            "AZ15": "#FEE5E5",
+            "AZ16": "#FEE5E5",
+            "AZ17": "#DC6451",
+            "AZ18": "#FEE5E5",
+            "AZ19": "#BDD6EA",
+            "AZ20": "#8BBDD6"
+          }
         },
         "Alleinerziehende": {
           "img": "/Interaktiv/pics/innerComparisonHaushaltstypenYear2005AreaStadtteilHaushaltstypenAlleinerziehende.gif",
@@ -2495,7 +2826,29 @@
               "people": "0",
               "value": "."
             }
-          ]
+          ],
+          "colors": {
+            "AZ01": "#F49182",
+            "AZ02": "#F49182",
+            "AZ03": "#FEBDBD",
+            "AZ04": "#F49182",
+            "AZ05": "#FEBDBD",
+            "AZ06": "#F49182",
+            "AZ07": "#FEBDBD",
+            "AZ08": "#F49182",
+            "AZ09": "#F49182",
+            "AZ10": "#DB6451",
+            "AZ11": "#FEE5E5",
+            "AZ12": "#FEE5E5",
+            "AZ13": "#F49182",
+            "AZ14": "#F49182",
+            "AZ15": "#DB6451",
+            "AZ16": "#DB6451",
+            "AZ17": "#AE2C1D",
+            "AZ18": "#DB6451",
+            "AZ19": "#FEE5E5",
+            "AZ20": "#E3E9FE"
+          }
         },
         "SonstigeMehrpersonenhaushalte": {
           "img": "/Interaktiv/pics/innerComparisonHaushaltstypenYear2005AreaStadtteilHaushaltstypenSonstigeMehrpersonenhaushalte.gif",
@@ -2632,7 +2985,29 @@
               "people": "0",
               "value": "."
             }
-          ]
+          ],
+          "colors": {
+            "AZ01": "#DB6451",
+            "AZ02": "#F49182",
+            "AZ03": "#AE2C1D",
+            "AZ04": "#DB6451",
+            "AZ05": "#F49182",
+            "AZ06": "#F49182",
+            "AZ07": "#DB6451",
+            "AZ08": "#FEBDBD",
+            "AZ09": "#FEBDBD",
+            "AZ10": "#F49182",
+            "AZ11": "#F49182",
+            "AZ12": "#DB6451",
+            "AZ13": "#F49182",
+            "AZ14": "#FEBDBD",
+            "AZ15": "#DB6451",
+            "AZ16": "#DB6451",
+            "AZ17": "#F49182",
+            "AZ18": "#FEBDBD",
+            "AZ19": "#FEBDBD",
+            "AZ20": "#FEBDBD"
+          }
         }
       },
       "cityLabels": [
@@ -2797,7 +3172,29 @@
               "value": "."
             }
           ],
-          "themenbereich": "Haushalte nach Personen"
+          "themenbereich": "Haushalte nach Personen",
+          "colors": {
+            "AZ01": "#FEBDBD",
+            "AZ02": "#FEE5E5",
+            "AZ03": "#E3E9FE",
+            "AZ04": "#E3E9FE",
+            "AZ05": "#F49182",
+            "AZ06": "#FEE5E5",
+            "AZ07": "#FEBDBD",
+            "AZ08": "#F49182",
+            "AZ09": "#FEBDBD",
+            "AZ10": "#E3E9FE",
+            "AZ11": "#BDD6EA",
+            "AZ12": "#FEBDBD",
+            "AZ13": "#F49182",
+            "AZ14": "#DB6451",
+            "AZ15": "#F49182",
+            "AZ16": "#FEE5E5",
+            "AZ17": "#FEE5E5",
+            "AZ18": "#F49182",
+            "AZ19": "#AE2C1E",
+            "AZ20": "#AE2C1E"
+          }
         },
         "Zweipersonenhaushalte": {
           "img": "/Interaktiv/pics/innerComparisonHaushalteNachPersonenYear2005AreaStadtteilHaushalteNachPersonenZweipersonenhaushalte.gif",
@@ -2934,7 +3331,29 @@
               "people": "0",
               "value": "."
             }
-          ]
+          ],
+          "colors": {
+            "AZ01": "#F49182",
+            "AZ02": "#F49182",
+            "AZ03": "#F49182",
+            "AZ04": "#DB6451",
+            "AZ05": "#F49182",
+            "AZ06": "#DB6451",
+            "AZ07": "#F49182",
+            "AZ08": "#F49182",
+            "AZ09": "#F49182",
+            "AZ10": "#F49182",
+            "AZ11": "#DB6451",
+            "AZ12": "#F49182",
+            "AZ13": "#FEBDBD",
+            "AZ14": "#FEBDBD",
+            "AZ15": "#FEBDBD",
+            "AZ16": "#F49182",
+            "AZ17": "#FEBDBD",
+            "AZ18": "#FEBDBD",
+            "AZ19": "#FEE5E5",
+            "AZ20": "#FEBDBD"
+          }
         },
         "DreiOderMehrpersonenhaushalte": {
           "img": "/Interaktiv/pics/innerComparisonHaushalteNachPersonenYear2005AreaStadtteilHaushalteNachPersonenDreiOderMehrpersonenhaushalte.gif",
@@ -3071,7 +3490,29 @@
               "people": "0",
               "value": "."
             }
-          ]
+          ],
+          "colors": {
+            "AZ01": "#FEBDBD",
+            "AZ02": "#FEBDBD",
+            "AZ03": "#DB6451",
+            "AZ04": "#DB6451",
+            "AZ05": "#FEE5E5",
+            "AZ06": "#FEE5E5",
+            "AZ07": "#FEE5E5",
+            "AZ08": "#E2E9FE",
+            "AZ09": "#FEE5E5",
+            "AZ10": "#AE2C1D",
+            "AZ11": "#AE2C1D",
+            "AZ12": "#FEBDBD",
+            "AZ13": "#E2E9FE",
+            "AZ14": "#E2E9FE",
+            "AZ15": "#FEE5E5",
+            "AZ16": "#FEBDBD",
+            "AZ17": "#F49182",
+            "AZ18": "#FEE5E5",
+            "AZ19": "#BDD6EA",
+            "AZ20": "#8BBDD6"
+          }
         }
       },
       "cityLabels": [
@@ -3241,7 +3682,29 @@
               "value": "."
             }
           ],
-          "themenbereich": "Haushalte nach Kindern"
+          "themenbereich": "Haushalte nach Kindern",
+          "colors": {
+            "AZ01": "#DB6451",
+            "AZ02": "#DB6451",
+            "AZ03": "#DB6451",
+            "AZ04": "#DB6451",
+            "AZ05": "#DB6451",
+            "AZ06": "#DB6451",
+            "AZ07": "#DB6451",
+            "AZ08": "#AE2C1E",
+            "AZ09": "#DB6451",
+            "AZ10": "#F49182",
+            "AZ11": "#F49182",
+            "AZ12": "#DB6451",
+            "AZ13": "#DB6451",
+            "AZ14": "#AE2C1E",
+            "AZ15": "#DB6451",
+            "AZ16": "#DB6451",
+            "AZ17": "#F49182",
+            "AZ18": "#DB6451",
+            "AZ19": "#AE2C1E",
+            "AZ20": "#AE2C1E"
+          }
         },
         "Haushalte1Kind": {
           "img": "/Interaktiv/pics/innerComparisonHaushalteNachKindernYear2005AreaStadtteilHaushalteNachKindernHaushalte1Kind.gif",
@@ -3378,7 +3841,29 @@
               "people": "0",
               "value": "."
             }
-          ]
+          ],
+          "colors": {
+            "AZ01": "#F49182",
+            "AZ02": "#F49182",
+            "AZ03": "#DB6451",
+            "AZ04": "#F49182",
+            "AZ05": "#FEBDBD",
+            "AZ06": "#FEBDBD",
+            "AZ07": "#FEBDBD",
+            "AZ08": "#FEE5E5",
+            "AZ09": "#F49182",
+            "AZ10": "#AE2C1E",
+            "AZ11": "#DB6451",
+            "AZ12": "#F49182",
+            "AZ13": "#FEBDBD",
+            "AZ14": "#FEBDBD",
+            "AZ15": "#FEBDBD",
+            "AZ16": "#F49182",
+            "AZ17": "#DB6451",
+            "AZ18": "#F49182",
+            "AZ19": "#E3E9FE",
+            "AZ20": "#E3E9FE"
+          }
         },
         "Haushalte2Kinder": {
           "img": "/Interaktiv/pics/innerComparisonHaushalteNachKindernYear2005AreaStadtteilHaushalteNachKindernHaushalte2Kinder.gif",
@@ -3515,7 +4000,29 @@
               "people": "0",
               "value": "."
             }
-          ]
+          ],
+          "colors": {
+            "AZ01": "#FEE5E5",
+            "AZ02": "#FEE5E5",
+            "AZ03": "#F49182",
+            "AZ04": "#F49182",
+            "AZ05": "#BDD6EA",
+            "AZ06": "#FEE5E5",
+            "AZ07": "#E2E9FE",
+            "AZ08": "#E2E9FE",
+            "AZ09": "#FEE5E5",
+            "AZ10": "#AE2C1D",
+            "AZ11": "#AE2C1D",
+            "AZ12": "#E2E9FE",
+            "AZ13": "#BDD6EA",
+            "AZ14": "#BDD6EA",
+            "AZ15": "#E2E9FE",
+            "AZ16": "#FEE5E5",
+            "AZ17": "#F49182",
+            "AZ18": "#FEE5E5",
+            "AZ19": "#8BBDD6",
+            "AZ20": "#8BBDD6"
+          }
         },
         "Haushalte3oderMehrKinder": {
           "img": "/Interaktiv/pics/innerComparisonHaushalteNachKindernYear2005AreaStadtteilHaushalteNachKindernHaushalte3oderMehrKinder.gif",
@@ -3652,7 +4159,29 @@
               "people": "0",
               "value": "."
             }
-          ]
+          ],
+          "colors": {
+            "AZ01": "#E2E9FE",
+            "AZ02": "#E2E9FE",
+            "AZ03": "#FEBDBD",
+            "AZ04": "#FEBDBD",
+            "AZ05": "#E2E9FE",
+            "AZ06": "#E2E9FE",
+            "AZ07": "#E2E9FE",
+            "AZ08": "#BDD6EA",
+            "AZ09": "#BDD6EA",
+            "AZ10": "#F49182",
+            "AZ11": "#FEBDBD",
+            "AZ12": "#BDD6EA",
+            "AZ13": "#BDD6EA",
+            "AZ14": "#BDD6EA",
+            "AZ15": "#FEE5E5",
+            "AZ16": "#FEE5E5",
+            "AZ17": "#DC6451",
+            "AZ18": "#E2E9FE",
+            "AZ19": "#8BBDD6",
+            "AZ20": "#4B8BC2"
+          }
         }
       },
       "cityLabels": [

@@ -111,7 +111,21 @@
               "value": "."
             }
           ],
-          "themenbereich": "Migrationshintergrund"
+          "themenbereich": "Migrationshintergrund",
+          "colors": {
+            "VRA01": "#DB6451",
+            "VRA02": "#FEE5E5",
+            "VRA03": "#F49182",
+            "VRA04": "#FEE5E5",
+            "VRA05": "#DB6451",
+            "VRA06": "#BDD6EA",
+            "VRA07": "#AE2C1D",
+            "VRA08": "#FEE5E5",
+            "VRA09": "#F49182",
+            "VRA10": "#FEE5E5",
+            "VRA11": "#DB6451",
+            "VRA12": "#AE2C1D"
+          }
         },
         "GermansWithMigration": {
           "img": "/Interaktiv/pics/innerComparisonMigrationYear2008AreaAltenhilfeMigrationGermansWithMigration.gif",
@@ -200,7 +214,21 @@
               "people": "0",
               "value": "."
             }
-          ]
+          ],
+          "colors": {
+            "VRA01": "#236DA9",
+            "VRA02": "#E3EAFE",
+            "VRA03": "#F49182",
+            "VRA04": "#F49182",
+            "VRA05": "#E3EAFE",
+            "VRA06": "#FEBDBD",
+            "VRA07": "#BDD6EA",
+            "VRA08": "#DB6451",
+            "VRA09": "#8BBDD6",
+            "VRA10": "#AE2C1D",
+            "VRA11": "#E3EAFE",
+            "VRA12": "#236DA9"
+          }
         },
         "Foreigners": {
           "img": "/Interaktiv/pics/innerComparisonMigrationYear2008AreaAltenhilfeMigrationForeigners.gif",
@@ -289,7 +317,21 @@
               "people": "0",
               "value": "."
             }
-          ]
+          ],
+          "colors": {
+            "VRA01": "#8BBDD6",
+            "VRA02": "#BDD6EA",
+            "VRA03": "#236EA9",
+            "VRA04": "#8BBDD6",
+            "VRA05": "#236EA9",
+            "VRA06": "#FEE5E5",
+            "VRA07": "#236EA9",
+            "VRA08": "#8BBDD6",
+            "VRA09": "#4B8BC2",
+            "VRA10": "#4B8BC2",
+            "VRA11": "#236EA9",
+            "VRA12": "#236EA9"
+          }
         }
       },
       "cityLabels": [
@@ -411,7 +453,21 @@
               "value": "."
             }
           ],
-          "themenbereich": "Familienstand"
+          "themenbereich": "Familienstand",
+          "colors": {
+            "VRA01": "#E2E9FE",
+            "VRA02": "#8BBDD6",
+            "VRA03": "#4B8BC2",
+            "VRA04": "#8BBDD6",
+            "VRA05": "#8BBDD6",
+            "VRA06": "#8BBDD6",
+            "VRA07": "#4B8BC2",
+            "VRA08": "#8BBDD6",
+            "VRA09": "#8BBDD6",
+            "VRA10": "#BDD6EA",
+            "VRA11": "#8BBDD6",
+            "VRA12": "#8BBDD6"
+          }
         },
         "Verheiratet": {
           "img": "/Interaktiv/pics/innerComparisonFamilienstandYear2008AreaAltenhilfeFamilienstandVerheiratet.gif",
@@ -500,7 +556,21 @@
               "people": "0",
               "value": "."
             }
-          ]
+          ],
+          "colors": {
+            "VRA01": "#FEE5E5",
+            "VRA02": "#DB6451",
+            "VRA03": "#AE2C1D",
+            "VRA04": "#DB6451",
+            "VRA05": "#DB6451",
+            "VRA06": "#F49182",
+            "VRA07": "#DB6451",
+            "VRA08": "#DB6451",
+            "VRA09": "#F49182",
+            "VRA10": "#F49182",
+            "VRA11": "#DB6451",
+            "VRA12": "#DB6451"
+          }
         },
         "Verwitwet": {
           "img": "/Interaktiv/pics/innerComparisonFamilienstandYear2008AreaAltenhilfeFamilienstandVerwitwet.gif",
@@ -589,7 +659,21 @@
               "people": "0",
               "value": "."
             }
-          ]
+          ],
+          "colors": {
+            "VRA01": "#FEBDBD",
+            "VRA02": "#DB6451",
+            "VRA03": "#F49182",
+            "VRA04": "#F49182",
+            "VRA05": "#DB6451",
+            "VRA06": "#FEBDBD",
+            "VRA07": "#DB6451",
+            "VRA08": "#FEE5E6",
+            "VRA09": "#FEBDBD",
+            "VRA10": "#F49182",
+            "VRA11": "#DB6451",
+            "VRA12": "#F49182"
+          }
         },
         "Geschieden": {
           "img": "/Interaktiv/pics/innerComparisonFamilienstandYear2008AreaAltenhilfeFamilienstandGeschieden.gif",
@@ -678,7 +762,21 @@
               "people": "0",
               "value": "."
             }
-          ]
+          ],
+          "colors": {
+            "VRA01": "#DB6451",
+            "VRA02": "#DB6451",
+            "VRA03": "#FEE5E5",
+            "VRA04": "#F49182",
+            "VRA05": "#F49182",
+            "VRA06": "#AE2C1D",
+            "VRA07": "#F49182",
+            "VRA08": "#FEBDBD",
+            "VRA09": "#DB6451",
+            "VRA10": "#F49182",
+            "VRA11": "#F49182",
+            "VRA12": "#F49182"
+          }
         }
       },
       "cityLabels": [
@@ -820,7 +918,21 @@
               "value": "0,0"
             }
           ],
-          "themenbereich": "Indikator"
+          "themenbereich": "Indikator",
+          "colors": {
+            "VRA01": "#DB6451",
+            "VRA02": "#AE2C1D",
+            "VRA03": "#AE2C1D",
+            "VRA04": "#AE2C1D",
+            "VRA05": "#AE2C1D",
+            "VRA06": "#DB6451",
+            "VRA07": "#AE2C1D",
+            "VRA08": "#DB6451",
+            "VRA09": "#DB6451",
+            "VRA10": "#AE2C1D",
+            "VRA11": "#AE2C1D",
+            "VRA12": "#AE2C1D"
+          }
         },
         "Medianalter": {
           "img": "/Interaktiv/pics/innerComparisonIndicatorsYear2008AreaAltenhilfeIndiMedianalter.gif",
@@ -909,7 +1021,21 @@
               "people": "0",
               "value": "0,0"
             }
-          ]
+          ],
+          "colors": {
+            "VRA01": "#DB6451",
+            "VRA02": "#AE2C1D",
+            "VRA03": "#AE2C1D",
+            "VRA04": "#AE2C1D",
+            "VRA05": "#AE2C1D",
+            "VRA06": "#DB6451",
+            "VRA07": "#AE2C1D",
+            "VRA08": "#F49182",
+            "VRA09": "#DB6451",
+            "VRA10": "#DB6451",
+            "VRA11": "#AE2C1D",
+            "VRA12": "#AE2C1D"
+          }
         },
         "Jugendquotient": {
           "img": "/Interaktiv/pics/innerComparisonIndicatorsYear2008AreaAltenhilfeIndiJugendquotient.gif",
@@ -998,7 +1124,21 @@
               "people": "0",
               "value": "0,0"
             }
-          ]
+          ],
+          "colors": {
+            "VRA01": "#4B8BC2",
+            "VRA02": "#8BBDD6",
+            "VRA03": "#BDD6EA",
+            "VRA04": "#BDD6EA",
+            "VRA05": "#BDD6EA",
+            "VRA06": "#BDD6EA",
+            "VRA07": "#BDD6EA",
+            "VRA08": "#E2E9FE",
+            "VRA09": "#8BBDD6",
+            "VRA10": "#8BBDD6",
+            "VRA11": "#8BBDD6",
+            "VRA12": "#8BBDD6"
+          }
         },
         "Altenquotient": {
           "img": "/Interaktiv/pics/innerComparisonIndicatorsYear2008AreaAltenhilfeIndiAltenquotient.gif",
@@ -1087,7 +1227,21 @@
               "people": "0",
               "value": "0,0"
             }
-          ]
+          ],
+          "colors": {
+            "VRA01": "#FEE5E5",
+            "VRA02": "#DB6451",
+            "VRA03": "#DB6451",
+            "VRA04": "#DB6451",
+            "VRA05": "#AE2C1E",
+            "VRA06": "#FEBDBD",
+            "VRA07": "#AE2C1E",
+            "VRA08": "#FEE5E5",
+            "VRA09": "#FEBDBD",
+            "VRA10": "#FEBDBD",
+            "VRA11": "#DB6451",
+            "VRA12": "#DB6451"
+          }
         },
         "Abhaengigkeitsquotient": {
           "img": "/Interaktiv/pics/innerComparisonIndicatorsYear2008AreaAltenhilfeIndiAbhaengigkeitsquotient.gif",
@@ -1176,7 +1330,21 @@
               "people": "0",
               "value": "0,0"
             }
-          ]
+          ],
+          "colors": {
+            "VRA01": "#E2E9FE",
+            "VRA02": "#FEBDBD",
+            "VRA03": "#F49182",
+            "VRA04": "#FEBDBD",
+            "VRA05": "#F49182",
+            "VRA06": "#FEBDBD",
+            "VRA07": "#F49182",
+            "VRA08": "#FEBDBD",
+            "VRA09": "#FEE5E5",
+            "VRA10": "#FEE5E5",
+            "VRA11": "#FEBDBD",
+            "VRA12": "#FEBDBD"
+          }
         },
         "GreyingIndex": {
           "img": "/Interaktiv/pics/innerComparisonIndicatorsYear2008AreaAltenhilfeIndiGreyingIndex.gif",
@@ -1265,7 +1433,21 @@
               "people": "0",
               "value": "0,0"
             }
-          ]
+          ],
+          "colors": {
+            "VRA01": "#AE2D1E",
+            "VRA02": "#F49182",
+            "VRA03": "#FEE5E5",
+            "VRA04": "#FEBDBD",
+            "VRA05": "#FEBDBD",
+            "VRA06": "#FEE5E5",
+            "VRA07": "#FEE5E5",
+            "VRA08": "#FEBDBD",
+            "VRA09": "#FEBDBD",
+            "VRA10": "#DB6451",
+            "VRA11": "#FEE5E5",
+            "VRA12": "#FEBDBD"
+          }
         },
         "Migrationshintergrund": {
           "img": "/Interaktiv/pics/innerComparisonIndicatorsYear2008AreaAltenhilfeIndiMigrationshintergrund.gif",
@@ -1354,7 +1536,21 @@
               "people": "0",
               "value": "0,0"
             }
-          ]
+          ],
+          "colors": {
+            "VRA01": "#BDD6EA",
+            "VRA02": "#E2E9FE",
+            "VRA03": "#BDD6EA",
+            "VRA04": "#E2E9FE",
+            "VRA05": "#BDD6EA",
+            "VRA06": "#FEE5E5",
+            "VRA07": "#BDD6EA",
+            "VRA08": "#E2E9FE",
+            "VRA09": "#BDD6EA",
+            "VRA10": "#E2E9FE",
+            "VRA11": "#BDD6EA",
+            "VRA12": "#8CBED6"
+          }
         },
         "Auslaenderanteil": {
           "img": "/Interaktiv/pics/innerComparisonIndicatorsYear2008AreaAltenhilfeIndiAuslaenderanteil.gif",
@@ -1443,7 +1639,21 @@
               "people": "0",
               "value": "0,0"
             }
-          ]
+          ],
+          "colors": {
+            "VRA01": "#4B8BC2",
+            "VRA02": "#8BBDD6",
+            "VRA03": "#236EA9",
+            "VRA04": "#4B8BC2",
+            "VRA05": "#4B8BC2",
+            "VRA06": "#8BBDD6",
+            "VRA07": "#4B8BC2",
+            "VRA08": "#4B8BC2",
+            "VRA09": "#4B8BC2",
+            "VRA10": "#4B8BC2",
+            "VRA11": "#4B8BC2",
+            "VRA12": "#236EA9"
+          }
         }
       },
       "cityLabels": [
@@ -1570,7 +1780,21 @@
               "value": "."
             }
           ],
-          "themenbereich": "Haushaltstypen"
+          "themenbereich": "Haushaltstypen",
+          "colors": {
+            "VRA01": "#AE2D1E",
+            "VRA02": "#F49182",
+            "VRA03": "#FEE5E5",
+            "VRA04": "#FEBDBD",
+            "VRA05": "#FEBDBD",
+            "VRA06": "#F49182",
+            "VRA07": "#FEBDBD",
+            "VRA08": "#FEE5E5",
+            "VRA09": "#F49182",
+            "VRA10": "#F49182",
+            "VRA11": "#FEBDBD",
+            "VRA12": "#FEBDBD"
+          }
         },
         "PaareOhneKinder": {
           "img": "/Interaktiv/pics/innerComparisonHaushaltstypenYear2008AreaAltenhilfeHaushaltstypenPaareOhneKinder.gif",
@@ -1659,7 +1883,21 @@
               "people": "0",
               "value": "."
             }
-          ]
+          ],
+          "colors": {
+            "VRA01": "#FEE5E5",
+            "VRA02": "#F49182",
+            "VRA03": "#AE2C1D",
+            "VRA04": "#F49182",
+            "VRA05": "#DB6451",
+            "VRA06": "#FEBDBD",
+            "VRA07": "#DB6451",
+            "VRA08": "#FEBDBD",
+            "VRA09": "#F49182",
+            "VRA10": "#FEBDBD",
+            "VRA11": "#DB6451",
+            "VRA12": "#DB6451"
+          }
         },
         "PaareMitKinder": {
           "img": "/Interaktiv/pics/innerComparisonHaushaltstypenYear2008AreaAltenhilfeHaushaltstypenPaareMitKinder.gif",
@@ -1748,7 +1986,21 @@
               "people": "0",
               "value": "."
             }
-          ]
+          ],
+          "colors": {
+            "VRA01": "#BDD6EA",
+            "VRA02": "#FEE5E5",
+            "VRA03": "#DB6451",
+            "VRA04": "#FEBDBD",
+            "VRA05": "#F49182",
+            "VRA06": "#FEBDBD",
+            "VRA07": "#FEBDBD",
+            "VRA08": "#AE2C1D",
+            "VRA09": "#FEBDBD",
+            "VRA10": "#FEE5E5",
+            "VRA11": "#FEBDBD",
+            "VRA12": "#FEBDBD"
+          }
         },
         "Alleinerziehende": {
           "img": "/Interaktiv/pics/innerComparisonHaushaltstypenYear2008AreaAltenhilfeHaushaltstypenAlleinerziehende.gif",
@@ -1837,7 +2089,21 @@
               "people": "0",
               "value": "."
             }
-          ]
+          ],
+          "colors": {
+            "VRA01": "#E2E9FE",
+            "VRA02": "#FEE5E5",
+            "VRA03": "#FEE5E5",
+            "VRA04": "#FEBDBD",
+            "VRA05": "#FEBDBD",
+            "VRA06": "#DB6451",
+            "VRA07": "#DB6451",
+            "VRA08": "#DB6451",
+            "VRA09": "#F49182",
+            "VRA10": "#FEBDBD",
+            "VRA11": "#FEBDBD",
+            "VRA12": "#FEBDBD"
+          }
         },
         "SonstigeMehrpersonenhaushalte": {
           "img": "/Interaktiv/pics/innerComparisonHaushaltstypenYear2008AreaAltenhilfeHaushaltstypenSonstigeMehrpersonenhaushalte.gif",
@@ -1926,7 +2192,21 @@
               "people": "0",
               "value": "."
             }
-          ]
+          ],
+          "colors": {
+            "VRA01": "#FEE5E5",
+            "VRA02": "#F49182",
+            "VRA03": "#DB6451",
+            "VRA04": "#F49182",
+            "VRA05": "#FEBDBD",
+            "VRA06": "#F49182",
+            "VRA07": "#DB6451",
+            "VRA08": "#F49182",
+            "VRA09": "#FEBDBD",
+            "VRA10": "#F49182",
+            "VRA11": "#FEBDBD",
+            "VRA12": "#FEBDBD"
+          }
         }
       },
       "cityLabels": [
@@ -2043,7 +2323,21 @@
               "value": "."
             }
           ],
-          "themenbereich": "Haushalte nach Personen"
+          "themenbereich": "Haushalte nach Personen",
+          "colors": {
+            "VRA01": "#AE2D1E",
+            "VRA02": "#F49182",
+            "VRA03": "#FEE5E5",
+            "VRA04": "#FEBDBD",
+            "VRA05": "#FEBDBD",
+            "VRA06": "#F49182",
+            "VRA07": "#FEBDBD",
+            "VRA08": "#FEE5E5",
+            "VRA09": "#F49182",
+            "VRA10": "#F49182",
+            "VRA11": "#FEBDBD",
+            "VRA12": "#FEBDBD"
+          }
         },
         "Zweipersonenhaushalte": {
           "img": "/Interaktiv/pics/innerComparisonHaushalteNachPersonenYear2008AreaAltenhilfeHaushalteNachPersonenZweipersonenhaushalte.gif",
@@ -2132,7 +2426,21 @@
               "people": "0",
               "value": "."
             }
-          ]
+          ],
+          "colors": {
+            "VRA01": "#FEBDBD",
+            "VRA02": "#DB6451",
+            "VRA03": "#AE2C1D",
+            "VRA04": "#DB6451",
+            "VRA05": "#DB6451",
+            "VRA06": "#F49182",
+            "VRA07": "#AE2C1D",
+            "VRA08": "#F49182",
+            "VRA09": "#F49182",
+            "VRA10": "#F49182",
+            "VRA11": "#AE2C1D",
+            "VRA12": "#DB6451"
+          }
         },
         "DreiOderMehrpersonenhaushalte": {
           "img": "/Interaktiv/pics/innerComparisonHaushalteNachPersonenYear2008AreaAltenhilfeHaushalteNachPersonenDreiOderMehrpersonenhaushalte.gif",
@@ -2221,7 +2529,21 @@
               "people": "0",
               "value": "."
             }
-          ]
+          ],
+          "colors": {
+            "VRA01": "#BDD6EA",
+            "VRA02": "#FEBDBD",
+            "VRA03": "#AE2C1D",
+            "VRA04": "#F49182",
+            "VRA05": "#F49182",
+            "VRA06": "#F49182",
+            "VRA07": "#F49182",
+            "VRA08": "#AE2C1D",
+            "VRA09": "#FEBDBD",
+            "VRA10": "#FEBDBD",
+            "VRA11": "#FEBDBD",
+            "VRA12": "#FEBDBD"
+          }
         }
       },
       "cityLabels": [
@@ -2343,7 +2665,21 @@
               "value": "."
             }
           ],
-          "themenbereich": "Haushalte nach Kindern"
+          "themenbereich": "Haushalte nach Kindern",
+          "colors": {
+            "VRA01": "#AE2C1D",
+            "VRA02": "#AE2C1D",
+            "VRA03": "#DB6451",
+            "VRA04": "#DB6451",
+            "VRA05": "#DB6451",
+            "VRA06": "#DB6451",
+            "VRA07": "#DB6451",
+            "VRA08": "#DB6451",
+            "VRA09": "#DB6451",
+            "VRA10": "#AE2C1D",
+            "VRA11": "#AE2C1D",
+            "VRA12": "#AE2C1D"
+          }
         },
         "Haushalte1Kind": {
           "img": "/Interaktiv/pics/innerComparisonHaushalteNachKindernYear2008AreaAltenhilfeHaushalteNachKindernHaushalte1Kind.gif",
@@ -2432,7 +2768,21 @@
               "people": "0",
               "value": "."
             }
-          ]
+          ],
+          "colors": {
+            "VRA01": "#E2E9FE",
+            "VRA02": "#FEBDBD",
+            "VRA03": "#F49182",
+            "VRA04": "#F49182",
+            "VRA05": "#F49182",
+            "VRA06": "#F49182",
+            "VRA07": "#F49182",
+            "VRA08": "#DC6451",
+            "VRA09": "#F49182",
+            "VRA10": "#FEBDBD",
+            "VRA11": "#F49182",
+            "VRA12": "#F49182"
+          }
         },
         "Haushalte2Kinder": {
           "img": "/Interaktiv/pics/innerComparisonHaushalteNachKindernYear2008AreaAltenhilfeHaushalteNachKindernHaushalte2Kinder.gif",
@@ -2521,7 +2871,21 @@
               "people": "0",
               "value": "."
             }
-          ]
+          ],
+          "colors": {
+            "VRA01": "#8BBDD6",
+            "VRA02": "#FEE5E5",
+            "VRA03": "#F49182",
+            "VRA04": "#FEE5E5",
+            "VRA05": "#FEBDBD",
+            "VRA06": "#FEBDBD",
+            "VRA07": "#FEBDBD",
+            "VRA08": "#AE2C1D",
+            "VRA09": "#FEBDBD",
+            "VRA10": "#E3E9FE",
+            "VRA11": "#FEE5E5",
+            "VRA12": "#FEBDBD"
+          }
         },
         "Haushalte3oderMehrKinder": {
           "img": "/Interaktiv/pics/innerComparisonHaushalteNachKindernYear2008AreaAltenhilfeHaushalteNachKindernHaushalte3oderMehrKinder.gif",
@@ -2610,7 +2974,21 @@
               "people": "0",
               "value": "."
             }
-          ]
+          ],
+          "colors": {
+            "VRA01": "#8BBDD6",
+            "VRA02": "#BDD6EA",
+            "VRA03": "#FEE5E5",
+            "VRA04": "#E2E9FE",
+            "VRA05": "#E2E9FE",
+            "VRA06": "#FEBDBD",
+            "VRA07": "#FEE5E5",
+            "VRA08": "#DC6451",
+            "VRA09": "#E2E9FE",
+            "VRA10": "#BDD6EA",
+            "VRA11": "#BDD6EA",
+            "VRA12": "#BDD6EA"
+          }
         }
       },
       "cityLabels": [
@@ -2722,7 +3100,21 @@
               "value": "."
             }
           ],
-          "themenbereich": "Natürliche Bevölkerungsbewegung"
+          "themenbereich": "Natürliche Bevölkerungsbewegung",
+          "colors": {
+            "VRA01": "#4B8BC2",
+            "VRA02": "#4B8BC2",
+            "VRA03": "#4B8BC2",
+            "VRA04": "#4B8BC2",
+            "VRA05": "#4B8BC2",
+            "VRA06": "#8BBDD6",
+            "VRA07": "#236EA9",
+            "VRA08": "#4B8BC2",
+            "VRA09": "#4B8BC2",
+            "VRA10": "#4B8BC2",
+            "VRA11": "#4B8BC2",
+            "VRA12": "#4B8BC2"
+          }
         },
         "Sterbefaelle": {
           "img": "/Interaktiv/pics/innerComparisonPopulationMovementYear2008AreaAltenhilfeNatuerlichSterbefaelle.gif",
@@ -2811,7 +3203,21 @@
               "people": "0",
               "value": "."
             }
-          ]
+          ],
+          "colors": {
+            "VRA01": "#DB6451",
+            "VRA02": "#DB6451",
+            "VRA03": "#FEE5E5",
+            "VRA04": "#F49182",
+            "VRA05": "#FEBDBD",
+            "VRA06": "#FEBDBD",
+            "VRA07": "#FEBDBD",
+            "VRA08": "#E3E9FE",
+            "VRA09": "#F49182",
+            "VRA10": "#F49182",
+            "VRA11": "#DB6451",
+            "VRA12": "#F49182"
+          }
         }
       },
       "cityLabels": [
@@ -2923,7 +3329,21 @@
               "value": "."
             }
           ],
-          "themenbereich": "Zu-/Wegzüge"
+          "themenbereich": "Zu-/Wegzüge",
+          "colors": {
+            "VRA01": "#236EA9",
+            "VRA02": "#236EA9",
+            "VRA03": "#236EA9",
+            "VRA04": "#236EA9",
+            "VRA05": "#236EA9",
+            "VRA06": "#236EA9",
+            "VRA07": "#236EA9",
+            "VRA08": "#236EA9",
+            "VRA09": "#236EA9",
+            "VRA10": "#236EA9",
+            "VRA11": "#236EA9",
+            "VRA12": "#236EA9"
+          }
         },
         "StadtFort": {
           "img": "/Interaktiv/pics/innerComparisonPopulationMovementYear2008AreaAltenhilfeStadtgrenzeStadtFort.gif",
@@ -3012,7 +3432,21 @@
               "people": "0",
               "value": "."
             }
-          ]
+          ],
+          "colors": {
+            "VRA01": "#236EA9",
+            "VRA02": "#236EA9",
+            "VRA03": "#236EA9",
+            "VRA04": "#236EA9",
+            "VRA05": "#236EA9",
+            "VRA06": "#236EA9",
+            "VRA07": "#236EA9",
+            "VRA08": "#236EA9",
+            "VRA09": "#236EA9",
+            "VRA10": "#236EA9",
+            "VRA11": "#236EA9",
+            "VRA12": "#236EA9"
+          }
         }
       },
       "cityLabels": [
@@ -3124,7 +3558,21 @@
               "value": "."
             }
           ],
-          "themenbereich": "Innerstädtische Bevölkerungsbewegung"
+          "themenbereich": "Innerstädtische Bevölkerungsbewegung",
+          "colors": {
+            "VRA01": "#236EA9",
+            "VRA02": "#236EA9",
+            "VRA03": "#236EA9",
+            "VRA04": "#236EA9",
+            "VRA05": "#236EA9",
+            "VRA06": "#236EA9",
+            "VRA07": "#236EA9",
+            "VRA08": "#236EA9",
+            "VRA09": "#236EA9",
+            "VRA10": "#236EA9",
+            "VRA11": "#236EA9",
+            "VRA12": "#236EA9"
+          }
         },
         "InnerFort": {
           "img": "/Interaktiv/pics/innerComparisonPopulationMovementYear2008AreaAltenhilfeInnerstaedtischInnerFort.gif",
@@ -3213,7 +3661,21 @@
               "people": "0",
               "value": "."
             }
-          ]
+          ],
+          "colors": {
+            "VRA01": "#236EA9",
+            "VRA02": "#236EA9",
+            "VRA03": "#236EA9",
+            "VRA04": "#236EA9",
+            "VRA05": "#236EA9",
+            "VRA06": "#236EA9",
+            "VRA07": "#236EA9",
+            "VRA08": "#236EA9",
+            "VRA09": "#236EA9",
+            "VRA10": "#236EA9",
+            "VRA11": "#236EA9",
+            "VRA12": "#236EA9"
+          }
         }
       },
       "cityLabels": [
@@ -3557,7 +4019,21 @@
               "value": "."
             }
           ],
-          "themenbereich": "Bedarfsgemeinschaften"
+          "themenbereich": "Bedarfsgemeinschaften",
+          "colors": {
+            "VRA01": "#AE2D1E",
+            "VRA02": "#F49182",
+            "VRA03": "#F49182",
+            "VRA04": "#F49182",
+            "VRA05": "#FEBDBD",
+            "VRA06": "#F49182",
+            "VRA07": "#DB6451",
+            "VRA08": "#FEE5E5",
+            "VRA09": "#F49182",
+            "VRA10": "#F49182",
+            "VRA11": "#F49182",
+            "VRA12": "#F49182"
+          }
         },
         "bg2P": {
           "img": "/Interaktiv/pics/innerComparisonBgPersonenYear2008AreaAltenhilfeBgPersonenbg2P.gif",
@@ -3646,7 +4122,21 @@
               "people": "0",
               "value": "."
             }
-          ]
+          ],
+          "colors": {
+            "VRA01": "#FEE5E5",
+            "VRA02": "#DB6451",
+            "VRA03": "#F49182",
+            "VRA04": "#F49182",
+            "VRA05": "#DB6451",
+            "VRA06": "#F49182",
+            "VRA07": "#F49182",
+            "VRA08": "#FEBDBD",
+            "VRA09": "#DB6451",
+            "VRA10": "#DB6451",
+            "VRA11": "#F49182",
+            "VRA12": "#AE2C1D"
+          }
         },
         "bg3mP": {
           "img": "/Interaktiv/pics/innerComparisonBgPersonenYear2008AreaAltenhilfeBgPersonenbg3mP.gif",
@@ -3735,7 +4225,21 @@
               "people": "0",
               "value": "."
             }
-          ]
+          ],
+          "colors": {
+            "VRA01": "#E2E9FE",
+            "VRA02": "#FEE5E5",
+            "VRA03": "#FEBDBD",
+            "VRA04": "#FEBDBD",
+            "VRA05": "#F49182",
+            "VRA06": "#FEBDBD",
+            "VRA07": "#E2E9FE",
+            "VRA08": "#AE2C1D",
+            "VRA09": "#FEBDBD",
+            "VRA10": "#FEBDBD",
+            "VRA11": "#FEE5E5",
+            "VRA12": "#FEE5E5"
+          }
         },
         "bgKeinKind": {
           "img": "/Interaktiv/pics/innerComparisonBgPersonenYear2008AreaAltenhilfeBgPersonenbgKeinKind.gif",
@@ -3824,7 +4328,21 @@
               "people": "0",
               "value": "."
             }
-          ]
+          ],
+          "colors": {
+            "VRA01": "#AE2D1E",
+            "VRA02": "#DB6451",
+            "VRA03": "#F49182",
+            "VRA04": "#DB6451",
+            "VRA05": "#F49182",
+            "VRA06": "#DB6451",
+            "VRA07": "#AE2D1E",
+            "VRA08": "#FEBDBD",
+            "VRA09": "#DB6451",
+            "VRA10": "#DB6451",
+            "VRA11": "#DB6451",
+            "VRA12": "#F49182"
+          }
         },
         "bg1Kind": {
           "img": "/Interaktiv/pics/innerComparisonBgPersonenYear2008AreaAltenhilfeBgPersonenbg1Kind.gif",
@@ -3913,7 +4431,21 @@
               "people": "0",
               "value": "."
             }
-          ]
+          ],
+          "colors": {
+            "VRA01": "#FEE5E5",
+            "VRA02": "#F49182",
+            "VRA03": "#F49182",
+            "VRA04": "#F49182",
+            "VRA05": "#DB6451",
+            "VRA06": "#FEBDBD",
+            "VRA07": "#F49182",
+            "VRA08": "#F49182",
+            "VRA09": "#F49182",
+            "VRA10": "#F49182",
+            "VRA11": "#F49182",
+            "VRA12": "#AE2C1D"
+          }
         },
         "bg2mKinder": {
           "img": "/Interaktiv/pics/innerComparisonBgPersonenYear2008AreaAltenhilfeBgPersonenbg2mKinder.gif",
@@ -4002,7 +4534,21 @@
               "people": "0",
               "value": "."
             }
-          ]
+          ],
+          "colors": {
+            "VRA01": "#BDD6EA",
+            "VRA02": "#E3EAFE",
+            "VRA03": "#FEBDBD",
+            "VRA04": "#FEBDBD",
+            "VRA05": "#FEE5E5",
+            "VRA06": "#FEE5E5",
+            "VRA07": "#BDD6EA",
+            "VRA08": "#AE2C1D",
+            "VRA09": "#FEE5E5",
+            "VRA10": "#FEE5E5",
+            "VRA11": "#FEE5E5",
+            "VRA12": "#FEE5E5"
+          }
         }
       },
       "cityLabels": [

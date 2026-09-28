@@ -191,7 +191,31 @@
               "people": "0",
               "value": "."
             }
-          ]
+          ],
+          "colors": {
+            "SMB01": "#4B8BC2",
+            "SMB02": "#FEE5E5",
+            "SMB03": "#BDD6EA",
+            "SMB04": "#BDD6EA",
+            "SMB05": "#E2E9FE",
+            "SMB06": "#BDD6EA",
+            "SMB07": "#BDD6EA",
+            "SMB08": "#F49182",
+            "SMB09": "#E2E9FE",
+            "SMB10": "#236EA9",
+            "SMB11": "#BDD6EA",
+            "SMB12": "#8BBDD6",
+            "SMB13": "#4B8BC2",
+            "SMB14": "#4B8BC2",
+            "SMB17": "#4B8BC2",
+            "SMB18": "#236EA9",
+            "SMB19": "#236EA9",
+            "SMB20": "#236EA9",
+            "SMB21": "#8BBDD6",
+            "SMB22": "#E2E9FE",
+            "SMB23": "#4B8BC2",
+            "SMB24": "#236EA9"
+          }
         }
       },
       "cityLabels": [
@@ -373,7 +397,31 @@
               "value": "."
             }
           ],
-          "themenbereich": "Familienstand"
+          "themenbereich": "Familienstand",
+          "colors": {
+            "SMB01": "#4B8BC2",
+            "SMB02": "#8BBDD6",
+            "SMB03": "#8BBDD6",
+            "SMB04": "#8BBDD6",
+            "SMB05": "#BDD6EA",
+            "SMB06": "#BDD6EA",
+            "SMB07": "#BDD6EA",
+            "SMB08": "#8BBDD6",
+            "SMB09": "#8BBDD6",
+            "SMB10": "#8BBDD6",
+            "SMB11": "#8BBDD6",
+            "SMB12": "#BDD6EA",
+            "SMB13": "#8BBDD6",
+            "SMB14": "#8BBDD6",
+            "SMB17": "#4B8BC2",
+            "SMB18": "#8BBDD6",
+            "SMB19": "#4B8BC2",
+            "SMB20": "#4B8BC2",
+            "SMB21": "#4B8BC2",
+            "SMB22": "#8BBDD6",
+            "SMB23": "#4B8BC2",
+            "SMB24": "#4B8BC2"
+          }
         },
         "Verheiratet": {
           "img": "/Interaktiv/pics/innerComparisonFamilienstandYear1999AreaSozialmonitoringbezirkFamilienstandVerheiratet.gif",
@@ -522,7 +570,31 @@
               "people": "0",
               "value": "."
             }
-          ]
+          ],
+          "colors": {
+            "SMB01": "#DB6451",
+            "SMB02": "#F49182",
+            "SMB03": "#F49182",
+            "SMB04": "#DB6451",
+            "SMB05": "#F49182",
+            "SMB06": "#FEBDBD",
+            "SMB07": "#FEBDBD",
+            "SMB08": "#DB6451",
+            "SMB09": "#DB6451",
+            "SMB10": "#DB6451",
+            "SMB11": "#F49182",
+            "SMB12": "#FEBDBD",
+            "SMB13": "#F49182",
+            "SMB14": "#DB6451",
+            "SMB17": "#DB6451",
+            "SMB18": "#DB6451",
+            "SMB19": "#AE2C1D",
+            "SMB20": "#AE2C1D",
+            "SMB21": "#DB6451",
+            "SMB22": "#DB6451",
+            "SMB23": "#DB6451",
+            "SMB24": "#AE2C1D"
+          }
         },
         "Verwitwet": {
           "img": "/Interaktiv/pics/innerComparisonFamilienstandYear1999AreaSozialmonitoringbezirkFamilienstandVerwitwet.gif",
@@ -671,7 +743,31 @@
               "people": "0",
               "value": "."
             }
-          ]
+          ],
+          "colors": {
+            "SMB01": "#F49182",
+            "SMB02": "#FEBDBD",
+            "SMB03": "#E2E9FE",
+            "SMB04": "#FEE5E5",
+            "SMB05": "#FEE5E5",
+            "SMB06": "#FEBDBD",
+            "SMB07": "#FEBDBD",
+            "SMB08": "#FEE5E5",
+            "SMB09": "#DC6451",
+            "SMB10": "#FEBDBD",
+            "SMB11": "#F49182",
+            "SMB12": "#AE2C1D",
+            "SMB13": "#E2E9FE",
+            "SMB14": "#FEBDBD",
+            "SMB17": "#F49182",
+            "SMB18": "#E2E9FE",
+            "SMB19": "#FEE5E5",
+            "SMB20": "#FEE5E5",
+            "SMB21": "#FEBDBD",
+            "SMB22": "#FEBDBD",
+            "SMB23": "#FEBDBD",
+            "SMB24": "#E2E9FE"
+          }
         },
         "Geschieden": {
           "img": "/Interaktiv/pics/innerComparisonFamilienstandYear1999AreaSozialmonitoringbezirkFamilienstandGeschieden.gif",
@@ -820,7 +916,31 @@
               "people": "0",
               "value": "."
             }
-          ]
+          ],
+          "colors": {
+            "SMB01": "#FEE5E5",
+            "SMB02": "#FEBDBD",
+            "SMB03": "#FEE5E5",
+            "SMB04": "#FEBDBD",
+            "SMB05": "#F49182",
+            "SMB06": "#FEBDBD",
+            "SMB07": "#FEBDBD",
+            "SMB08": "#FEE5E5",
+            "SMB09": "#FEBDBD",
+            "SMB10": "#FEE5E5",
+            "SMB11": "#FEBDBD",
+            "SMB12": "#FEBDBD",
+            "SMB13": "#E3E9FE",
+            "SMB14": "#FEE5E5",
+            "SMB17": "#FEBDBD",
+            "SMB18": "#E3E9FE",
+            "SMB19": "#BDD6EA",
+            "SMB20": "#E3E9FE",
+            "SMB21": "#FEE5E5",
+            "SMB22": "#FEE5E5",
+            "SMB23": "#FEE5E5",
+            "SMB24": "#BDD6EA"
+          }
         }
       },
       "cityLabels": [
@@ -1022,7 +1142,31 @@
               "value": "0,0"
             }
           ],
-          "themenbereich": "Indikator"
+          "themenbereich": "Indikator",
+          "colors": {
+            "SMB01": "#AE2C1D",
+            "SMB02": "#DB6451",
+            "SMB03": "#F49182",
+            "SMB04": "#DB6451",
+            "SMB05": "#DB6451",
+            "SMB06": "#DB6451",
+            "SMB07": "#DB6451",
+            "SMB08": "#DB6451",
+            "SMB09": "#AE2C1D",
+            "SMB10": "#AE2C1D",
+            "SMB11": "#DB6451",
+            "SMB12": "#AE2C1D",
+            "SMB13": "#F49182",
+            "SMB14": "#AE2C1D",
+            "SMB17": "#DB6451",
+            "SMB18": "#DB6451",
+            "SMB19": "#DB6451",
+            "SMB20": "#DB6451",
+            "SMB21": "#DB6451",
+            "SMB22": "#DB6451",
+            "SMB23": "#DB6451",
+            "SMB24": "#DB6451"
+          }
         },
         "Medianalter": {
           "img": "/Interaktiv/pics/innerComparisonIndicatorsYear1999AreaSozialmonitoringbezirkIndiMedianalter.gif",
@@ -1171,7 +1315,31 @@
               "people": "0",
               "value": "0,0"
             }
-          ]
+          ],
+          "colors": {
+            "SMB01": "#DB6451",
+            "SMB02": "#F49182",
+            "SMB03": "#FEBEBD",
+            "SMB04": "#F49182",
+            "SMB05": "#F49182",
+            "SMB06": "#F49182",
+            "SMB07": "#F49182",
+            "SMB08": "#F49182",
+            "SMB09": "#DB6451",
+            "SMB10": "#AE2C1D",
+            "SMB11": "#F49182",
+            "SMB12": "#DB6451",
+            "SMB13": "#F49182",
+            "SMB14": "#DB6451",
+            "SMB17": "#DB6451",
+            "SMB18": "#F49182",
+            "SMB19": "#DB6451",
+            "SMB20": "#DB6451",
+            "SMB21": "#DB6451",
+            "SMB22": "#F49182",
+            "SMB23": "#DB6451",
+            "SMB24": "#F49182"
+          }
         },
         "Jugendquotient": {
           "img": "/Interaktiv/pics/innerComparisonIndicatorsYear1999AreaSozialmonitoringbezirkIndiJugendquotient.gif",
@@ -1320,7 +1488,31 @@
               "people": "0",
               "value": "0,0"
             }
-          ]
+          ],
+          "colors": {
+            "SMB01": "#BDD6EA",
+            "SMB02": "#BDD6EA",
+            "SMB03": "#BDD6EA",
+            "SMB04": "#8BBDD6",
+            "SMB05": "#8BBDD6",
+            "SMB06": "#4B8BC2",
+            "SMB07": "#4B8BC2",
+            "SMB08": "#BDD6EA",
+            "SMB09": "#8BBDD6",
+            "SMB10": "#8BBDD6",
+            "SMB11": "#8BBDD6",
+            "SMB12": "#8BBDD6",
+            "SMB13": "#8BBDD6",
+            "SMB14": "#8BBDD6",
+            "SMB17": "#8BBDD6",
+            "SMB18": "#8BBDD6",
+            "SMB19": "#BDD6EA",
+            "SMB20": "#BDD6EA",
+            "SMB21": "#BDD6EA",
+            "SMB22": "#BDD6EA",
+            "SMB23": "#BDD6EA",
+            "SMB24": "#E2E9FE"
+          }
         },
         "Altenquotient": {
           "img": "/Interaktiv/pics/innerComparisonIndicatorsYear1999AreaSozialmonitoringbezirkIndiAltenquotient.gif",
@@ -1469,7 +1661,31 @@
               "people": "0",
               "value": "0,0"
             }
-          ]
+          ],
+          "colors": {
+            "SMB01": "#FEBDBD",
+            "SMB02": "#E2E9FE",
+            "SMB03": "#E2E9FE",
+            "SMB04": "#E2E9FE",
+            "SMB05": "#BDD6EA",
+            "SMB06": "#E2E9FE",
+            "SMB07": "#E2E9FE",
+            "SMB08": "#BDD6EA",
+            "SMB09": "#F49182",
+            "SMB10": "#FEBDBD",
+            "SMB11": "#FEE5E5",
+            "SMB12": "#FEBDBD",
+            "SMB13": "#BDD6EA",
+            "SMB14": "#FEE5E5",
+            "SMB17": "#FEE5E5",
+            "SMB18": "#BDD6EA",
+            "SMB19": "#FEE5E5",
+            "SMB20": "#FEE5E5",
+            "SMB21": "#E2E9FE",
+            "SMB22": "#FEE5E5",
+            "SMB23": "#FEE5E5",
+            "SMB24": "#E2E9FE"
+          }
         },
         "Abhaengigkeitsquotient": {
           "img": "/Interaktiv/pics/innerComparisonIndicatorsYear1999AreaSozialmonitoringbezirkIndiAbhaengigkeitsquotient.gif",
@@ -1618,7 +1834,31 @@
               "people": "0",
               "value": "0,0"
             }
-          ]
+          ],
+          "colors": {
+            "SMB01": "#FEBDBD",
+            "SMB02": "#FEE5E5",
+            "SMB03": "#FEBDBD",
+            "SMB04": "#FEE5E5",
+            "SMB05": "#E2E9FE",
+            "SMB06": "#E2E9FE",
+            "SMB07": "#E2E9FE",
+            "SMB08": "#FEE5E5",
+            "SMB09": "#F49182",
+            "SMB10": "#FEBDBD",
+            "SMB11": "#FEBDBD",
+            "SMB12": "#FEE5E5",
+            "SMB13": "#E2E9FE",
+            "SMB14": "#FEE5E5",
+            "SMB17": "#FEBDBD",
+            "SMB18": "#FEE5E5",
+            "SMB19": "#FEBDBD",
+            "SMB20": "#FEBDBD",
+            "SMB21": "#FEE5E5",
+            "SMB22": "#FEE5E5",
+            "SMB23": "#FEBDBD",
+            "SMB24": "#FEBDBD"
+          }
         },
         "GreyingIndex": {
           "img": "/Interaktiv/pics/innerComparisonIndicatorsYear1999AreaSozialmonitoringbezirkIndiGreyingIndex.gif",
@@ -1767,7 +2007,31 @@
               "people": "0",
               "value": "0,0"
             }
-          ]
+          ],
+          "colors": {
+            "SMB01": "#8BBDD6",
+            "SMB02": "#BDD6EA",
+            "SMB03": "#8BBDD6",
+            "SMB04": "#BDD6EA",
+            "SMB05": "#BDD6EA",
+            "SMB06": "#E2E9FE",
+            "SMB07": "#F49081",
+            "SMB08": "#8BBDD6",
+            "SMB09": "#E2E9FE",
+            "SMB10": "#8BBDD6",
+            "SMB11": "#BDD6EA",
+            "SMB12": "#AE2C1D",
+            "SMB13": "#8BBDD6",
+            "SMB14": "#BDD6EA",
+            "SMB17": "#BDD6EA",
+            "SMB18": "#4B8BC2",
+            "SMB19": "#8BBDD6",
+            "SMB20": "#8BBDD6",
+            "SMB21": "#8BBDD6",
+            "SMB22": "#8BBDD6",
+            "SMB23": "#8BBDD6",
+            "SMB24": "#BDD6EA"
+          }
         },
         "Migrationshintergrund": {
           "img": "/Interaktiv/pics/innerComparisonIndicatorsYear1999AreaSozialmonitoringbezirkIndiMigrationshintergrund.gif",
@@ -1916,7 +2180,8 @@
               "people": "0",
               "value": "0,0"
             }
-          ]
+          ],
+          "mapUnavailable": true
         },
         "Auslaenderanteil": {
           "img": "/Interaktiv/pics/innerComparisonIndicatorsYear1999AreaSozialmonitoringbezirkIndiAuslaenderanteil.gif",
@@ -2065,7 +2330,31 @@
               "people": "0",
               "value": "0,0"
             }
-          ]
+          ],
+          "colors": {
+            "SMB01": "#236EA9",
+            "SMB02": "#BDD6EA",
+            "SMB03": "#8BBDD6",
+            "SMB04": "#4B8BC2",
+            "SMB05": "#8BBDD6",
+            "SMB06": "#4B8BC2",
+            "SMB07": "#4B8BC2",
+            "SMB08": "#BDD6EA",
+            "SMB09": "#8BBDD6",
+            "SMB10": "#236EA9",
+            "SMB11": "#8BBDD6",
+            "SMB12": "#4B8BC2",
+            "SMB13": "#4B8BC2",
+            "SMB14": "#4B8BC2",
+            "SMB17": "#4B8BC2",
+            "SMB18": "#236EA9",
+            "SMB19": "#236EA9",
+            "SMB20": "#236EA9",
+            "SMB21": "#4B8BC2",
+            "SMB22": "#8BBDD6",
+            "SMB23": "#236EA9",
+            "SMB24": "#236EA9"
+          }
         }
       },
       "cityLabels": [

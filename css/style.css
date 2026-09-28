@@ -181,13 +181,13 @@ input[list]::-webkit-calendar-picker-indicator {
 .small { font-size: .82rem; }
 
 /* Tabellen */
-.table-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; border: 1px solid var(--border); border-radius: var(--radius-sm); }
+.table-wrap { container-type: inline-size; overflow-x: auto; -webkit-overflow-scrolling: touch; border: 1px solid var(--border); border-radius: var(--radius-sm); }
 table.data { width: 100%; border-collapse: separate; border-spacing: 0; font-size: .85rem; font-variant-numeric: tabular-nums; }
-table.data th, table.data td { padding: 5px 8px; text-align: right; white-space: nowrap; border-bottom: 1px solid var(--border); }
+table.data th, table.data td { padding: 5px clamp(4px, .7cqw, 8px); text-align: right; white-space: nowrap; border-bottom: 1px solid var(--border); }
 table.data th { white-space: normal; min-width: 64px; }
 table.data th { background: var(--g-50); color: var(--g-900); font-weight: 600; text-align: center; vertical-align: bottom; }
 table.data thead tr:first-child th { border-top: 0; }
-table.data th.lbl, table.data td.lbl { text-align: left; position: sticky; left: 0; background: #fff; z-index: 1; min-width: 160px; }
+table.data th.lbl, table.data td.lbl { text-align: left; position: sticky; left: 0; background: #fff; z-index: 1; min-width: clamp(120px, 16cqw, 160px); }
 table.data th.lbl { background: var(--g-50); }
 table.data td.lbl { font-weight: 500; }
 table.data th.grp-end, table.data td.grp-end { border-right: 1px solid var(--border-strong); }
@@ -200,7 +200,7 @@ table.data tbody tr.sum:hover td { background: var(--g-100); }
 table.data tbody tr.linkable { cursor: pointer; }
 table.data tbody tr.is-hl td { background: var(--g-100); }
 table.data td.hl-col, table.data th.hl-col { background: #FFF8E1; }
-table.data.compact td, table.data.compact th { padding: 4px 8px; }
+table.data.compact td, table.data.compact th { padding: 4px clamp(4px, .7cqw, 8px); }
 table.data th[title] { text-decoration: underline dotted var(--g-300); text-underline-offset: 3px; cursor: help; }
 .legend { display: flex; flex-wrap: wrap; gap: 6px 18px; font-size: .85rem; margin: 10px 0; }
 .legend .sw { display: inline-block; width: 12px; height: 12px; border-radius: 3px; margin-right: 6px; vertical-align: -1px; }
@@ -282,6 +282,30 @@ table.data th[title] { text-decoration: underline dotted var(--g-300); text-unde
 .anim-controls { display: flex; justify-content: center; gap: 8px; margin: 10px 0; flex-wrap: wrap; }
 .anim-meta { color: var(--muted); font-size: .9rem; margin-bottom: 8px; }
 .anim-grid { display: grid; grid-template-columns: 1fr 150px; gap: 16px; align-items: start; }
+/* Karte und Bedienung teilen sich die verfügbare Fensterhöhe. */
+.modal-dialog:has(.anim-comparison) { height: min(760px, calc(100dvh - 24px)); max-height: calc(100dvh - 24px); }
+.modal-dialog:has(.anim-comparison) .modal-head { flex: none; }
+.modal-body:has(.anim-comparison) { flex: 1; min-height: 0; overflow: hidden; padding: 12px 20px; }
+.anim-comparison { height: 100%; min-height: 0; display: grid; grid-template-rows: auto auto minmax(0, 1fr) auto; }
+.anim-comparison .anim-grid { min-height: 0; grid-template-columns: minmax(0, 1fr) 140px; align-items: stretch; }
+.anim-comparison .vg-map { min-height: 0; min-width: 0; }
+.anim-comparison .vg-map svg { width: 100%; height: 100%; }
+.anim-comparison .vg-legend { min-height: 0; text-align: left; }
+.anim-comparison .vg-scale { height: 100%; max-height: 297px; min-height: 0; display: flex; flex-direction: column; font-size: clamp(8px, 1.7dvh, 12px); }
+.anim-comparison .vg-scale ol { flex: 1; min-height: 0; }
+.anim-comparison .vg-scale li { height: 10%; }
+.anim-comparison .vg-scale-unit { flex: none; margin: 8px 0 4px; }
+.anim-comparison .anim-controls { margin: 10px 0 0; }
+@media (max-width: 600px), (max-height: 500px) {
+  .modal-body:has(.anim-comparison) { padding: 8px 12px; }
+  .anim-comparison .anim-meta { font-size: .75rem; margin-bottom: 0; }
+  .anim-comparison .anim-year { font-size: 1.1rem; margin: 2px 0; }
+  .anim-comparison .anim-grid { grid-template-columns: minmax(0, 1fr) 112px; gap: 8px; }
+  .anim-comparison .vg-scale { width: 112px; font-size: 9px; }
+  .anim-comparison .vg-scale li { gap: 5px; }
+  .anim-comparison .anim-controls { gap: 5px; margin-top: 6px; }
+  .anim-comparison .anim-controls .btn { font-size: .75rem; padding: 6px 9px; }
+}
 .pyramid-legend { margin: 14px auto 6px; border-collapse: collapse; font-size: .88rem; }
 .pyramid-legend th, .pyramid-legend td { padding: 4px 14px; text-align: center; border: 0; }
 .pyramid-legend td:first-child { text-align: left; font-weight: 500; }

@@ -69,7 +69,14 @@
               "value": "."
             }
           ],
-          "themenbereich": "Migrationshintergrund"
+          "themenbereich": "Migrationshintergrund",
+          "colors": {
+            "SoR01": "#F49182",
+            "SoR02": "#FEE5E6",
+            "SoR03": "#AE2C1D",
+            "SoR04": "#AE2C1D",
+            "SoR05": "#F49182"
+          }
         },
         "GermansWithMigration": {
           "img": "/Interaktiv/pics/innerComparisonMigrationYear2008AreaSozialregionMigrationGermansWithMigration.gif",
@@ -116,7 +123,14 @@
               "people": "0",
               "value": "."
             }
-          ]
+          ],
+          "colors": {
+            "SoR01": "#DB6451",
+            "SoR02": "#FEBDBD",
+            "SoR03": "#236EA9",
+            "SoR04": "#F49182",
+            "SoR05": "#FEBDBD"
+          }
         },
         "Foreigners": {
           "img": "/Interaktiv/pics/innerComparisonMigrationYear2008AreaSozialregionMigrationForeigners.gif",
@@ -163,7 +177,14 @@
               "people": "0",
               "value": "."
             }
-          ]
+          ],
+          "colors": {
+            "SoR01": "#4B8BC2",
+            "SoR02": "#E2E9FE",
+            "SoR03": "#8BBDD6",
+            "SoR04": "#236EA9",
+            "SoR05": "#4B8BC2"
+          }
         }
       },
       "cityLabels": [
@@ -243,7 +264,14 @@
               "value": "."
             }
           ],
-          "themenbereich": "Familienstand"
+          "themenbereich": "Familienstand",
+          "colors": {
+            "SoR01": "#8CBED6",
+            "SoR02": "#8CBED6",
+            "SoR03": "#BDD6EA",
+            "SoR04": "#8CBED6",
+            "SoR05": "#8CBED6"
+          }
         },
         "Verheiratet": {
           "img": "/Interaktiv/pics/innerComparisonFamilienstandYear2008AreaSozialregionFamilienstandVerheiratet.gif",
@@ -290,7 +318,14 @@
               "people": "0",
               "value": "."
             }
-          ]
+          ],
+          "colors": {
+            "SoR01": "#AE2C1E",
+            "SoR02": "#DB6451",
+            "SoR03": "#FEBDBD",
+            "SoR04": "#DB6451",
+            "SoR05": "#DB6451"
+          }
         },
         "Verwitwet": {
           "img": "/Interaktiv/pics/innerComparisonFamilienstandYear2008AreaSozialregionFamilienstandVerwitwet.gif",
@@ -337,7 +372,14 @@
               "people": "0",
               "value": "."
             }
-          ]
+          ],
+          "colors": {
+            "SoR01": "#DB6451",
+            "SoR02": "#F49182",
+            "SoR03": "#DB6451",
+            "SoR04": "#DB6451",
+            "SoR05": "#FEBDBD"
+          }
         },
         "Geschieden": {
           "img": "/Interaktiv/pics/innerComparisonFamilienstandYear2008AreaSozialregionFamilienstandGeschieden.gif",
@@ -384,7 +426,14 @@
               "people": "0",
               "value": "."
             }
-          ]
+          ],
+          "colors": {
+            "SoR01": "#F49182",
+            "SoR02": "#DB6451",
+            "SoR03": "#DB6451",
+            "SoR04": "#F49182",
+            "SoR05": "#F49182"
+          }
         }
       },
       "cityLabels": [
@@ -484,7 +533,14 @@
               "value": "0,0"
             }
           ],
-          "themenbereich": "Indikator"
+          "themenbereich": "Indikator",
+          "colors": {
+            "SoR01": "#AE2C1E",
+            "SoR02": "#AE2C1E",
+            "SoR03": "#AE2C1E",
+            "SoR04": "#AE2C1E",
+            "SoR05": "#AE2C1E"
+          }
         },
         "Medianalter": {
           "img": "/Interaktiv/pics/innerComparisonIndicatorsYear2008AreaSozialregionIndiMedianalter.gif",
@@ -531,7 +587,14 @@
               "people": "0",
               "value": "0,0"
             }
-          ]
+          ],
+          "colors": {
+            "SoR01": "#AE2C1D",
+            "SoR02": "#DB6451",
+            "SoR03": "#DB6451",
+            "SoR04": "#AE2C1D",
+            "SoR05": "#DB6451"
+          }
         },
         "Jugendquotient": {
           "img": "/Interaktiv/pics/innerComparisonIndicatorsYear2008AreaSozialregionIndiJugendquotient.gif",
@@ -578,7 +641,14 @@
               "people": "0",
               "value": "0,0"
             }
-          ]
+          ],
+          "colors": {
+            "SoR01": "#BDD6EA",
+            "SoR02": "#BDD6EA",
+            "SoR03": "#8CBED6",
+            "SoR04": "#8CBED6",
+            "SoR05": "#BDD6EA"
+          }
         },
         "Altenquotient": {
           "img": "/Interaktiv/pics/innerComparisonIndicatorsYear2008AreaSozialregionIndiAltenquotient.gif",
@@ -625,7 +695,14 @@
               "people": "0",
               "value": "0,0"
             }
-          ]
+          ],
+          "colors": {
+            "SoR01": "#AE2C1D",
+            "SoR02": "#F49182",
+            "SoR03": "#F49182",
+            "SoR04": "#DB6451",
+            "SoR05": "#F49182"
+          }
         },
         "Abhaengigkeitsquotient": {
           "img": "/Interaktiv/pics/innerComparisonIndicatorsYear2008AreaSozialregionIndiAbhaengigkeitsquotient.gif",
@@ -672,7 +749,14 @@
               "people": "0",
               "value": "0,0"
             }
-          ]
+          ],
+          "colors": {
+            "SoR01": "#F49182",
+            "SoR02": "#FEBDBD",
+            "SoR03": "#FEE5E5",
+            "SoR04": "#FEBDBD",
+            "SoR05": "#FEBDBD"
+          }
         },
         "GreyingIndex": {
           "img": "/Interaktiv/pics/innerComparisonIndicatorsYear2008AreaSozialregionIndiGreyingIndex.gif",
@@ -719,7 +803,14 @@
               "people": "0",
               "value": "0,0"
             }
-          ]
+          ],
+          "colors": {
+            "SoR01": "#FEBDBD",
+            "SoR02": "#FEBDBD",
+            "SoR03": "#AE2C1E",
+            "SoR04": "#FEBDBD",
+            "SoR05": "#FEBDBD"
+          }
         },
         "Migrationshintergrund": {
           "img": "/Interaktiv/pics/innerComparisonIndicatorsYear2008AreaSozialregionIndiMigrationshintergrund.gif",
@@ -766,7 +857,14 @@
               "people": "0",
               "value": "0,0"
             }
-          ]
+          ],
+          "colors": {
+            "SoR01": "#E2E9FE",
+            "SoR02": "#E2E9FE",
+            "SoR03": "#BDD6EA",
+            "SoR04": "#BDD6EA",
+            "SoR05": "#E2E9FE"
+          }
         },
         "Auslaenderanteil": {
           "img": "/Interaktiv/pics/innerComparisonIndicatorsYear2008AreaSozialregionIndiAuslaenderanteil.gif",
@@ -813,7 +911,14 @@
               "people": "0",
               "value": "0,0"
             }
-          ]
+          ],
+          "colors": {
+            "SoR01": "#4B8BC2",
+            "SoR02": "#8BBDD6",
+            "SoR03": "#4B8BC2",
+            "SoR04": "#4B8BC2",
+            "SoR05": "#4B8BC2"
+          }
         }
       },
       "cityLabels": [
@@ -898,7 +1003,14 @@
               "value": "."
             }
           ],
-          "themenbereich": "Haushaltstypen"
+          "themenbereich": "Haushaltstypen",
+          "colors": {
+            "SoR01": "#FEBDBD",
+            "SoR02": "#F49182",
+            "SoR03": "#AE2C1E",
+            "SoR04": "#F49182",
+            "SoR05": "#F49182"
+          }
         },
         "PaareOhneKinder": {
           "img": "/Interaktiv/pics/innerComparisonHaushaltstypenYear2008AreaSozialregionHaushaltstypenPaareOhneKinder.gif",
@@ -945,7 +1057,14 @@
               "people": "0",
               "value": "."
             }
-          ]
+          ],
+          "colors": {
+            "SoR01": "#AE2C1D",
+            "SoR02": "#F49182",
+            "SoR03": "#FEBDBD",
+            "SoR04": "#AE2C1D",
+            "SoR05": "#DB6451"
+          }
         },
         "PaareMitKinder": {
           "img": "/Interaktiv/pics/innerComparisonHaushaltstypenYear2008AreaSozialregionHaushaltstypenPaareMitKinder.gif",
@@ -992,7 +1111,14 @@
               "people": "0",
               "value": "."
             }
-          ]
+          ],
+          "colors": {
+            "SoR01": "#DB6451",
+            "SoR02": "#F49182",
+            "SoR03": "#FEE5E5",
+            "SoR04": "#F49182",
+            "SoR05": "#AE2C1D"
+          }
         },
         "Alleinerziehende": {
           "img": "/Interaktiv/pics/innerComparisonHaushaltstypenYear2008AreaSozialregionHaushaltstypenAlleinerziehende.gif",
@@ -1039,7 +1165,14 @@
               "people": "0",
               "value": "."
             }
-          ]
+          ],
+          "colors": {
+            "SoR01": "#FEBDBD",
+            "SoR02": "#DB6451",
+            "SoR03": "#FEE5E5",
+            "SoR04": "#FEBDBD",
+            "SoR05": "#F49182"
+          }
         },
         "SonstigeMehrpersonenhaushalte": {
           "img": "/Interaktiv/pics/innerComparisonHaushaltstypenYear2008AreaSozialregionHaushaltstypenSonstigeMehrpersonenhaushalte.gif",
@@ -1086,7 +1219,14 @@
               "people": "0",
               "value": "."
             }
-          ]
+          ],
+          "colors": {
+            "SoR01": "#DB6451",
+            "SoR02": "#DB6451",
+            "SoR03": "#FEBDBD",
+            "SoR04": "#F49182",
+            "SoR05": "#F49182"
+          }
         }
       },
       "cityLabels": [
@@ -1161,7 +1301,14 @@
               "value": "."
             }
           ],
-          "themenbereich": "Haushalte nach Personen"
+          "themenbereich": "Haushalte nach Personen",
+          "colors": {
+            "SoR01": "#FEBDBD",
+            "SoR02": "#F49182",
+            "SoR03": "#AE2C1E",
+            "SoR04": "#F49182",
+            "SoR05": "#F49182"
+          }
         },
         "Zweipersonenhaushalte": {
           "img": "/Interaktiv/pics/innerComparisonHaushalteNachPersonenYear2008AreaSozialregionHaushalteNachPersonenZweipersonenhaushalte.gif",
@@ -1208,7 +1355,14 @@
               "people": "0",
               "value": "."
             }
-          ]
+          ],
+          "colors": {
+            "SoR01": "#AE2C1D",
+            "SoR02": "#DB6451",
+            "SoR03": "#F49182",
+            "SoR04": "#AE2C1D",
+            "SoR05": "#DB6451"
+          }
         },
         "DreiOderMehrpersonenhaushalte": {
           "img": "/Interaktiv/pics/innerComparisonHaushalteNachPersonenYear2008AreaSozialregionHaushalteNachPersonenDreiOderMehrpersonenhaushalte.gif",
@@ -1255,7 +1409,14 @@
               "people": "0",
               "value": "."
             }
-          ]
+          ],
+          "colors": {
+            "SoR01": "#AE2C1D",
+            "SoR02": "#DB6451",
+            "SoR03": "#FEE5E5",
+            "SoR04": "#DB6451",
+            "SoR05": "#AE2C1D"
+          }
         }
       },
       "cityLabels": [
@@ -1335,7 +1496,14 @@
               "value": "."
             }
           ],
-          "themenbereich": "Haushalte nach Kindern"
+          "themenbereich": "Haushalte nach Kindern",
+          "colors": {
+            "SoR01": "#AE2C1E",
+            "SoR02": "#AE2C1E",
+            "SoR03": "#AE2C1E",
+            "SoR04": "#AE2C1E",
+            "SoR05": "#DB6350"
+          }
         },
         "Haushalte1Kind": {
           "img": "/Interaktiv/pics/innerComparisonHaushalteNachKindernYear2008AreaSozialregionHaushalteNachKindernHaushalte1Kind.gif",
@@ -1382,7 +1550,14 @@
               "people": "0",
               "value": "."
             }
-          ]
+          ],
+          "colors": {
+            "SoR01": "#DB6451",
+            "SoR02": "#DB6451",
+            "SoR03": "#FEBDBD",
+            "SoR04": "#DB6451",
+            "SoR05": "#AE2C1D"
+          }
         },
         "Haushalte2Kinder": {
           "img": "/Interaktiv/pics/innerComparisonHaushalteNachKindernYear2008AreaSozialregionHaushalteNachKindernHaushalte2Kinder.gif",
@@ -1429,7 +1604,14 @@
               "people": "0",
               "value": "."
             }
-          ]
+          ],
+          "colors": {
+            "SoR01": "#DB6451",
+            "SoR02": "#F49182",
+            "SoR03": "#E2E9FE",
+            "SoR04": "#F49182",
+            "SoR05": "#AE2C1D"
+          }
         },
         "Haushalte3oderMehrKinder": {
           "img": "/Interaktiv/pics/innerComparisonHaushalteNachKindernYear2008AreaSozialregionHaushalteNachKindernHaushalte3oderMehrKinder.gif",
@@ -1476,7 +1658,14 @@
               "people": "0",
               "value": "."
             }
-          ]
+          ],
+          "colors": {
+            "SoR01": "#DB6451",
+            "SoR02": "#AE2C1E",
+            "SoR03": "#E2E9FE",
+            "SoR04": "#FEE5E5",
+            "SoR05": "#AE2C1E"
+          }
         }
       },
       "cityLabels": [
@@ -1546,7 +1735,14 @@
               "value": "."
             }
           ],
-          "themenbereich": "Natürliche Bevölkerungsbewegung"
+          "themenbereich": "Natürliche Bevölkerungsbewegung",
+          "colors": {
+            "SoR01": "#4B8CC3",
+            "SoR02": "#4B8CC3",
+            "SoR03": "#4B8CC3",
+            "SoR04": "#4B8CC3",
+            "SoR05": "#4B8CC3"
+          }
         },
         "Sterbefaelle": {
           "img": "/Interaktiv/pics/innerComparisonPopulationMovementYear2008AreaSozialregionNatuerlichSterbefaelle.gif",
@@ -1593,7 +1789,14 @@
               "people": "0",
               "value": "."
             }
-          ]
+          ],
+          "colors": {
+            "SoR01": "#FEBDBD",
+            "SoR02": "#FEE5E5",
+            "SoR03": "#DB6451",
+            "SoR04": "#FEBDBD",
+            "SoR05": "#FEE5E5"
+          }
         }
       },
       "cityLabels": [
@@ -1663,7 +1866,14 @@
               "value": "."
             }
           ],
-          "themenbereich": "Zu-/Wegzüge"
+          "themenbereich": "Zu-/Wegzüge",
+          "colors": {
+            "SoR01": "#236DA9",
+            "SoR02": "#236DA9",
+            "SoR03": "#236DA9",
+            "SoR04": "#236DA9",
+            "SoR05": "#236DA9"
+          }
         },
         "StadtFort": {
           "img": "/Interaktiv/pics/innerComparisonPopulationMovementYear2008AreaSozialregionStadtgrenzeStadtFort.gif",
@@ -1710,7 +1920,14 @@
               "people": "0",
               "value": "."
             }
-          ]
+          ],
+          "colors": {
+            "SoR01": "#236DA9",
+            "SoR02": "#236DA9",
+            "SoR03": "#236DA9",
+            "SoR04": "#236DA9",
+            "SoR05": "#236DA9"
+          }
         }
       },
       "cityLabels": [
@@ -1780,7 +1997,14 @@
               "value": "."
             }
           ],
-          "themenbereich": "Innerstädtische Bevölkerungsbewegung"
+          "themenbereich": "Innerstädtische Bevölkerungsbewegung",
+          "colors": {
+            "SoR01": "#236DA9",
+            "SoR02": "#236DA9",
+            "SoR03": "#236DA9",
+            "SoR04": "#236DA9",
+            "SoR05": "#236DA9"
+          }
         },
         "InnerFort": {
           "img": "/Interaktiv/pics/innerComparisonPopulationMovementYear2008AreaSozialregionInnerstaedtischInnerFort.gif",
@@ -1827,7 +2051,14 @@
               "people": "0",
               "value": "."
             }
-          ]
+          ],
+          "colors": {
+            "SoR01": "#236DA9",
+            "SoR02": "#236DA9",
+            "SoR03": "#236DA9",
+            "SoR04": "#236DA9",
+            "SoR05": "#236DA9"
+          }
         }
       },
       "cityLabels": [
@@ -2129,7 +2360,14 @@
               "value": "."
             }
           ],
-          "themenbereich": "Bedarfsgemeinschaften"
+          "themenbereich": "Bedarfsgemeinschaften",
+          "colors": {
+            "SoR01": "#F49182",
+            "SoR02": "#DB6451",
+            "SoR03": "#AE2C1E",
+            "SoR04": "#F49182",
+            "SoR05": "#F49182"
+          }
         },
         "bg2P": {
           "img": "/Interaktiv/pics/innerComparisonBgPersonenYear2008AreaSozialregionBgPersonenbg2P.gif",
@@ -2176,7 +2414,14 @@
               "people": "0",
               "value": "."
             }
-          ]
+          ],
+          "colors": {
+            "SoR01": "#DB6451",
+            "SoR02": "#F49182",
+            "SoR03": "#FEBDBD",
+            "SoR04": "#DB6451",
+            "SoR05": "#DB6451"
+          }
         },
         "bg3mP": {
           "img": "/Interaktiv/pics/innerComparisonBgPersonenYear2008AreaSozialregionBgPersonenbg3mP.gif",
@@ -2223,7 +2468,14 @@
               "people": "0",
               "value": "."
             }
-          ]
+          ],
+          "colors": {
+            "SoR01": "#DB6451",
+            "SoR02": "#DB6451",
+            "SoR03": "#FEBDBD",
+            "SoR04": "#F49182",
+            "SoR05": "#AE2C1D"
+          }
         },
         "bgKeinKind": {
           "img": "/Interaktiv/pics/innerComparisonBgPersonenYear2008AreaSozialregionBgPersonenbgKeinKind.gif",
@@ -2270,7 +2522,14 @@
               "people": "0",
               "value": "."
             }
-          ]
+          ],
+          "colors": {
+            "SoR01": "#DB6451",
+            "SoR02": "#DB6451",
+            "SoR03": "#AE2C1E",
+            "SoR04": "#DB6451",
+            "SoR05": "#F49182"
+          }
         },
         "bg1Kind": {
           "img": "/Interaktiv/pics/innerComparisonBgPersonenYear2008AreaSozialregionBgPersonenbg1Kind.gif",
@@ -2317,7 +2576,14 @@
               "people": "0",
               "value": "."
             }
-          ]
+          ],
+          "colors": {
+            "SoR01": "#DB6451",
+            "SoR02": "#F49182",
+            "SoR03": "#FEBDBD",
+            "SoR04": "#DB6451",
+            "SoR05": "#DB6451"
+          }
         },
         "bg2mKinder": {
           "img": "/Interaktiv/pics/innerComparisonBgPersonenYear2008AreaSozialregionBgPersonenbg2mKinder.gif",
@@ -2364,7 +2630,14 @@
               "people": "0",
               "value": "."
             }
-          ]
+          ],
+          "colors": {
+            "SoR01": "#DB6451",
+            "SoR02": "#F49182",
+            "SoR03": "#FEE5E5",
+            "SoR04": "#F49182",
+            "SoR05": "#AE2C1D"
+          }
         }
       },
       "cityLabels": [

@@ -161,7 +161,26 @@
               "people": "11.720",
               "value": "10,9 %"
             }
-          ]
+          ],
+          "colors": {
+            "I": "#E2E9FE",
+            "II": "#FEE5E5",
+            "III": "#4B8BC2",
+            "IV": "#236EA9",
+            "V": "#236EA9",
+            "VI": "#BDD6EA",
+            "VII": "#BDD6EA",
+            "VIII": "#BDD6EA",
+            "IX": "#E2E9FE",
+            "X": "#BDD6EA",
+            "XI": "#BDD6EA",
+            "XII": "#4B8BC2",
+            "XIII": "#4B8BC2",
+            "XIV": "#8BBDD6",
+            "XV": "#4B8BC2",
+            "XVI": "#236EA9",
+            "XVII": "#4B8BC2"
+          }
         }
       },
       "cityLabels": [
@@ -313,7 +332,26 @@
               "value": "27,3 %"
             }
           ],
-          "themenbereich": "Familienstand"
+          "themenbereich": "Familienstand",
+          "colors": {
+            "I": "#BDD6EA",
+            "II": "#8BBDD6",
+            "III": "#4B8BC2",
+            "IV": "#4B8BC2",
+            "V": "#4B8BC2",
+            "VI": "#4B8BC2",
+            "VII": "#8BBDD6",
+            "VIII": "#8BBDD6",
+            "IX": "#8BBDD6",
+            "X": "#BDD6EA",
+            "XI": "#8BBDD6",
+            "XII": "#4B8BC2",
+            "XIII": "#8BBDD6",
+            "XIV": "#8BBDD6",
+            "XV": "#4B8BC2",
+            "XVI": "#4B8BC2",
+            "XVII": "#8BBDD6"
+          }
         },
         "Verheiratet": {
           "img": "/Interaktiv/pics/innerComparisonFamilienstandYear1999AreaPlanungsraumFamilienstandVerheiratet.gif",
@@ -432,7 +470,26 @@
               "people": "11.720",
               "value": "44,3 % %"
             }
-          ]
+          ],
+          "colors": {
+            "I": "#FEBDBD",
+            "II": "#F49182",
+            "III": "#DB6451",
+            "IV": "#AE2C1D",
+            "V": "#AE2C1D",
+            "VI": "#DB6451",
+            "VII": "#F49182",
+            "VIII": "#DB6451",
+            "IX": "#F49182",
+            "X": "#FEBDBD",
+            "XI": "#DB6451",
+            "XII": "#DB6451",
+            "XIII": "#DB6451",
+            "XIV": "#DB6451",
+            "XV": "#AE2C1D",
+            "XVI": "#AE2C1D",
+            "XVII": "#F49182"
+          }
         },
         "Verwitwet": {
           "img": "/Interaktiv/pics/innerComparisonFamilienstandYear1999AreaPlanungsraumFamilienstandVerwitwet.gif",
@@ -551,7 +608,26 @@
               "people": "11.720",
               "value": "6,3 % %"
             }
-          ]
+          ],
+          "colors": {
+            "I": "#FEE5E5",
+            "II": "#FEBDBD",
+            "III": "#F49182",
+            "IV": "#FEE5E5",
+            "V": "#FEE5E5",
+            "VI": "#FEBDBD",
+            "VII": "#E3E9FE",
+            "VIII": "#FEE5E5",
+            "IX": "#F49182",
+            "X": "#AE2C1D",
+            "XI": "#DB6451",
+            "XII": "#FEBDBD",
+            "XIII": "#FEBDBD",
+            "XIV": "#FEBDBD",
+            "XV": "#FEE5E5",
+            "XVI": "#BDD6EA",
+            "XVII": "#E3E9FE"
+          }
         },
         "Geschieden": {
           "img": "/Interaktiv/pics/innerComparisonFamilienstandYear1999AreaPlanungsraumFamilienstandGeschieden.gif",
@@ -670,7 +746,26 @@
               "people": "11.720",
               "value": "5,2 % %"
             }
-          ]
+          ],
+          "colors": {
+            "I": "#FEBDBD",
+            "II": "#F49182",
+            "III": "#FEE5E5",
+            "IV": "#BDD6EA",
+            "V": "#FEE5E5",
+            "VI": "#FEE5E5",
+            "VII": "#FEE5E5",
+            "VIII": "#F49182",
+            "IX": "#F49182",
+            "X": "#F49182",
+            "XI": "#FEBDBD",
+            "XII": "#FEE5E5",
+            "XIII": "#FEBDBD",
+            "XIV": "#FEBDBD",
+            "XV": "#BDD6EA",
+            "XVI": "#BDD6EA",
+            "XVII": "#FEE5E5"
+          }
         }
       },
       "cityLabels": [
@@ -842,7 +937,26 @@
               "value": "38,0"
             }
           ],
-          "themenbereich": "Indikator"
+          "themenbereich": "Indikator",
+          "colors": {
+            "I": "#DB6451",
+            "II": "#DB6451",
+            "III": "#AE2C1D",
+            "IV": "#DB6451",
+            "V": "#DB6451",
+            "VI": "#DB6451",
+            "VII": "#F49182",
+            "VIII": "#DB6451",
+            "IX": "#DB6451",
+            "X": "#AE2C1D",
+            "XI": "#AE2C1D",
+            "XII": "#DB6451",
+            "XIII": "#DB6451",
+            "XIV": "#AE2C1D",
+            "XV": "#F49182",
+            "XVI": "#DB6451",
+            "XVII": "#F49182"
+          }
         },
         "Medianalter": {
           "img": "/Interaktiv/pics/innerComparisonIndicatorsYear1999AreaPlanungsraumIndiMedianalter.gif",
@@ -961,7 +1075,26 @@
               "people": "11.720",
               "value": "36,0"
             }
-          ]
+          ],
+          "colors": {
+            "I": "#F49182",
+            "II": "#F49182",
+            "III": "#DB6451",
+            "IV": "#DB6451",
+            "V": "#DB6451",
+            "VI": "#F49182",
+            "VII": "#FEBEBD",
+            "VIII": "#F49182",
+            "IX": "#F49182",
+            "X": "#DB6451",
+            "XI": "#DB6451",
+            "XII": "#DB6451",
+            "XIII": "#DB6451",
+            "XIV": "#DB6451",
+            "XV": "#F49182",
+            "XVI": "#DB6451",
+            "XVII": "#F49182"
+          }
         },
         "Jugendquotient": {
           "img": "/Interaktiv/pics/innerComparisonIndicatorsYear1999AreaPlanungsraumIndiJugendquotient.gif",
@@ -1080,7 +1213,26 @@
               "people": "11.720",
               "value": "29,0"
             }
-          ]
+          ],
+          "colors": {
+            "I": "#8CBED6",
+            "II": "#BDD6EA",
+            "III": "#BDD6EA",
+            "IV": "#BDD6EA",
+            "V": "#BDD6EA",
+            "VI": "#BDD6EA",
+            "VII": "#BDD6EA",
+            "VIII": "#8CBED6",
+            "IX": "#8CBED6",
+            "X": "#8CBED6",
+            "XI": "#8CBED6",
+            "XII": "#BDD6EA",
+            "XIII": "#8CBED6",
+            "XIV": "#8CBED6",
+            "XV": "#E2E9FE",
+            "XVI": "#BDD6EA",
+            "XVII": "#8CBED6"
+          }
         },
         "Altenquotient": {
           "img": "/Interaktiv/pics/innerComparisonIndicatorsYear1999AreaPlanungsraumIndiAltenquotient.gif",
@@ -1199,7 +1351,26 @@
               "people": "11.720",
               "value": "19,6"
             }
-          ]
+          ],
+          "colors": {
+            "I": "#E2E9FE",
+            "II": "#E2E9FE",
+            "III": "#FEBDBD",
+            "IV": "#FEE5E5",
+            "V": "#FEE5E5",
+            "VI": "#FEE5E5",
+            "VII": "#E2E9FE",
+            "VIII": "#E2E9FE",
+            "IX": "#FEE5E5",
+            "X": "#FEBDBD",
+            "XI": "#F49182",
+            "XII": "#FEE5E5",
+            "XIII": "#FEE5E5",
+            "XIV": "#FEE5E5",
+            "XV": "#BDD6EA",
+            "XVI": "#E2E9FE",
+            "XVII": "#BDD6EA"
+          }
         },
         "Abhaengigkeitsquotient": {
           "img": "/Interaktiv/pics/innerComparisonIndicatorsYear1999AreaPlanungsraumIndiAbhaengigkeitsquotient.gif",
@@ -1318,7 +1489,26 @@
               "people": "11.720",
               "value": "48,7"
             }
-          ]
+          ],
+          "colors": {
+            "I": "#E2E9FE",
+            "II": "#FEE5E5",
+            "III": "#FEBDBD",
+            "IV": "#FEBDBD",
+            "V": "#FEBDBD",
+            "VI": "#FEE5E5",
+            "VII": "#FEBDBD",
+            "VIII": "#FEE5E5",
+            "IX": "#FEBDBD",
+            "X": "#FEE5E5",
+            "XI": "#FEBDBD",
+            "XII": "#FEBDBD",
+            "XIII": "#FEE5E5",
+            "XIV": "#FEE5E5",
+            "XV": "#FEBDBD",
+            "XVI": "#FEBDBD",
+            "XVII": "#E2E9FE"
+          }
         },
         "GreyingIndex": {
           "img": "/Interaktiv/pics/innerComparisonIndicatorsYear1999AreaPlanungsraumIndiGreyingIndex.gif",
@@ -1437,7 +1627,26 @@
               "people": "11.720",
               "value": "15,1"
             }
-          ]
+          ],
+          "colors": {
+            "I": "#E2E9FE",
+            "II": "#BDD6EA",
+            "III": "#8BBDD6",
+            "IV": "#8BBDD6",
+            "V": "#8BBDD6",
+            "VI": "#8BBDD6",
+            "VII": "#8BBDD6",
+            "VIII": "#BDD6EA",
+            "IX": "#BDD6EA",
+            "X": "#AE2C1D",
+            "XI": "#BDD6EA",
+            "XII": "#8BBDD6",
+            "XIII": "#BDD6EA",
+            "XIV": "#BDD6EA",
+            "XV": "#BDD6EA",
+            "XVI": "#BDD6EA",
+            "XVII": "#8BBDD6"
+          }
         },
         "Migrationshintergrund": {
           "img": "/Interaktiv/pics/innerComparisonIndicatorsYear1999AreaPlanungsraumIndiMigrationshintergrund.gif",
@@ -1556,7 +1765,8 @@
               "people": "11.720",
               "value": "0,0"
             }
-          ]
+          ],
+          "mapUnavailable": true
         },
         "Auslaenderanteil": {
           "img": "/Interaktiv/pics/innerComparisonIndicatorsYear1999AreaPlanungsraumIndiAuslaenderanteil.gif",
@@ -1675,7 +1885,26 @@
               "people": "11.720",
               "value": "10,9"
             }
-          ]
+          ],
+          "colors": {
+            "I": "#8BBDD6",
+            "II": "#8BBDD6",
+            "III": "#236EA9",
+            "IV": "#236EA9",
+            "V": "#236EA9",
+            "VI": "#4B8BC2",
+            "VII": "#8BBDD6",
+            "VIII": "#4B8BC2",
+            "IX": "#8BBDD6",
+            "X": "#4B8BC2",
+            "XI": "#8BBDD6",
+            "XII": "#236EA9",
+            "XIII": "#4B8BC2",
+            "XIV": "#4B8BC2",
+            "XV": "#236EA9",
+            "XVI": "#236EA9",
+            "XVII": "#4B8BC2"
+          }
         }
       },
       "cityLabels": [

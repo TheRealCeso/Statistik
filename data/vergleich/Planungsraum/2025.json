@@ -141,7 +141,26 @@
               "value": "35,2 %"
             }
           ],
-          "themenbereich": "Migrationshintergrund"
+          "themenbereich": "Migrationshintergrund",
+          "colors": {
+            "I": "#E3EAFE",
+            "II": "#236DA9",
+            "III": "#BDD6EA",
+            "IV": "#FEE5E5",
+            "V": "#E3EAFE",
+            "VI": "#4B8BC2",
+            "VII": "#8BBDD6",
+            "VIII": "#E3EAFE",
+            "IX": "#BDD6EA",
+            "X": "#FEE5E5",
+            "XI": "#8BBDD6",
+            "XII": "#E3EAFE",
+            "XIII": "#E3EAFE",
+            "XIV": "#FEE5E5",
+            "XV": "#F49182",
+            "XVI": "#AE2C1D",
+            "XVII": "#4B8BC2"
+          }
         },
         "GermansWithMigration": {
           "img": "/Interaktiv/pics/innerComparisonMigrationYear2025AreaPlanungsraumMigrationGermansWithMigration.gif",
@@ -260,7 +279,26 @@
               "people": "11.017",
               "value": "43,5 %"
             }
-          ]
+          ],
+          "colors": {
+            "I": "#4B8BC2",
+            "II": "#BDD6EA",
+            "III": "#BDD6EA",
+            "IV": "#E3EAFE",
+            "V": "#FEE5E5",
+            "VI": "#E3EAFE",
+            "VII": "#FEE5E5",
+            "VIII": "#BDD6EA",
+            "IX": "#BDD6EA",
+            "X": "#4B8BC2",
+            "XI": "#BDD6EA",
+            "XII": "#BDD6EA",
+            "XIII": "#BDD6EA",
+            "XIV": "#BDD6EA",
+            "XV": "#8BBDD6",
+            "XVI": "#236DA9",
+            "XVII": "#DB6451"
+          }
         },
         "Foreigners": {
           "img": "/Interaktiv/pics/innerComparisonMigrationYear2025AreaPlanungsraumMigrationForeigners.gif",
@@ -379,7 +417,26 @@
               "people": "11.017",
               "value": "21,3 %"
             }
-          ]
+          ],
+          "colors": {
+            "I": "#FEE5E5",
+            "II": "#AE2C1D",
+            "III": "#FEE5E5",
+            "IV": "#4B8BC2",
+            "V": "#8BBDD6",
+            "VI": "#FEBDBD",
+            "VII": "#FEE5E5",
+            "VIII": "#E3EAFE",
+            "IX": "#FEE5E5",
+            "X": "#E3EAFE",
+            "XI": "#FEBDBD",
+            "XII": "#E3EAFE",
+            "XIII": "#BDD6EA",
+            "XIV": "#BDD6EA",
+            "XV": "#4B8BC2",
+            "XVI": "#236DA9",
+            "XVII": "#E3EAFE"
+          }
         }
       },
       "cityLabels": [
@@ -531,7 +588,26 @@
               "value": "33,9 %"
             }
           ],
-          "themenbereich": "Familienstand"
+          "themenbereich": "Familienstand",
+          "colors": {
+            "I": "#E2E9FE",
+            "II": "#BDD6EA",
+            "III": "#8BBDD6",
+            "IV": "#4B8BC2",
+            "V": "#8BBDD6",
+            "VI": "#8BBDD6",
+            "VII": "#8BBDD6",
+            "VIII": "#BDD6EA",
+            "IX": "#E2E9FE",
+            "X": "#BDD6EA",
+            "XI": "#8BBDD6",
+            "XII": "#8BBDD6",
+            "XIII": "#8BBDD6",
+            "XIV": "#BDD6EA",
+            "XV": "#8BBDD6",
+            "XVI": "#4B8BC2",
+            "XVII": "#BDD6EA"
+          }
         },
         "Verheiratet": {
           "img": "/Interaktiv/pics/innerComparisonFamilienstandYear2025AreaPlanungsraumFamilienstandVerheiratet.gif",
@@ -650,7 +726,26 @@
               "people": "11.017",
               "value": "40,1 % %"
             }
-          ]
+          ],
+          "colors": {
+            "I": "#FEE5E5",
+            "II": "#FEBDBD",
+            "III": "#F49182",
+            "IV": "#DB6451",
+            "V": "#DB6451",
+            "VI": "#F49182",
+            "VII": "#F49182",
+            "VIII": "#FEBDBD",
+            "IX": "#FEE5E5",
+            "X": "#FEE5E5",
+            "XI": "#F49182",
+            "XII": "#F49182",
+            "XIII": "#F49182",
+            "XIV": "#F49182",
+            "XV": "#DB6451",
+            "XVI": "#AE2C1D",
+            "XVII": "#F49182"
+          }
         },
         "Verwitwet": {
           "img": "/Interaktiv/pics/innerComparisonFamilienstandYear2025AreaPlanungsraumFamilienstandVerwitwet.gif",
@@ -769,7 +864,26 @@
               "people": "11.017",
               "value": "6,3 % %"
             }
-          ]
+          ],
+          "colors": {
+            "I": "#BDD6EA",
+            "II": "#BDD6EA",
+            "III": "#E2E9FE",
+            "IV": "#FEE5E5",
+            "V": "#FEE5E5",
+            "VI": "#E2E9FE",
+            "VII": "#E2E9FE",
+            "VIII": "#E2E9FE",
+            "IX": "#BDD6EA",
+            "X": "#E2E9FE",
+            "XI": "#FEE5E5",
+            "XII": "#E2E9FE",
+            "XIII": "#FEE5E5",
+            "XIV": "#E2E9FE",
+            "XV": "#FEE5E5",
+            "XVI": "#E2E9FE",
+            "XVII": "#E2E9FE"
+          }
         },
         "Geschieden": {
           "img": "/Interaktiv/pics/innerComparisonFamilienstandYear2025AreaPlanungsraumFamilienstandGeschieden.gif",
@@ -888,7 +1002,26 @@
               "people": "11.017",
               "value": "7,3 % %"
             }
-          ]
+          ],
+          "colors": {
+            "I": "#F49182",
+            "II": "#F49182",
+            "III": "#F49182",
+            "IV": "#FEBDBD",
+            "V": "#F49182",
+            "VI": "#F49182",
+            "VII": "#F49182",
+            "VIII": "#DB6451",
+            "IX": "#DB6451",
+            "X": "#AE2C1D",
+            "XI": "#F49182",
+            "XII": "#F49182",
+            "XIII": "#DB6451",
+            "XIV": "#F49182",
+            "XV": "#FEBDBD",
+            "XVI": "#FEE5E5",
+            "XVII": "#F49182"
+          }
         }
       },
       "cityLabels": [
@@ -1060,7 +1193,26 @@
               "value": "43,7"
             }
           ],
-          "themenbereich": "Indikator"
+          "themenbereich": "Indikator",
+          "colors": {
+            "I": "#DB6451",
+            "II": "#DB6451",
+            "III": "#AE2C1D",
+            "IV": "#AE2C1D",
+            "V": "#AE2C1D",
+            "VI": "#DB6451",
+            "VII": "#DB6451",
+            "VIII": "#DB6451",
+            "IX": "#DB6451",
+            "X": "#AE2C1D",
+            "XI": "#AE2C1D",
+            "XII": "#AE2C1D",
+            "XIII": "#AE2C1D",
+            "XIV": "#DB6451",
+            "XV": "#AE2C1D",
+            "XVI": "#AE2C1D",
+            "XVII": "#AE2C1D"
+          }
         },
         "Medianalter": {
           "img": "/Interaktiv/pics/innerComparisonIndicatorsYear2025AreaPlanungsraumIndiMedianalter.gif",
@@ -1179,7 +1331,26 @@
               "people": "11.017",
               "value": "42,3"
             }
-          ]
+          ],
+          "colors": {
+            "I": "#F49182",
+            "II": "#F49182",
+            "III": "#DB6451",
+            "IV": "#AE2C1D",
+            "V": "#AE2C1D",
+            "VI": "#DB6451",
+            "VII": "#F49182",
+            "VIII": "#DB6451",
+            "IX": "#F49182",
+            "X": "#DB6451",
+            "XI": "#DB6451",
+            "XII": "#DB6451",
+            "XIII": "#DB6451",
+            "XIV": "#DB6451",
+            "XV": "#AE2C1D",
+            "XVI": "#5C3A35",
+            "XVII": "#DB6451"
+          }
         },
         "Jugendquotient": {
           "img": "/Interaktiv/pics/innerComparisonIndicatorsYear2025AreaPlanungsraumIndiJugendquotient.gif",
@@ -1298,7 +1469,26 @@
               "people": "11.017",
               "value": "24,1"
             }
-          ]
+          ],
+          "colors": {
+            "I": "#4B8BC2",
+            "II": "#BDD6EA",
+            "III": "#BDD6EA",
+            "IV": "#BDD6EA",
+            "V": "#BDD6EA",
+            "VI": "#8BBDD6",
+            "VII": "#BDD6EA",
+            "VIII": "#8BBDD6",
+            "IX": "#8BBDD6",
+            "X": "#8BBDD6",
+            "XI": "#8BBDD6",
+            "XII": "#BDD6EA",
+            "XIII": "#8BBDD6",
+            "XIV": "#8BBDD6",
+            "XV": "#BDD6EA",
+            "XVI": "#BDD6EA",
+            "XVII": "#8BBDD6"
+          }
         },
         "Altenquotient": {
           "img": "/Interaktiv/pics/innerComparisonIndicatorsYear2025AreaPlanungsraumIndiAltenquotient.gif",
@@ -1417,7 +1607,26 @@
               "people": "11.017",
               "value": "38,8"
             }
-          ]
+          ],
+          "colors": {
+            "I": "#BDD6EA",
+            "II": "#BDD6EA",
+            "III": "#FEBDBD",
+            "IV": "#AE2C1D",
+            "V": "#F49182",
+            "VI": "#FEE5E5",
+            "VII": "#E3E9FE",
+            "VIII": "#FEE5E5",
+            "IX": "#E3E9FE",
+            "X": "#FEE5E5",
+            "XI": "#FEBDBD",
+            "XII": "#FEBDBD",
+            "XIII": "#FEBDBD",
+            "XIV": "#FEE5E5",
+            "XV": "#DB6451",
+            "XVI": "#AE2C1D",
+            "XVII": "#FEBDBD"
+          }
         },
         "Abhaengigkeitsquotient": {
           "img": "/Interaktiv/pics/innerComparisonIndicatorsYear2025AreaPlanungsraumIndiAbhaengigkeitsquotient.gif",
@@ -1536,7 +1745,26 @@
               "people": "11.017",
               "value": "62,9"
             }
-          ]
+          ],
+          "colors": {
+            "I": "#E2E9FE",
+            "II": "#FEE5E5",
+            "III": "#FEBDBD",
+            "IV": "#AE2C1D",
+            "V": "#F49182",
+            "VI": "#FEBDBD",
+            "VII": "#FEBDBD",
+            "VIII": "#FEE5E5",
+            "IX": "#E2E9FE",
+            "X": "#FEE5E5",
+            "XI": "#FEBDBD",
+            "XII": "#F49182",
+            "XIII": "#FEBDBD",
+            "XIV": "#FEBDBD",
+            "XV": "#F49182",
+            "XVI": "#AE2C1D",
+            "XVII": "#FEBDBD"
+          }
         },
         "GreyingIndex": {
           "img": "/Interaktiv/pics/innerComparisonIndicatorsYear2025AreaPlanungsraumIndiGreyingIndex.gif",
@@ -1655,7 +1883,26 @@
               "people": "11.017",
               "value": "26,3"
             }
-          ]
+          ],
+          "colors": {
+            "I": "#FEE5E5",
+            "II": "#BDD6EA",
+            "III": "#E3E9FE",
+            "IV": "#FEE5E5",
+            "V": "#E3E9FE",
+            "VI": "#FEE5E5",
+            "VII": "#E3E9FE",
+            "VIII": "#E3E9FE",
+            "IX": "#BDD6EA",
+            "X": "#FEBDBD",
+            "XI": "#FEBDBD",
+            "XII": "#FEE5E5",
+            "XIII": "#FEE5E5",
+            "XIV": "#FEE5E5",
+            "XV": "#E3E9FE",
+            "XVI": "#FEE5E5",
+            "XVII": "#E3E9FE"
+          }
         },
         "Migrationshintergrund": {
           "img": "/Interaktiv/pics/innerComparisonIndicatorsYear2025AreaPlanungsraumIndiMigrationshintergrund.gif",
@@ -1774,7 +2021,26 @@
               "people": "11.017",
               "value": "64,8"
             }
-          ]
+          ],
+          "colors": {
+            "I": "#E2E9FE",
+            "II": "#F49182",
+            "III": "#E2E9FE",
+            "IV": "#BDD6EA",
+            "V": "#E2E9FE",
+            "VI": "#FEBDBD",
+            "VII": "#FEE5E5",
+            "VIII": "#E2E9FE",
+            "IX": "#FEE5E5",
+            "X": "#BDD6EA",
+            "XI": "#FEE5E5",
+            "XII": "#E2E9FE",
+            "XIII": "#E2E9FE",
+            "XIV": "#E2E9FE",
+            "XV": "#8BBDD6",
+            "XVI": "#4B8BC2",
+            "XVII": "#FEBDBD"
+          }
         },
         "Auslaenderanteil": {
           "img": "/Interaktiv/pics/innerComparisonIndicatorsYear2025AreaPlanungsraumIndiAuslaenderanteil.gif",
@@ -1893,7 +2159,26 @@
               "people": "11.017",
               "value": "21,3"
             }
-          ]
+          ],
+          "colors": {
+            "I": "#8BBDD6",
+            "II": "#E2E9FE",
+            "III": "#8BBDD6",
+            "IV": "#4B8BC2",
+            "V": "#4B8BC2",
+            "VI": "#BDD6EA",
+            "VII": "#8BBDD6",
+            "VIII": "#8BBDD6",
+            "IX": "#8BBDD6",
+            "X": "#8BBDD6",
+            "XI": "#BDD6EA",
+            "XII": "#8BBDD6",
+            "XIII": "#4B8BC2",
+            "XIV": "#4B8BC2",
+            "XV": "#4B8BC2",
+            "XVI": "#236EA9",
+            "XVII": "#8BBDD6"
+          }
         }
       },
       "cityLabels": [
@@ -2050,7 +2335,26 @@
               "value": "56,4 %"
             }
           ],
-          "themenbereich": "Haushaltstypen"
+          "themenbereich": "Haushaltstypen",
+          "colors": {
+            "I": "#AE2C1D",
+            "II": "#DB6451",
+            "III": "#FEBDBD",
+            "IV": "#FEE5E5",
+            "V": "#FEBDBD",
+            "VI": "#F49182",
+            "VII": "#FEBDBD",
+            "VIII": "#F49182",
+            "IX": "#AE2C1D",
+            "X": "#DB6451",
+            "XI": "#F49182",
+            "XII": "#F49182",
+            "XIII": "#F49182",
+            "XIV": "#DB6451",
+            "XV": "#FEE5E5",
+            "XVI": "#E2E9FE",
+            "XVII": "#DB6451"
+          }
         },
         "PaareOhneKinder": {
           "img": "/Interaktiv/pics/innerComparisonHaushaltstypenYear2025AreaPlanungsraumHaushaltstypenPaareOhneKinder.gif",
@@ -2169,7 +2473,26 @@
               "people": "1.616",
               "value": "25,3 %"
             }
-          ]
+          ],
+          "colors": {
+            "I": "#E3E9FE",
+            "II": "#E3E9FE",
+            "III": "#FEBDBD",
+            "IV": "#DB6451",
+            "V": "#F49182",
+            "VI": "#FEE5E5",
+            "VII": "#FEBDBD",
+            "VIII": "#FEE5E5",
+            "IX": "#E3E9FE",
+            "X": "#FEE5E5",
+            "XI": "#FEE5E5",
+            "XII": "#FEBDBD",
+            "XIII": "#FEBDBD",
+            "XIV": "#FEE5E5",
+            "XV": "#DB6451",
+            "XVI": "#AE2C1D",
+            "XVII": "#FEE5E5"
+          }
         },
         "PaareMitKinder": {
           "img": "/Interaktiv/pics/innerComparisonHaushaltstypenYear2025AreaPlanungsraumHaushaltstypenPaareMitKinder.gif",
@@ -2288,7 +2611,26 @@
               "people": "636",
               "value": "9,9 %"
             }
-          ]
+          ],
+          "colors": {
+            "I": "#BDD6EA",
+            "II": "#FEE5E5",
+            "III": "#FEBDBD",
+            "IV": "#FEBDBD",
+            "V": "#FEBDBD",
+            "VI": "#FEE5E5",
+            "VII": "#F49182",
+            "VIII": "#FEE5E5",
+            "IX": "#BDD6EA",
+            "X": "#E2E9FE",
+            "XI": "#FEE5E5",
+            "XII": "#FEBDBD",
+            "XIII": "#FEE5E5",
+            "XIV": "#FEE5E5",
+            "XV": "#FEBDBD",
+            "XVI": "#F49182",
+            "XVII": "#BDD6EA"
+          }
         },
         "Alleinerziehende": {
           "img": "/Interaktiv/pics/innerComparisonHaushaltstypenYear2025AreaPlanungsraumHaushaltstypenAlleinerziehende.gif",
@@ -2407,7 +2749,26 @@
               "people": "161",
               "value": "2,5 %"
             }
-          ]
+          ],
+          "colors": {
+            "I": "#E2E9FE",
+            "II": "#FEBDBD",
+            "III": "#FEBDBD",
+            "IV": "#FEE5E5",
+            "V": "#E2E9FE",
+            "VI": "#FEE5E5",
+            "VII": "#FEBDBD",
+            "VIII": "#FEE5E5",
+            "IX": "#FEE5E5",
+            "X": "#FEE5E5",
+            "XI": "#FEE5E5",
+            "XII": "#FEE5E5",
+            "XIII": "#FEE5E5",
+            "XIV": "#E2E9FE",
+            "XV": "#FEE5E5",
+            "XVI": "#E2E9FE",
+            "XVII": "#E2E9FE"
+          }
         },
         "SonstigeMehrpersonenhaushalte": {
           "img": "/Interaktiv/pics/innerComparisonHaushaltstypenYear2025AreaPlanungsraumHaushaltstypenSonstigeMehrpersonenhaushalte.gif",
@@ -2526,7 +2887,26 @@
               "people": "373",
               "value": "5,8 %"
             }
-          ]
+          ],
+          "colors": {
+            "I": "#FEE5E5",
+            "II": "#DB6451",
+            "III": "#DB6451",
+            "IV": "#DB6451",
+            "V": "#DB6451",
+            "VI": "#F49182",
+            "VII": "#DB6451",
+            "VIII": "#FEBDBD",
+            "IX": "#FEBDBD",
+            "X": "#FEE5E5",
+            "XI": "#FEBDBD",
+            "XII": "#FEBDBD",
+            "XIII": "#FEE5E5",
+            "XIV": "#FEE5E5",
+            "XV": "#F49182",
+            "XVI": "#FEBDBD",
+            "XVII": "#FEE5E5"
+          }
         }
       },
       "cityLabels": [
@@ -2673,7 +3053,26 @@
               "value": "56,4 %"
             }
           ],
-          "themenbereich": "Haushalte nach Personen"
+          "themenbereich": "Haushalte nach Personen",
+          "colors": {
+            "I": "#AE2C1D",
+            "II": "#DB6451",
+            "III": "#FEBDBD",
+            "IV": "#FEE5E5",
+            "V": "#FEBDBD",
+            "VI": "#F49182",
+            "VII": "#FEBDBD",
+            "VIII": "#F49182",
+            "IX": "#AE2C1D",
+            "X": "#DB6451",
+            "XI": "#F49182",
+            "XII": "#F49182",
+            "XIII": "#F49182",
+            "XIV": "#DB6451",
+            "XV": "#FEE5E5",
+            "XVI": "#E2E9FE",
+            "XVII": "#DB6451"
+          }
         },
         "Zweipersonenhaushalte": {
           "img": "/Interaktiv/pics/innerComparisonHaushalteNachPersonenYear2025AreaPlanungsraumHaushalteNachPersonenZweipersonenhaushalte.gif",
@@ -2792,7 +3191,26 @@
               "people": "1.702",
               "value": "26,6 %"
             }
-          ]
+          ],
+          "colors": {
+            "I": "#FEE5E5",
+            "II": "#FEE5E5",
+            "III": "#FEBDBD",
+            "IV": "#DB6451",
+            "V": "#F49182",
+            "VI": "#FEBDBD",
+            "VII": "#FEBDBD",
+            "VIII": "#FEBDBD",
+            "IX": "#FEE5E5",
+            "X": "#FEBDBD",
+            "XI": "#FEBDBD",
+            "XII": "#F49182",
+            "XIII": "#FEBDBD",
+            "XIV": "#FEBDBD",
+            "XV": "#DB6451",
+            "XVI": "#AE2C1D",
+            "XVII": "#FEBDBD"
+          }
         },
         "DreiOderMehrpersonenhaushalte": {
           "img": "/Interaktiv/pics/innerComparisonHaushalteNachPersonenYear2025AreaPlanungsraumHaushalteNachPersonenDreiOderMehrpersonenhaushalte.gif",
@@ -2911,7 +3329,26 @@
               "people": "1.084",
               "value": "17,0 %"
             }
-          ]
+          ],
+          "colors": {
+            "I": "#BDD6EA",
+            "II": "#FEE5E5",
+            "III": "#FEBDBD",
+            "IV": "#FEBDBD",
+            "V": "#F49182",
+            "VI": "#FEE5E5",
+            "VII": "#FEBDBD",
+            "VIII": "#FEE5E5",
+            "IX": "#BDD6EA",
+            "X": "#E2E9FE",
+            "XI": "#FEE5E5",
+            "XII": "#FEE5E5",
+            "XIII": "#FEE5E5",
+            "XIV": "#E2E9FE",
+            "XV": "#FEBDBD",
+            "XVI": "#F49182",
+            "XVII": "#E2E9FE"
+          }
         }
       },
       "cityLabels": [
@@ -3063,7 +3500,26 @@
               "value": "86,6 %"
             }
           ],
-          "themenbereich": "Haushalte nach Kindern"
+          "themenbereich": "Haushalte nach Kindern",
+          "colors": {
+            "I": "#AE2C1D",
+            "II": "#AE2C1D",
+            "III": "#DB6451",
+            "IV": "#DB6451",
+            "V": "#DB6451",
+            "VI": "#AE2C1D",
+            "VII": "#DB6451",
+            "VIII": "#AE2C1D",
+            "IX": "#AE2C1D",
+            "X": "#AE2C1D",
+            "XI": "#DB6451",
+            "XII": "#DB6451",
+            "XIII": "#AE2C1D",
+            "XIV": "#AE2C1D",
+            "XV": "#DB6451",
+            "XVI": "#DB6451",
+            "XVII": "#AE2C1D"
+          }
         },
         "Haushalte1Kind": {
           "img": "/Interaktiv/pics/innerComparisonHaushalteNachKindernYear2025AreaPlanungsraumHaushalteNachKindernHaushalte1Kind.gif",
@@ -3182,7 +3638,26 @@
               "people": "454",
               "value": "7,1 %"
             }
-          ]
+          ],
+          "colors": {
+            "I": "#E3E9FE",
+            "II": "#FEBDBD",
+            "III": "#FEBDBD",
+            "IV": "#FEBDBD",
+            "V": "#FEBDBD",
+            "VI": "#FEBDBD",
+            "VII": "#F49182",
+            "VIII": "#FEBDBD",
+            "IX": "#FEE5E5",
+            "X": "#FEE5E5",
+            "XI": "#FEBDBD",
+            "XII": "#FEBDBD",
+            "XIII": "#FEE5E5",
+            "XIV": "#FEE5E5",
+            "XV": "#FEBDBD",
+            "XVI": "#FEBDBD",
+            "XVII": "#E3E9FE"
+          }
         },
         "Haushalte2Kinder": {
           "img": "/Interaktiv/pics/innerComparisonHaushalteNachKindernYear2025AreaPlanungsraumHaushalteNachKindernHaushalte2Kinder.gif",
@@ -3301,7 +3776,26 @@
               "people": "327",
               "value": "5,1 %"
             }
-          ]
+          ],
+          "colors": {
+            "I": "#8BBDD6",
+            "II": "#E2E9FE",
+            "III": "#FEBDBD",
+            "IV": "#FEBDBD",
+            "V": "#FEBDBD",
+            "VI": "#E2E9FE",
+            "VII": "#FEBDBD",
+            "VIII": "#E2E9FE",
+            "IX": "#BDD6EA",
+            "X": "#BDD6EA",
+            "XI": "#FEE5E5",
+            "XII": "#FEE5E5",
+            "XIII": "#E2E9FE",
+            "XIV": "#E2E9FE",
+            "XV": "#FEBDBD",
+            "XVI": "#F49182",
+            "XVII": "#BDD6EA"
+          }
         },
         "Haushalte3oderMehrKinder": {
           "img": "/Interaktiv/pics/innerComparisonHaushalteNachKindernYear2025AreaPlanungsraumHaushalteNachKindernHaushalte3oderMehrKinder.gif",
@@ -3420,7 +3914,26 @@
               "people": "78",
               "value": "1,2 %"
             }
-          ]
+          ],
+          "colors": {
+            "I": "#8BBDD6",
+            "II": "#FEBDBD",
+            "III": "#E2E9FE",
+            "IV": "#FEE5E5",
+            "V": "#FEE5E5",
+            "VI": "#E2E9FE",
+            "VII": "#FEBDBD",
+            "VIII": "#BDD6EA",
+            "IX": "#8BBDD6",
+            "X": "#8BBDD6",
+            "XI": "#E2E9FE",
+            "XII": "#E2E9FE",
+            "XIII": "#E2E9FE",
+            "XIV": "#BDD6EA",
+            "XV": "#E2E9FE",
+            "XVI": "#FEE5E5",
+            "XVII": "#8BBDD6"
+          }
         }
       },
       "cityLabels": [
@@ -3562,7 +4075,26 @@
               "value": "7,5 je Tausend"
             }
           ],
-          "themenbereich": "Natürliche Bevölkerungsbewegung"
+          "themenbereich": "Natürliche Bevölkerungsbewegung",
+          "colors": {
+            "I": "#4B8BC2",
+            "II": "#4B8BC2",
+            "III": "#4B8BC2",
+            "IV": "#4B8BC2",
+            "V": "#236EA9",
+            "VI": "#4B8BC2",
+            "VII": "#4B8BC2",
+            "VIII": "#4B8BC2",
+            "IX": "#4B8BC2",
+            "X": "#4B8BC2",
+            "XI": "#4B8BC2",
+            "XII": "#4B8BC2",
+            "XIII": "#4B8BC2",
+            "XIV": "#4B8BC2",
+            "XV": "#236EA9",
+            "XVI": "#4B8BC2",
+            "XVII": "#4B8BC2"
+          }
         },
         "Sterbefaelle": {
           "img": "/Interaktiv/pics/innerComparisonPopulationMovementYear2025AreaPlanungsraumNatuerlichSterbefaelle.gif",
@@ -3681,7 +4213,26 @@
               "people": "11.017",
               "value": "9,2 je Tausend"
             }
-          ]
+          ],
+          "colors": {
+            "I": "#8BBDD6",
+            "II": "#8BBDD6",
+            "III": "#8BBDD6",
+            "IV": "#E2E9FE",
+            "V": "#8BBDD6",
+            "VI": "#BDD6EA",
+            "VII": "#8BBDD6",
+            "VIII": "#BDD6EA",
+            "IX": "#4B8BC2",
+            "X": "#FEE5E5",
+            "XI": "#E2E9FE",
+            "XII": "#BDD6EA",
+            "XIII": "#E2E9FE",
+            "XIV": "#8BBDD6",
+            "XV": "#E2E9FE",
+            "XVI": "#BDD6EA",
+            "XVII": "#8BBDD6"
+          }
         }
       },
       "cityLabels": [
@@ -3823,7 +4374,26 @@
               "value": "62,0 je Tausend"
             }
           ],
-          "themenbereich": "Zu-/Wegzüge"
+          "themenbereich": "Zu-/Wegzüge",
+          "colors": {
+            "I": "#236EA9",
+            "II": "#236EA9",
+            "III": "#236EA9",
+            "IV": "#236EA9",
+            "V": "#236EA9",
+            "VI": "#236EA9",
+            "VII": "#236EA9",
+            "VIII": "#236EA9",
+            "IX": "#236EA9",
+            "X": "#236EA9",
+            "XI": "#236EA9",
+            "XII": "#236EA9",
+            "XIII": "#236EA9",
+            "XIV": "#236EA9",
+            "XV": "#236EA9",
+            "XVI": "#236EA9",
+            "XVII": "#236EA9"
+          }
         },
         "StadtFort": {
           "img": "/Interaktiv/pics/innerComparisonPopulationMovementYear2025AreaPlanungsraumStadtgrenzeStadtFort.gif",
@@ -3942,7 +4512,26 @@
               "people": "11.017",
               "value": "60,3 je Tausend"
             }
-          ]
+          ],
+          "colors": {
+            "I": "#236EA9",
+            "II": "#236EA9",
+            "III": "#236EA9",
+            "IV": "#236EA9",
+            "V": "#236EA9",
+            "VI": "#236EA9",
+            "VII": "#236EA9",
+            "VIII": "#236EA9",
+            "IX": "#236EA9",
+            "X": "#236EA9",
+            "XI": "#236EA9",
+            "XII": "#236EA9",
+            "XIII": "#236EA9",
+            "XIV": "#236EA9",
+            "XV": "#236EA9",
+            "XVI": "#236EA9",
+            "XVII": "#236EA9"
+          }
         }
       },
       "cityLabels": [
@@ -4084,7 +4673,26 @@
               "value": "49,1 je Tausend"
             }
           ],
-          "themenbereich": "Innerstädtische Bevölkerungsbewegung"
+          "themenbereich": "Innerstädtische Bevölkerungsbewegung",
+          "colors": {
+            "I": "#236EA9",
+            "II": "#236EA9",
+            "III": "#236EA9",
+            "IV": "#236EA9",
+            "V": "#236EA9",
+            "VI": "#236EA9",
+            "VII": "#236EA9",
+            "VIII": "#236EA9",
+            "IX": "#236EA9",
+            "X": "#236EA9",
+            "XI": "#236EA9",
+            "XII": "#236EA9",
+            "XIII": "#236EA9",
+            "XIV": "#236EA9",
+            "XV": "#236EA9",
+            "XVI": "#236EA9",
+            "XVII": "#236EA9"
+          }
         },
         "InnerFort": {
           "img": "/Interaktiv/pics/innerComparisonPopulationMovementYear2025AreaPlanungsraumInnerstaedtischInnerFort.gif",
@@ -4203,7 +4811,26 @@
               "people": "11.017",
               "value": "43,9 je Tausend"
             }
-          ]
+          ],
+          "colors": {
+            "I": "#236EA9",
+            "II": "#236EA9",
+            "III": "#236EA9",
+            "IV": "#236EA9",
+            "V": "#236EA9",
+            "VI": "#236EA9",
+            "VII": "#236EA9",
+            "VIII": "#236EA9",
+            "IX": "#236EA9",
+            "X": "#236EA9",
+            "XI": "#236EA9",
+            "XII": "#236EA9",
+            "XIII": "#236EA9",
+            "XIV": "#236EA9",
+            "XV": "#236EA9",
+            "XVI": "#236EA9",
+            "XVII": "#236EA9"
+          }
         }
       },
       "cityLabels": [

@@ -89,7 +89,14 @@
               "people": "25.590",
               "value": "10,0 %"
             }
-          ]
+          ],
+          "colors": {
+            "MI": "#E2E9FE",
+            "NO": "#8BBDD6",
+            "NW": "#FEE5E5",
+            "SO": "#8BBDD6",
+            "SW": "#236DA9"
+          }
         }
       },
       "cityLabels": [
@@ -169,7 +176,14 @@
               "value": "24,1 %"
             }
           ],
-          "themenbereich": "Familienstand"
+          "themenbereich": "Familienstand",
+          "colors": {
+            "MI": "#BDD6EA",
+            "NO": "#4B8BC2",
+            "NW": "#8BBDD6",
+            "SO": "#8BBDD6",
+            "SW": "#8BBDD6"
+          }
         },
         "Verheiratet": {
           "img": "/Interaktiv/pics/innerComparisonFamilienstandYear2002AreaStadtregionFamilienstandVerheiratet.gif",
@@ -216,7 +230,14 @@
               "people": "25.590",
               "value": "46,7 % %"
             }
-          ]
+          ],
+          "colors": {
+            "MI": "#FEBDBD",
+            "NO": "#AE2C1D",
+            "NW": "#DB6451",
+            "SO": "#DB6451",
+            "SW": "#AE2C1D"
+          }
         },
         "Verwitwet": {
           "img": "/Interaktiv/pics/innerComparisonFamilienstandYear2002AreaStadtregionFamilienstandVerwitwet.gif",
@@ -263,7 +284,14 @@
               "people": "25.590",
               "value": "7,5 % %"
             }
-          ]
+          ],
+          "colors": {
+            "MI": "#F49182",
+            "NO": "#F49182",
+            "NW": "#F49182",
+            "SO": "#DB6451",
+            "SW": "#F49182"
+          }
         },
         "Geschieden": {
           "img": "/Interaktiv/pics/innerComparisonFamilienstandYear2002AreaStadtregionFamilienstandGeschieden.gif",
@@ -310,7 +338,14 @@
               "people": "25.590",
               "value": "5,9 % %"
             }
-          ]
+          ],
+          "colors": {
+            "MI": "#DB6451",
+            "NO": "#FEBDBD",
+            "NW": "#F49182",
+            "SO": "#F49182",
+            "SW": "#FEBDBD"
+          }
         }
       },
       "cityLabels": [
@@ -410,7 +445,14 @@
               "value": "42,4"
             }
           ],
-          "themenbereich": "Indikator"
+          "themenbereich": "Indikator",
+          "colors": {
+            "MI": "#AE2C1D",
+            "NO": "#AE2C1D",
+            "NW": "#AE2C1D",
+            "SO": "#AE2C1D",
+            "SW": "#AE2C1D"
+          }
         },
         "Medianalter": {
           "img": "/Interaktiv/pics/innerComparisonIndicatorsYear2002AreaStadtregionIndiMedianalter.gif",
@@ -457,7 +499,14 @@
               "people": "25.590",
               "value": "42,0"
             }
-          ]
+          ],
+          "colors": {
+            "MI": "#DB6451",
+            "NO": "#AE2C1D",
+            "NW": "#DB6451",
+            "SO": "#DB6451",
+            "SW": "#AE2C1D"
+          }
         },
         "Jugendquotient": {
           "img": "/Interaktiv/pics/innerComparisonIndicatorsYear2002AreaStadtregionIndiJugendquotient.gif",
@@ -504,7 +553,14 @@
               "people": "25.590",
               "value": "28,2"
             }
-          ]
+          ],
+          "colors": {
+            "MI": "#4B8CC3",
+            "NO": "#BDD6EA",
+            "NW": "#BDD6EA",
+            "SO": "#8CBED6",
+            "SW": "#8CBED6"
+          }
         },
         "Altenquotient": {
           "img": "/Interaktiv/pics/innerComparisonIndicatorsYear2002AreaStadtregionIndiAltenquotient.gif",
@@ -551,7 +607,14 @@
               "people": "25.590",
               "value": "31,2"
             }
-          ]
+          ],
+          "colors": {
+            "MI": "#FEBDBD",
+            "NO": "#DB6451",
+            "NW": "#FEBDBD",
+            "SO": "#DB6451",
+            "SW": "#DB6451"
+          }
         },
         "Abhaengigkeitsquotient": {
           "img": "/Interaktiv/pics/innerComparisonIndicatorsYear2002AreaStadtregionIndiAbhaengigkeitsquotient.gif",
@@ -598,7 +661,14 @@
               "people": "25.590",
               "value": "59,4"
             }
-          ]
+          ],
+          "colors": {
+            "MI": "#E2E9FE",
+            "NO": "#FEBDBD",
+            "NW": "#FEE5E5",
+            "SO": "#FEE5E5",
+            "SW": "#FEE5E5"
+          }
         },
         "GreyingIndex": {
           "img": "/Interaktiv/pics/innerComparisonIndicatorsYear2002AreaStadtregionIndiGreyingIndex.gif",
@@ -645,7 +715,14 @@
               "people": "25.590",
               "value": "21,8"
             }
-          ]
+          ],
+          "colors": {
+            "MI": "#AE2C1D",
+            "NO": "#FEE5E5",
+            "NW": "#FEE5E5",
+            "SO": "#F49182",
+            "SW": "#FEE5E5"
+          }
         },
         "Migrationshintergrund": {
           "img": "/Interaktiv/pics/innerComparisonIndicatorsYear2002AreaStadtregionIndiMigrationshintergrund.gif",
@@ -692,7 +769,8 @@
               "people": "25.590",
               "value": "0,0"
             }
-          ]
+          ],
+          "mapUnavailable": true
         },
         "Auslaenderanteil": {
           "img": "/Interaktiv/pics/innerComparisonIndicatorsYear2002AreaStadtregionIndiAuslaenderanteil.gif",
@@ -739,7 +817,14 @@
               "people": "25.590",
               "value": "10,0"
             }
-          ]
+          ],
+          "colors": {
+            "MI": "#4B8BC2",
+            "NO": "#4B8BC2",
+            "NW": "#8BBDD6",
+            "SO": "#4B8BC2",
+            "SW": "#4B8BC2"
+          }
         }
       },
       "cityLabels": [
