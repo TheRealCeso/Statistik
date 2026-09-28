@@ -819,6 +819,69 @@
 
   // ------------------------------------------------------------------ Ansicht: Innerstädtischer Vergleich
   const vg = { pins: [] };
+  // Feste Klassengrenzen und Einheiten der bisherigen Legenden (zehn Klassen).
+  const VG_LEGENDS = {
+    Abhaengigkeitsquotient: [28, 95, 'Abhängigkeitsquotient'],
+    Alleinerziehende: [1, 7, 'Haushalte in %'],
+    alo55: [0, 60, 'Arbeitslose in %'],
+    aloAuslaender: [0, 72, 'Arbeitslose in %'],
+    aloDeutsche: [28, 100, 'Arbeitslose in %'],
+    aloMaennlich: [11, 70, 'Arbeitslose in %'],
+    aloUnter55: [40, 100, 'Arbeitslose in %'],
+    aloWeiblich: [30, 89, 'Arbeitslose in %'],
+    Altenquotient: [14, 63, 'Altenquotient'],
+    Auslaenderanteil: [2, 59, 'Ausländeranteil in %'],
+    bg1Kind: [0, 67, 'Bedarfsgemeinschaften in %'],
+    bg1P: [16, 85, 'Bedarfsgemeinschaften in %'],
+    bg2mKinder: [0, 40, 'Bedarfsgemeinschaften in %'],
+    bg2P: [3, 56, 'Bedarfsgemeinschaften in %'],
+    bg3mP: [0, 50, 'Bedarfsgemeinschaften in %'],
+    bgKeinKind: [33, 92, 'Bedarfsgemeinschaften in %'],
+    DreiOderMehrpersonenhaushalte: [8, 42, 'Haushalte in %'],
+    Durchschnittsalter: [33, 50, 'Durchschnittsalter'],
+    Einpersonenhaushalte: [22, 73, 'Haushalte in %'],
+    EinpersonenhaushalteHT: [22, 73, 'Haushalte in %'],
+    Foreigners: [2, 59, 'Personen in %'],
+    Geburten: [0, 26, 'Geburten je Tausend'],
+    GermansWithMigration: [9, 50, 'Personen in %'],
+    GermansWithoutMigration: [22, 87, 'Personen in %'],
+    Geschieden: [0, 11, 'Personen in %'],
+    GreyingIndex: [3, 66, 'Greying-Index'],
+    Haushalte1Kind: [4, 17, 'Haushalte in %'],
+    Haushalte2Kinder: [1, 14, 'Haushalte in %'],
+    Haushalte3oderMehrKinder: [0, 5, 'Haushalte in %'],
+    HaushalteOhneKinder: [68, 93, 'Haushalte in %'],
+    InnerFort: [12, 205, 'Binnenwegzüge je Tausend'],
+    InnerZu: [26, 528, 'Binnenzuzüge je Tausend'],
+    Jugendquotient: [11, 43, 'Jugendquotient'],
+    Ledig: [13, 56, 'Personen in %'],
+    Medianalter: [31, 54, 'Medianalter'],
+    Migrationshintergrund: [0, 78, 'Migrationshintergrund in %'],
+    PaareMitKinder: [4, 26, 'Haushalte in %'],
+    PaareOhneKinder: [15, 44, 'Haushalte in %'],
+    SonstigeMehrpersonenhaushalte: [3, 13, 'Haushalte in %'],
+    StadtFort: [12, 152, 'Außenwegzüge je Tausend'],
+    StadtZu: [9, 247, 'Außenzuzüge je Tausend'],
+    Sterbefaelle: [0, 34, 'Sterbefälle je Tausend'],
+    svb25UndAelter: [0, 93, 'Beschäftigte in %'],
+    svbAuslaender: [0, 55, 'Beschäftigte in %'],
+    svbDeutsche: [0, 98, 'Beschäftigte in %'],
+    svbMaennlich: [0, 64, 'Beschäftigte in %'],
+    svbUnter25: [0, 20, 'Beschäftigte in %'],
+    svbWeiblich: [0, 53, 'Beschäftigte in %'],
+    Verheiratet: [22, 60, 'Personen in %'],
+    Verwitwet: [2, 13, 'Personen in %'],
+    Zweipersonenhaushalte: [18, 43, 'Haushalte in %'],
+  };
+  const VG_LEGEND_COLORS = ['#af2d1e', '#dc6451', '#f59182', '#ffbebe', '#ffe6e6', '#e3eaff', '#bed7eb', '#8cbed7', '#4b8cc3', '#236eaa'];
+  function vergleichLegendHtml(mk) {
+    const legend = VG_LEGENDS[mk];
+    if (!legend) return '';
+    const [min, max, unit] = legend;
+    const boundary = i => (Math.round((min + (max - min) * i / 10) * 10) / 10).toFixed(1);
+    const rows = VG_LEGEND_COLORS.map((color, i) => `<li><span class="vg-scale-swatch" style="background:${color}" aria-hidden="true"></span><span>${boundary(9 - i)} bis ${i === 0 ? '≤' : '&lt;'} ${boundary(10 - i)}</span></li>`).join('');
+    return `<div class="vg-scale" role="group" aria-label="Legende"><ol>${rows}</ol><div class="vg-scale-unit">${esc(unit)}</div></div>`;
+  }
   function themeKeyFor(tab, sub) { return tab.subs ? sub : (tab.key === 'Migration' ? 'Migration' : tab.page); }
   function unitOf(m) {
     const v = (m.city && m.city[1]) || (m.areas[0] && m.areas[0].value) || '';
@@ -871,7 +934,7 @@
       ${radios}
       <div class="vg-grid">
         <div class="vg-map"><div class="stand">Stand: 31.12.${state.year}</div><div id="vgMap">${mapHtml}</div><div class="map-tooltip" id="vgTip"></div></div>
-        <div class="vg-legend"><img src="img/legend/${esc(type)}/${esc(mk)}.png" alt="Legende ${esc(m.merkmal || mk)}, die Klassen stehen auch als Text unter der Karte" loading="lazy" onerror="this.style.display='none'"><div class="small muted" style="margin-top:6px">${esc(unit.y)}</div></div>
+        <div class="vg-legend">${vergleichLegendHtml(mk)}</div>
         <div class="vg-table"><h3>Vergleich</h3>
           ${box('Augsburg', cleanVal(m.city[0]), cleanVal(m.city[1]))}
           <div id="vgBox1"></div><div id="vgBox2"></div>
@@ -912,8 +975,9 @@
             }
           });
         };
-        if (vg.pins[0]) addOutlines(vg.pins[0]);
-        if (vg.pins[1]) addOutlines(vg.pins[1]);
+        // Auch Hover-Umrisse über allen Nachbarflächen zeichnen.
+        // Mehrteilige Gebiete vollständig markieren, Pins dabei nicht doppeln.
+        new Set([...vg.pins, hoverId].filter(Boolean)).forEach(addOutlines);
         ov.innerHTML = outlines;
       }
     };
@@ -1063,7 +1127,7 @@
     const label = (theme.radios.find(r => r.value === mk) || {}).label || mk;
     openModal('Innerstädtischer Vergleich animiert', h`<div class="anim"><div class="anim-meta">Gebietseinteilung: ${esc(areaLabel(type))} · Themenbereich: ${esc(tab.label)}${tab.subs ? ' – ' + esc(tab.subs.find(s => s[0] === sub)[1]) : ''} · Merkmal: ${esc(label)}</div>
       <div class="anim-year" id="animYear">…</div>
-      <div class="anim-grid"><div id="animMap" class="vg-map"><div class="loading">Jahre werden geladen …</div></div><div class="vg-legend"><img src="img/legend/${esc(type)}/${esc(mk)}.png" alt="Legende" onerror="this.style.display='none'"></div></div>
+      <div class="anim-grid"><div id="animMap" class="vg-map"><div class="loading">Jahre werden geladen …</div></div><div class="vg-legend">${vergleichLegendHtml(mk)}</div></div>
       <div class="anim-controls"><button type="button" class="btn btn-primary" id="animStart">Start Animation</button><button type="button" class="btn" id="animStop">Stop Animation</button><button type="button" class="btn" id="animReset">Zurücksetzen</button></div></div>`);
     const frames = [];
     await Promise.all(A.years.map(async y => {
